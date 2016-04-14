@@ -1,13 +1,29 @@
-//
-//  cemployee.m
-//  chimichamba
-//
-//  Created by zero on 4/14/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
-
 #import "cemployee.h"
+#import "vemployee.h"
+
+@interface cemployee ()
+
+@property(weak, nonatomic)vemployee *view;
+
+@end
 
 @implementation cemployee
+
+@dynamic view;
+
+-(void)loadView
+{
+    self.view = [[vemployee alloc] init:self];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+-(BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
 
 @end
