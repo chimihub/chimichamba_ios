@@ -57,7 +57,7 @@ static NSInteger const picturesize = 150;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[name]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[segmented]-40-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[buttoncontinue]-40-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-20-[picture(picturesize)]-30-[name(60)]-60-[segmented(40)]-40-[buttoncontinue]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-20-[picture(picturesize)]-30-[name(70)]-60-[segmented(40)]-40-[buttoncontinue]" options:0 metrics:metrics views:views]];
     [self addConstraint:self.layoutpictureleft];
     
     return self;

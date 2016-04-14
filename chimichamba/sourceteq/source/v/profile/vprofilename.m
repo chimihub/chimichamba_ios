@@ -13,13 +13,13 @@
     [bordertop setUserInteractionEnabled:NO];
     [bordertop setClipsToBounds:YES];
     [bordertop setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.5]];
     
     UIView *borderbottom = [[UIView alloc] init];
     [borderbottom setUserInteractionEnabled:NO];
     [borderbottom setClipsToBounds:YES];
     [borderbottom setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.5]];
     
     UITextField *field = [[UITextField alloc] init];
     [field setAutocapitalizationType:UITextAutocapitalizationTypeWords];
@@ -27,7 +27,7 @@
     [field setBackgroundColor:[UIColor clearColor]];
     [field setBorderStyle:UITextBorderStyleNone];
     [field setClearButtonMode:UITextFieldViewModeNever];
-    [field setFont:[UIFont systemFontOfSize:22]];
+    [field setFont:[UIFont systemFontOfSize:25]];
     [field setKeyboardType:UIKeyboardTypeAlphabet];
     [field setKeyboardAppearance:UIKeyboardAppearanceLight];
     [field setPlaceholder:NSLocalizedString(@"profile_name_placeholder", nil)];
@@ -45,9 +45,9 @@
     NSDictionary *views = @{@"field":field, @"bordertop":bordertop, @"borderbottom":borderbottom};
     NSDictionary *metrics = @{};
     
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[field]-10-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[bordertop]-50-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[borderbottom]-50-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[field]-15-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[bordertop]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[borderbottom]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bordertop(1)]-0-[field]-0-[borderbottom(1)]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
