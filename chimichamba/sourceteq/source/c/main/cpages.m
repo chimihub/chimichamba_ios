@@ -1,5 +1,6 @@
 #import "cpages.h"
 #import "clanding.h"
+#import "clogin.h"
 
 @implementation cpages
 
@@ -48,7 +49,8 @@
 
 -(void)pagelogin
 {
-    
+    clogin *controller = [[clogin alloc] init];
+    [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 
 @end
