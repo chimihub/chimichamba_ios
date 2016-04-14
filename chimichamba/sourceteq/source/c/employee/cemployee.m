@@ -3,13 +3,25 @@
 
 @interface cemployee ()
 
-@property(weak, nonatomic)vemployee *view;
+@property(strong, nonatomic)vemployee *view;
 
 @end
 
 @implementation cemployee
 
 @dynamic view;
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+}
 
 -(void)loadView
 {

@@ -41,6 +41,7 @@ static NSInteger const picturesize = 150;
     self.segmented = segmented;
     
     UIButton *buttoncontinue = [UIButton second:NSLocalizedString(@"profile_button_continue", nil)];
+    [buttoncontinue addTarget:self action:@selector(actioncontinue:) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:bar];
     [self addSubview:picture];
@@ -86,6 +87,11 @@ static NSInteger const picturesize = 150;
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[alert]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[alert]-0-|" options:0 metrics:metrics views:views]];
+}
+
+-(void)actioncontinue:(UIButton*)button
+{
+    [self.controller next];
 }
 
 #pragma mark public

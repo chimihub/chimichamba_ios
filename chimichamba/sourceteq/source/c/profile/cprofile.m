@@ -1,6 +1,7 @@
 #import "cprofile.h"
 #import "cmain.h"
 #import "vprofile.h"
+#import "cemployee.h"
 
 @interface cprofile ()
 
@@ -16,6 +17,18 @@
 {
     cprofile *controller = [[cprofile alloc] init];
     [[cmain singleton] pushViewController:controller animated:YES];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
 -(void)loadView
@@ -72,6 +85,12 @@
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
     [self presentpicker:picker];
+}
+
+-(void)next
+{
+    cemployee *controller = [[cemployee alloc] init];
+    [[cmain singleton] pushViewController:controller animated:YES];
 }
 
 #pragma mark -
