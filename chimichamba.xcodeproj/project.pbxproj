@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA2913851CBFE4C300A66DCC /* brand.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2913841CBFE4C300A66DCC /* brand.xcassets */; };
+		DA2913881CBFF0A400A66DCC /* clanding.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913871CBFF0A400A66DCC /* clanding.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -43,6 +44,8 @@
 		D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chimichamba.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0A202D1CBFD8B200F08C7A /* chimichamba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chimichamba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2913841CBFE4C300A66DCC /* brand.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = brand.xcassets; sourceTree = "<group>"; };
+		DA2913861CBFF0A400A66DCC /* clanding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clanding.h; sourceTree = "<group>"; };
+		DA2913871CBFF0A400A66DCC /* clanding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clanding.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				DA6C49C31CBFDC0E00406C44 /* cmain.m */,
 				DA6C49C41CBFDC0E00406C44 /* cpages.h */,
 				DA6C49C51CBFDC0E00406C44 /* cpages.m */,
+				DA2913861CBFF0A400A66DCC /* clanding.h */,
+				DA2913871CBFF0A400A66DCC /* clanding.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
+				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
 				DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */,
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
 				DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */,
