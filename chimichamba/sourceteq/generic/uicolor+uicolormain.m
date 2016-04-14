@@ -9,7 +9,7 @@
 
 +(UIColor*)second
 {
-    return [UIColor colorWithRed:0 green:0.49803 blue:0.62745 alpha:1];
+    return [UIColor colorWithRed:0.8509 green:0.1098 blue:0.3607 alpha:1];
 }
 
 @end
