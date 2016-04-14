@@ -64,4 +64,10 @@ static NSInteger const picturesize = 150;
     [super layoutSubviews];
 }
 
+#pragma mark public
+
+-(void)updatepicture:(UIImage*)image
+{
+}
+
 @end
