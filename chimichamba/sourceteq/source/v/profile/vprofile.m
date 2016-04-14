@@ -1,5 +1,5 @@
 #import "vprofile.h"
-#import "cprofile.h"
+#import "vprofilebar.h"
 
 @interface vprofile ()
 
