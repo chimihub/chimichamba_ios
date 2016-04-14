@@ -13,14 +13,7 @@ static CGFloat const animationduration = 3.0;
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self setContentMode:UIViewContentModeScaleAspectFit];
     [self setAnimationDuration:animationduration];
-    self.animationImages = @[
-                             [UIImage imageNamed:@"spinner_0"],
-                             [UIImage imageNamed:@"spinner_1"],
-                             [UIImage imageNamed:@"spinner_2"],
-                             [UIImage imageNamed:@"spinner_3"],
-                             [UIImage imageNamed:@"spinner_4"],
-                             [UIImage imageNamed:@"spinner_5"]
-                             ];
+    self.animationImages = @[];
     [self startAnimating];
     
     return self;
