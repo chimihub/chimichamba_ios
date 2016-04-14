@@ -12,7 +12,7 @@
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     self.controller = controller;
     
-    vblur *blur = [vblur light:NO];
+    vblur *blur = [vblur dark];
     
     UIButton *buttoncamera = [UIButton main:NSLocalizedString(@"profile_alert_button_camera", nil)];
     [buttoncamera addTarget:self action:@selector(actioncamera:) forControlEvents:UIControlEventTouchUpInside];
@@ -36,7 +36,7 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[buttoncamera]-40-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[buttonlibrary]-40-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[buttoncancel]-40-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-150-[buttoncamera]-20-[buttonlibrary]-20-[buttoncancel]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-150-[buttoncamera]-20-[buttonlibrary]-70-[buttoncancel]" options:0 metrics:metrics views:views]];
     
     return self;
 }
