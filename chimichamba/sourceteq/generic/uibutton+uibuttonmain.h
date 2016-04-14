@@ -1,13 +1,8 @@
-//
-//  uibutton+uibuttonmain.h
-//  chimichamba
-//
-//  Created by zero on 4/14/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
 
-#import <Foundation/Foundation.h>
+@interface UIButton (uibuttonmain)
 
-@interface uibutton_uibuttonmain : NSObject
++(UIButton*)main(NSString*)title;
++(UIButton*)second(NSString*)title;
 
 @end
