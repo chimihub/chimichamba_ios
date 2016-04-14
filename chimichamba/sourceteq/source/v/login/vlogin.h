@@ -1,5 +1,4 @@
 #import "vchimi.h"
-#import "clogin.h"
 
 @interface vlogin:vchimi
 

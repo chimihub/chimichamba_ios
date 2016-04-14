@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "vchimi.h"
 
-@interface vprofile:UIView
+@interface vprofile:vchimi
 
 @end

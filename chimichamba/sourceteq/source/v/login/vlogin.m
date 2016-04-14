@@ -1,6 +1,7 @@
 #import "vlogin.h"
 #import "uibutton+uibuttonmain.h"
 #import "uicolor+uicolormain.h"
+#import "clogin.h"
 
 @interface vlogin ()
 
