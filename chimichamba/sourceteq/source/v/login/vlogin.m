@@ -2,9 +2,17 @@
 #import "uibutton+uibuttonmain.h"
 #import "uicolor+uicolormain.h"
 
+@interface vlogin ()
+
+@property(weak, nonatomic)clogin *controller;
+
+@end
+
 @implementation vlogin
 
--(instancetype)init:(UIViewController*)controller
+@dynamic controller;
+
+-(instancetype)init:(clogin*)controller
 {
     self = [super init:controller];
     
@@ -40,9 +48,11 @@
     [logo setImage:[UIImage imageNamed:@"generic_logo"]];
     
     UIButton *buttonfacebook = [UIButton main:NSLocalizedString(@"login_btn_facebook", nil)];
+    [buttonfacebook addTarget:self action:@selector(actionprofile:) forControlEvents:UIControlEventTouchUpInside];
     self.buttonfacebook = buttonfacebook;
     
     UIButton *buttonemail = [UIButton second:NSLocalizedString(@"login_btn_email", nil)];
+    [buttonemail addTarget:self action:@selector(actionprofile:) forControlEvents:UIControlEventTouchUpInside];
     self.buttonemail = buttonemail;
     
     [self addSubview:titleborder];
@@ -64,6 +74,13 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-70-[title(30)]-10-[titleborder(1)]-40-[logo(170)]-10-[motto(25)]-70-[btnface(50)]-20-[btnemail(50)]" options:0 metrics:metrics views:views]];
     
     return self;
+}
+
+#pragma mark actions
+
+-(void)actionprofile:(UIButton*)button
+{
+    [self.controller profile];
 }
 
 @end

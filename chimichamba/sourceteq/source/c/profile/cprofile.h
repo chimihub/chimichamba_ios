@@ -2,4 +2,6 @@
 
 @interface cprofile:UIViewController
 
++(void)open;
+
 @end

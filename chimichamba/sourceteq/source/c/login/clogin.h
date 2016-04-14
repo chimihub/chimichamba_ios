@@ -2,6 +2,6 @@
 
 @interface clogin:UIViewController
 
--(void)openprofile;
+-(void)profile;
 
 @end

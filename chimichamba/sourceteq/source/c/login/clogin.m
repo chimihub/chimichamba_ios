@@ -1,7 +1,6 @@
 #import "clogin.h"
 #import "vlogin.h"
 #import "cprofile.h"
-#import "cmain.h"
 
 @interface clogin ()
 
@@ -20,9 +19,9 @@
 
 #pragma mark public
 
--(void)openprofile
+-(void)profile
 {
-    
+    [cprofile open];
 }
 
 @end
