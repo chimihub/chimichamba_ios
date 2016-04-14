@@ -1,4 +1,5 @@
 #import "vlogin.h"
+#import "uibutton+uibuttonmain.h"
 
 @implementation vlogin
 
@@ -24,15 +25,25 @@
     [titleborder setTranslatesAutoresizingMaskIntoConstraints:NO];
     [titleborder setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
     
+    UIButton *buttonfacebook = [UIButton main:NSLocalizedString(@"login_btn_facebook", nil)];
+    self.buttonfacebook = buttonfacebook;
+    
+    UIButton *buttonemail = [UIButton second:NSLocalizedString(@"login_btn_email", nil)];
+    self.buttonemail = buttonemail;
+    
     [self addSubview:titleborder];
     [self addSubview:title];
+    [self addSubview:buttonfacebook];
+    [self addSubview:buttonemail];
     
-    NSDictionary *views = @{@"title":title, @"titleborder":titleborder};
+    NSDictionary *views = @{@"title":title, @"titleborder":titleborder, @"btnface":buttonfacebook, @"btnemail":buttonemail};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[title]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[titleborder]-40-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-70-[title]-10-[titleborder(1)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[titleborder]-30-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[btnface]-10-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[btnemail]-10-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-70-[title]-10-[titleborder(1)]-150-[btnface(40)]-30-[btnemail(40)]" options:0 metrics:metrics views:views]];
     
     return self;
 }
