@@ -129,6 +129,7 @@
 		DA6C49F51CBFDC0E00406C44 /* vmenucell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenucell.m; sourceTree = "<group>"; };
 		DA6C49F61CBFDC0E00406C44 /* vmenuheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmenuheader.h; sourceTree = "<group>"; };
 		DA6C49F71CBFDC0E00406C44 /* vmenuheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenuheader.m; sourceTree = "<group>"; };
+		DA6C4A211CBFDD2D00406C44 /* privateconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privateconstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +200,7 @@
 		DA6C49961CBFDC0E00406C44 /* sourceteq */ = {
 			isa = PBXGroup;
 			children = (
+				DA6C4A201CBFDD2D00406C44 /* private */,
 				DA6C49971CBFDC0E00406C44 /* core */,
 				DA6C499C1CBFDC0E00406C44 /* generic */,
 				DA6C49AA1CBFDC0E00406C44 /* lib */,
@@ -450,6 +452,14 @@
 				DA6C49F71CBFDC0E00406C44 /* vmenuheader.m */,
 			);
 			path = menu;
+			sourceTree = "<group>";
+		};
+		DA6C4A201CBFDD2D00406C44 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				DA6C4A211CBFDD2D00406C44 /* privateconstants.h */,
+			);
+			path = private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
