@@ -12,7 +12,6 @@
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
 		DA6C49FB1CBFDC0E00406C44 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49931CBFDC0E00406C44 /* Localizable.strings */; };
 		DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49991CBFDC0E00406C44 /* appdel.m */; };
-		DA6C49FD1CBFDC0E00406C44 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C499A1CBFDC0E00406C44 /* Info.plist */; };
 		DA6C49FE1CBFDC0E00406C44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C499B1CBFDC0E00406C44 /* main.m */; };
 		DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C499E1CBFDC0E00406C44 /* analytics.m */; };
 		DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49A11CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m */; };
@@ -523,7 +522,6 @@
 				DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */,
 				DA6C49FB1CBFDC0E00406C44 /* Localizable.strings in Resources */,
 				DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */,
-				DA6C49FD1CBFDC0E00406C44 /* Info.plist in Resources */,
 				DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -662,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -674,7 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = chimichamba/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/chimichamba/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,7 +687,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = chimichamba/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/chimichamba/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
