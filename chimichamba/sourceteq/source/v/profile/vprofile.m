@@ -2,6 +2,7 @@
 #import "vprofilebar.h"
 #import "uicolor+uicolormain.h"
 #import "uibutton+uibuttonmain.h"
+#import "vprofilealert.h"
 
 static NSInteger const picturesize = 150;
 
@@ -70,7 +71,15 @@ static NSInteger const picturesize = 150;
 
 -(void)actionupload:(UIButton*)button
 {
-    [self.controller uploadpicture];
+    vprofilealert *alert = [[vprofilealert alloc] init:self.controller];
+    
+    [self addSubview:alert];
+    
+    NSDictionary *views = @{@"alert":alert};
+    NSDictionary *metrics = @{};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[alert]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[alert]-0-|" options:0 metrics:metrics views:views]];
 }
 
 #pragma mark public

@@ -40,7 +40,12 @@
     [[cmain singleton] popViewControllerAnimated:YES];
 }
 
--(void)uploadpicture
+-(void)picturecamera
+{
+    
+}
+
+-(void)picturelibrary
 {
     
 }

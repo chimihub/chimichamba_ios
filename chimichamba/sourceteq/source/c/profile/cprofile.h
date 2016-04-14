@@ -4,7 +4,8 @@
 
 +(void)open;
 -(void)back;
--(void)uploadpicture;
+-(void)picturecamera;
+-(void)picturelibrary;
 
 @property(weak, nonatomic)UIPopoverController *popover;
 
