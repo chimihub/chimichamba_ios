@@ -37,11 +37,6 @@
 		DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E71CBFDC0E00406C44 /* vblur.m */; };
 		DA6C4A191CBFDC0E00406C44 /* vmenubutton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E91CBFDC0E00406C44 /* vmenubutton.m */; };
 		DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49EB1CBFDC0E00406C44 /* vspinner.m */; };
-		DA6C4A1B1CBFDC0E00406C44 /* vloading.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49EE1CBFDC0E00406C44 /* vloading.m */; };
-		DA6C4A1C1CBFDC0E00406C44 /* vmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49F11CBFDC0E00406C44 /* vmenu.m */; };
-		DA6C4A1D1CBFDC0E00406C44 /* vmenubanner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49F31CBFDC0E00406C44 /* vmenubanner.m */; };
-		DA6C4A1E1CBFDC0E00406C44 /* vmenucell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49F51CBFDC0E00406C44 /* vmenucell.m */; };
-		DA6C4A1F1CBFDC0E00406C44 /* vmenuheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49F71CBFDC0E00406C44 /* vmenuheader.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -109,16 +104,6 @@
 		DA6C49E91CBFDC0E00406C44 /* vmenubutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenubutton.m; sourceTree = "<group>"; };
 		DA6C49EA1CBFDC0E00406C44 /* vspinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vspinner.h; sourceTree = "<group>"; };
 		DA6C49EB1CBFDC0E00406C44 /* vspinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vspinner.m; sourceTree = "<group>"; };
-		DA6C49ED1CBFDC0E00406C44 /* vloading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vloading.h; sourceTree = "<group>"; };
-		DA6C49EE1CBFDC0E00406C44 /* vloading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vloading.m; sourceTree = "<group>"; };
-		DA6C49F01CBFDC0E00406C44 /* vmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmenu.h; sourceTree = "<group>"; };
-		DA6C49F11CBFDC0E00406C44 /* vmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenu.m; sourceTree = "<group>"; };
-		DA6C49F21CBFDC0E00406C44 /* vmenubanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmenubanner.h; sourceTree = "<group>"; };
-		DA6C49F31CBFDC0E00406C44 /* vmenubanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenubanner.m; sourceTree = "<group>"; };
-		DA6C49F41CBFDC0E00406C44 /* vmenucell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmenucell.h; sourceTree = "<group>"; };
-		DA6C49F51CBFDC0E00406C44 /* vmenucell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenucell.m; sourceTree = "<group>"; };
-		DA6C49F61CBFDC0E00406C44 /* vmenuheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmenuheader.h; sourceTree = "<group>"; };
-		DA6C49F71CBFDC0E00406C44 /* vmenuheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenuheader.m; sourceTree = "<group>"; };
 		DA6C4A211CBFDD2D00406C44 /* privateconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privateconstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -403,7 +388,6 @@
 			children = (
 				DA6C49E31CBFDC0E00406C44 /* general */,
 				DA6C49EC1CBFDC0E00406C44 /* main */,
-				DA6C49EF1CBFDC0E00406C44 /* menu */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -426,25 +410,8 @@
 		DA6C49EC1CBFDC0E00406C44 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				DA6C49ED1CBFDC0E00406C44 /* vloading.h */,
-				DA6C49EE1CBFDC0E00406C44 /* vloading.m */,
 			);
 			path = main;
-			sourceTree = "<group>";
-		};
-		DA6C49EF1CBFDC0E00406C44 /* menu */ = {
-			isa = PBXGroup;
-			children = (
-				DA6C49F01CBFDC0E00406C44 /* vmenu.h */,
-				DA6C49F11CBFDC0E00406C44 /* vmenu.m */,
-				DA6C49F21CBFDC0E00406C44 /* vmenubanner.h */,
-				DA6C49F31CBFDC0E00406C44 /* vmenubanner.m */,
-				DA6C49F41CBFDC0E00406C44 /* vmenucell.h */,
-				DA6C49F51CBFDC0E00406C44 /* vmenucell.m */,
-				DA6C49F61CBFDC0E00406C44 /* vmenuheader.h */,
-				DA6C49F71CBFDC0E00406C44 /* vmenuheader.m */,
-			);
-			path = menu;
 			sourceTree = "<group>";
 		};
 		DA6C4A201CBFDD2D00406C44 /* private */ = {
@@ -593,19 +560,14 @@
 				DA6C4A0D1CBFDC0E00406C44 /* cmenu.m in Sources */,
 				DA6C4A0B1CBFDC0E00406C44 /* cmain.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
-				DA6C4A1C1CBFDC0E00406C44 /* vmenu.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
-				DA6C4A1E1CBFDC0E00406C44 /* vmenucell.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
-				DA6C4A1B1CBFDC0E00406C44 /* vloading.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
 				DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */,
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
 				DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */,
 				DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */,
-				DA6C4A1D1CBFDC0E00406C44 /* vmenubanner.m in Sources */,
-				DA6C4A1F1CBFDC0E00406C44 /* vmenuheader.m in Sources */,
 				DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
