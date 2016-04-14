@@ -10,7 +10,16 @@
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     UIView *bordertop = [[UIView alloc] init];
+    [bordertop setUserInteractionEnabled:NO];
+    [bordertop setClipsToBounds:YES];
+    [bordertop setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    
     UIView *borderbottom = [[UIView alloc] init];
+    [borderbottom setUserInteractionEnabled:NO];
+    [borderbottom setClipsToBounds:YES];
+    [borderbottom setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
     
     UITextField *field = [[UITextField alloc] init];
     [field setAutocapitalizationType:UITextAutocapitalizationTypeWords];
@@ -29,13 +38,17 @@
     [field setTranslatesAutoresizingMaskIntoConstraints:NO];
     self.field = field;
     
+    [self addSubview:bordertop];
+    [self addSubview:borderbottom];
     [self addSubview:field];
     
-    NSDictionary *views = @{@"field":field};
+    NSDictionary *views = @{@"field":field, @"bordertop":bordertop, @"borderbottom":borderbottom};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[field]-10-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[field]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[bordertop]-50-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[borderbottom]-50-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bordertop(1)]-0-[field]-0-[borderbottom(1)]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
