@@ -35,7 +35,6 @@
 		DA6C4A121CBFDC0E00406C44 /* mpages.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49D81CBFDC0E00406C44 /* mpages.m */; };
 		DA6C4A131CBFDC0E00406C44 /* mpagesitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49DA1CBFDC0E00406C44 /* mpagesitem.m */; };
 		DA6C4A151CBFDC0E00406C44 /* mpagessection.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49DE1CBFDC0E00406C44 /* mpagessection.m */; };
-		DA6C4A161CBFDC0E00406C44 /* mpagessectionstats.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E01CBFDC0E00406C44 /* mpagessectionstats.m */; };
 		DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E51CBFDC0E00406C44 /* valert.m */; };
 		DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E71CBFDC0E00406C44 /* vblur.m */; };
 		DA6C4A191CBFDC0E00406C44 /* vmenubutton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E91CBFDC0E00406C44 /* vmenubutton.m */; };
@@ -109,8 +108,6 @@
 		DA6C49DA1CBFDC0E00406C44 /* mpagesitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mpagesitem.m; sourceTree = "<group>"; };
 		DA6C49DD1CBFDC0E00406C44 /* mpagessection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpagessection.h; sourceTree = "<group>"; };
 		DA6C49DE1CBFDC0E00406C44 /* mpagessection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mpagessection.m; sourceTree = "<group>"; };
-		DA6C49DF1CBFDC0E00406C44 /* mpagessectionstats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpagessectionstats.h; sourceTree = "<group>"; };
-		DA6C49E01CBFDC0E00406C44 /* mpagessectionstats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mpagessectionstats.m; sourceTree = "<group>"; };
 		DA6C49E41CBFDC0E00406C44 /* valert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = valert.h; sourceTree = "<group>"; };
 		DA6C49E51CBFDC0E00406C44 /* valert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = valert.m; sourceTree = "<group>"; };
 		DA6C49E61CBFDC0E00406C44 /* vblur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vblur.h; sourceTree = "<group>"; };
@@ -410,8 +407,6 @@
 				DA6C49DA1CBFDC0E00406C44 /* mpagesitem.m */,
 				DA6C49DD1CBFDC0E00406C44 /* mpagessection.h */,
 				DA6C49DE1CBFDC0E00406C44 /* mpagessection.m */,
-				DA6C49DF1CBFDC0E00406C44 /* mpagessectionstats.h */,
-				DA6C49E01CBFDC0E00406C44 /* mpagessectionstats.m */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -624,7 +619,6 @@
 				DA6C4A131CBFDC0E00406C44 /* mpagesitem.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
 				DA6C4A1B1CBFDC0E00406C44 /* vloading.m in Sources */,
-				DA6C4A161CBFDC0E00406C44 /* mpagessectionstats.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
 				DA6C4A121CBFDC0E00406C44 /* mpages.m in Sources */,
