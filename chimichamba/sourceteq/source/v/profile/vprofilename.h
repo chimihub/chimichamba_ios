@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface vprofilename:UIView<UITextFieldDelegate>
+@interface vprofilename:UIView
 
 @property(weak, nonatomic)UITextField *field;
 

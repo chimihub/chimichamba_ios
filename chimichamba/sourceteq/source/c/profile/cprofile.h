@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface cprofile:UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface cprofile:UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
 
 +(void)open;
 -(void)back;

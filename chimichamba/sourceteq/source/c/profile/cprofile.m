@@ -93,4 +93,13 @@
     [self.view updatepicture:image];
 }
 
+#pragma mark field del
+
+-(BOOL)textFieldShouldReturn:(UITextField*)field
+{
+    [field resignFirstResponder];
+    
+    return YES;
+}
+
 @end

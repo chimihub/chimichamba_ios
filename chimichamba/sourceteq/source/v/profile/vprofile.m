@@ -28,6 +28,10 @@ static NSInteger const picturesize = 150;
     [picture.buttonupload addTarget:self action:@selector(actionupload:) forControlEvents:UIControlEventTouchUpInside];
     self.picture = picture;
     
+    vprofilename *name = [[vprofilename alloc] init];
+    [name.field setDelegate:controller];
+    self.name = name;
+    
     UISegmentedControl *segmented = [[UISegmentedControl alloc] initWithItems:@[@"Busco chamba", @"Quiero contratar"]];
     [segmented setClipsToBounds:YES];
     [segmented setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -40,18 +44,20 @@ static NSInteger const picturesize = 150;
     
     [self addSubview:bar];
     [self addSubview:picture];
+    [self addSubview:name];
     [self addSubview:segmented];
     [self addSubview:buttoncontinue];
     
-    NSDictionary *views = @{@"bar":bar, @"picture":picture, @"segmented":segmented, @"buttoncontinue":buttoncontinue};
+    NSDictionary *views = @{@"bar":bar, @"picture":picture, @"segmented":segmented, @"buttoncontinue":buttoncontinue, @"name":name};
     NSDictionary *metrics = @{@"picturesize":@(picturesize)};
     
     self.layoutpictureleft = [NSLayoutConstraint constraintWithItem:picture attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[picture(picturesize)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[name]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[segmented]-40-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[buttoncontinue]-40-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-20-[picture(picturesize)]-50-[segmented(40)]-40-[buttoncontinue]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-20-[picture(picturesize)]-30-[name(60)]-60-[segmented(40)]-40-[buttoncontinue]" options:0 metrics:metrics views:views]];
     [self addConstraint:self.layoutpictureleft];
     
     return self;
