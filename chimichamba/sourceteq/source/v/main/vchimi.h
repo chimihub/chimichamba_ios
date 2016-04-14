@@ -1,13 +1,9 @@
-//
-//  vchimi.h
-//  chimichamba
-//
-//  Created by zero on 4/14/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
 
-#import <Foundation/Foundation.h>
+@interface vchimi:UIView
 
-@interface vchimi : NSObject
+-(instancetype)init:(UIViewController*)controller;
+
+@property(weak, nonatomic)UIViewController *controller;
 
 @end
