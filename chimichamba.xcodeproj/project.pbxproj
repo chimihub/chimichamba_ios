@@ -16,6 +16,7 @@
 		DA29139B1CC0055200A66DCC /* cprofile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29139A1CC0055200A66DCC /* cprofile.m */; };
 		DA29139E1CC0056300A66DCC /* vprofile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29139D1CC0056300A66DCC /* vprofile.m */; };
 		DA2913A01CC0066E00A66DCC /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA29139F1CC0066E00A66DCC /* generic.xcassets */; };
+		DA2913A31CC0079500A66DCC /* vchimi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913A21CC0079500A66DCC /* vchimi.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -66,6 +67,8 @@
 		DA29139C1CC0056300A66DCC /* vprofile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vprofile.h; sourceTree = "<group>"; };
 		DA29139D1CC0056300A66DCC /* vprofile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofile.m; sourceTree = "<group>"; };
 		DA29139F1CC0066E00A66DCC /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
+		DA2913A11CC0079500A66DCC /* vchimi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vchimi.h; sourceTree = "<group>"; };
+		DA2913A21CC0079500A66DCC /* vchimi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vchimi.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -455,6 +458,8 @@
 		DA6C49EC1CBFDC0E00406C44 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				DA2913A11CC0079500A66DCC /* vchimi.h */,
+				DA2913A21CC0079500A66DCC /* vchimi.m */,
 				DA2913891CBFF2A300A66DCC /* vlanding.h */,
 				DA29138A1CBFF2A300A66DCC /* vlanding.m */,
 			);
@@ -605,6 +610,7 @@
 				DA6C4A0F1CBFDC0E00406C44 /* mdbcreate.m in Sources */,
 				DA29139B1CC0055200A66DCC /* cprofile.m in Sources */,
 				DA6C4A031CBFDC0E00406C44 /* uifont+uifontmain.m in Sources */,
+				DA2913A31CC0079500A66DCC /* vchimi.m in Sources */,
 				DA6C4A081CBFDC0E00406C44 /* amanager.m in Sources */,
 				DA6C4A0B1CBFDC0E00406C44 /* cmain.m in Sources */,
 				DA29138B1CBFF2A300A66DCC /* vlanding.m in Sources */,
