@@ -1,10 +1,12 @@
 #import "cpages.h"
+#import "clanding.h"
 
 @implementation cpages
 
 -(instancetype)init
 {
     self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    [self pagelanding];
     
     return self;
 }
@@ -33,6 +35,12 @@
 {
     NSArray *array = @[controller];
     [self setViewControllers:array direction:direction animated:animated completion:nil];
+}
+
+-(void)pagelanding
+{
+    clanding *controller = [[clanding alloc] init];
+    [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:NO];
 }
 
 #pragma mark public
