@@ -4,6 +4,7 @@
 
 +(void)open;
 -(void)back;
+-(void)uploadpicture;
 
 @property(weak, nonatomic)UIPopoverController *popover;
 

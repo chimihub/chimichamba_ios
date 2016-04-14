@@ -24,6 +24,7 @@ static NSInteger const picturesize = 150;
     vprofilebar *bar = [[vprofilebar alloc] init:controller];
     
     vprofilepicture *picture = [[vprofilepicture alloc] init];
+    [picture.buttonupload addTarget:self action:@selector(actionupload:) forControlEvents:UIControlEventTouchUpInside];
     self.picture = picture;
     
     UISegmentedControl *segmented = [[UISegmentedControl alloc] initWithItems:@[@"Busco chamba", @"Quiero contratar"]];
@@ -63,6 +64,13 @@ static NSInteger const picturesize = 150;
     self.layoutpictureleft.constant = margin;
     
     [super layoutSubviews];
+}
+
+#pragma mark actions
+
+-(void)actionupload:(UIButton*)button
+{
+    [self.controller uploadpicture];
 }
 
 #pragma mark public

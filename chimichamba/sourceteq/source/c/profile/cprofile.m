@@ -40,6 +40,11 @@
     [[cmain singleton] popViewControllerAnimated:YES];
 }
 
+-(void)uploadpicture
+{
+    
+}
+
 #pragma mark -
 #pragma mark picker del
 
