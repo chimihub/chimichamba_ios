@@ -36,11 +36,19 @@ static NSInteger const circlemargin = 5;
     [buttonupload addTarget:self action:@selector(actionupload:) forControlEvents:UIControlEventTouchUpInside];
     self.buttonupload = buttonupload;
     
+    UIImageView *image = [[UIImageView alloc] init];
+    [image setClipsToBounds:YES];
+    [image setUserInteractionEnabled:NO];
+    [image setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [image setContentMode:UIViewContentModeScaleAspectFill];
+    self.image = image;
+    
+    [circle addSubview:image];
     [self addSubview:circle];
     [self addSubview:placeholder];
     [self addSubview:buttonupload];
     
-    NSDictionary *views = @{@"circle":circle, @"placeholder":placeholder, @"buttonupload":buttonupload};
+    NSDictionary *views = @{@"circle":circle, @"placeholder":placeholder, @"buttonupload":buttonupload, @"image":image};
     NSDictionary *metrics = @{@"circlemargin":@(circlemargin)};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(circlemargin)-[circle]-(circlemargin)-|" options:0 metrics:metrics views:views]];
@@ -49,6 +57,8 @@ static NSInteger const circlemargin = 5;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[placeholder]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[buttonupload(50)]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[buttonupload(50)]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[image]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[image]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }

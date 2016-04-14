@@ -45,6 +45,8 @@
 
 -(void)imagePickerController:(UIImagePickerController*)picker didFinishPickingMediaWithInfo:(NSDictionary*)info
 {
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
     if(self.popover)
     {
         [self.popover dismissPopoverAnimated:YES];
@@ -54,24 +56,7 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }
     
-    switch(applicationtype)
-    {
-        case apptypepad:
-            
-            [popover dismissPopoverAnimated:YES];
-            [self imagedefined:_info[UIImagePickerControllerOriginalImage]];
-            
-            break;
-            
-        case apptypephone:
-            
-            [[ctrmain sha] dismissViewControllerAnimated:YES completion:^(void)
-             {
-                 [self imagedefined:_info[UIImagePickerControllerOriginalImage]];
-             }];
-            
-            break;
-    }
+    [self.view updatepicture:image];
 }
 
 @end

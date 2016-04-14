@@ -1,6 +1,5 @@
 #import "vprofile.h"
 #import "vprofilebar.h"
-#import "vprofilepicture.h"
 #import "uicolor+uicolormain.h"
 #import "uibutton+uibuttonmain.h"
 
@@ -10,6 +9,7 @@ static NSInteger const picturesize = 150;
 
 @property(weak, nonatomic)cprofile *controller;
 @property(weak, nonatomic)NSLayoutConstraint *layoutpictureleft;
+@property(weak, nonatomic)UISegmentedControl *segmented;
 
 @end
 
@@ -24,6 +24,7 @@ static NSInteger const picturesize = 150;
     vprofilebar *bar = [[vprofilebar alloc] init:controller];
     
     vprofilepicture *picture = [[vprofilepicture alloc] init];
+    self.picture = picture;
     
     UISegmentedControl *segmented = [[UISegmentedControl alloc] initWithItems:@[@"Busco chamba", @"Quiero contratar"]];
     [segmented setClipsToBounds:YES];
@@ -68,6 +69,7 @@ static NSInteger const picturesize = 150;
 
 -(void)updatepicture:(UIImage*)image
 {
+    [self.picture.image setImage:image];
 }
 
 @end
