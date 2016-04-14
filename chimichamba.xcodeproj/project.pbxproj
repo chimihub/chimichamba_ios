@@ -14,6 +14,7 @@
 		DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913921CBFF4E400A66DCC /* vlogin.m */; };
 		DA2913961CBFFF1500A66DCC /* uibutton+uibuttonmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913951CBFFF1500A66DCC /* uibutton+uibuttonmain.m */; };
 		DA29139B1CC0055200A66DCC /* cprofile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29139A1CC0055200A66DCC /* cprofile.m */; };
+		DA29139E1CC0056300A66DCC /* vprofile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29139D1CC0056300A66DCC /* vprofile.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -61,6 +62,8 @@
 		DA2913951CBFFF1500A66DCC /* uibutton+uibuttonmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "uibutton+uibuttonmain.m"; sourceTree = "<group>"; };
 		DA2913991CC0055200A66DCC /* cprofile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cprofile.h; sourceTree = "<group>"; };
 		DA29139A1CC0055200A66DCC /* cprofile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cprofile.m; sourceTree = "<group>"; };
+		DA29139C1CC0056300A66DCC /* vprofile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vprofile.h; sourceTree = "<group>"; };
+		DA29139D1CC0056300A66DCC /* vprofile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofile.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 		DA2913971CC0052600A66DCC /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				DA29139C1CC0056300A66DCC /* vprofile.h */,
+				DA29139D1CC0056300A66DCC /* vprofile.m */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
+				DA29139E1CC0056300A66DCC /* vprofile.m in Sources */,
 				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
 				DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */,
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
