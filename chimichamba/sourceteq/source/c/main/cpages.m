@@ -37,4 +37,9 @@
 
 #pragma mark public
 
+-(void)pagelogin
+{
+    
+}
+
 @end

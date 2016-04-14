@@ -2,4 +2,6 @@
 
 @interface cpages:UIPageViewController
 
+-(void)pagelogin;
+
 @end

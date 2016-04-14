@@ -25,17 +25,14 @@
 		DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49B71CBFDC0E00406C44 /* acall.m */; };
 		DA6C4A081CBFDC0E00406C44 /* amanager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49BA1CBFDC0E00406C44 /* amanager.m */; };
 		DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49BD1CBFDC0E00406C44 /* aparser.m */; };
-		DA6C4A0A1CBFDC0E00406C44 /* cloading.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49C11CBFDC0E00406C44 /* cloading.m */; };
 		DA6C4A0B1CBFDC0E00406C44 /* cmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49C31CBFDC0E00406C44 /* cmain.m */; };
 		DA6C4A0C1CBFDC0E00406C44 /* cpages.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49C51CBFDC0E00406C44 /* cpages.m */; };
-		DA6C4A0D1CBFDC0E00406C44 /* cmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49C81CBFDC0E00406C44 /* cmenu.m */; };
 		DA6C4A0E1CBFDC0E00406C44 /* mdb.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49CC1CBFDC0E00406C44 /* mdb.m */; };
 		DA6C4A0F1CBFDC0E00406C44 /* mdbcreate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49CE1CBFDC0E00406C44 /* mdbcreate.m */; };
 		DA6C4A101CBFDC0E00406C44 /* mdirs.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49D11CBFDC0E00406C44 /* mdirs.m */; };
 		DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49D51CBFDC0E00406C44 /* msettings.m */; };
 		DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E51CBFDC0E00406C44 /* valert.m */; };
 		DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E71CBFDC0E00406C44 /* vblur.m */; };
-		DA6C4A191CBFDC0E00406C44 /* vmenubutton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49E91CBFDC0E00406C44 /* vmenubutton.m */; };
 		DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49EB1CBFDC0E00406C44 /* vspinner.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
@@ -79,14 +76,10 @@
 		DA6C49BA1CBFDC0E00406C44 /* amanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amanager.m; sourceTree = "<group>"; };
 		DA6C49BC1CBFDC0E00406C44 /* aparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aparser.h; sourceTree = "<group>"; };
 		DA6C49BD1CBFDC0E00406C44 /* aparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aparser.m; sourceTree = "<group>"; };
-		DA6C49C01CBFDC0E00406C44 /* cloading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cloading.h; sourceTree = "<group>"; };
-		DA6C49C11CBFDC0E00406C44 /* cloading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cloading.m; sourceTree = "<group>"; };
 		DA6C49C21CBFDC0E00406C44 /* cmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmain.h; sourceTree = "<group>"; };
 		DA6C49C31CBFDC0E00406C44 /* cmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cmain.m; sourceTree = "<group>"; };
 		DA6C49C41CBFDC0E00406C44 /* cpages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpages.h; sourceTree = "<group>"; };
 		DA6C49C51CBFDC0E00406C44 /* cpages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cpages.m; sourceTree = "<group>"; };
-		DA6C49C71CBFDC0E00406C44 /* cmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmenu.h; sourceTree = "<group>"; };
-		DA6C49C81CBFDC0E00406C44 /* cmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cmenu.m; sourceTree = "<group>"; };
 		DA6C49CB1CBFDC0E00406C44 /* mdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdb.h; sourceTree = "<group>"; };
 		DA6C49CC1CBFDC0E00406C44 /* mdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdb.m; sourceTree = "<group>"; };
 		DA6C49CD1CBFDC0E00406C44 /* mdbcreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdbcreate.h; sourceTree = "<group>"; };
@@ -100,8 +93,6 @@
 		DA6C49E51CBFDC0E00406C44 /* valert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = valert.m; sourceTree = "<group>"; };
 		DA6C49E61CBFDC0E00406C44 /* vblur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vblur.h; sourceTree = "<group>"; };
 		DA6C49E71CBFDC0E00406C44 /* vblur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vblur.m; sourceTree = "<group>"; };
-		DA6C49E81CBFDC0E00406C44 /* vmenubutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmenubutton.h; sourceTree = "<group>"; };
-		DA6C49E91CBFDC0E00406C44 /* vmenubutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vmenubutton.m; sourceTree = "<group>"; };
 		DA6C49EA1CBFDC0E00406C44 /* vspinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vspinner.h; sourceTree = "<group>"; };
 		DA6C49EB1CBFDC0E00406C44 /* vspinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vspinner.m; sourceTree = "<group>"; };
 		DA6C4A211CBFDD2D00406C44 /* privateconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privateconstants.h; sourceTree = "<group>"; };
@@ -309,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				DA6C49BF1CBFDC0E00406C44 /* main */,
-				DA6C49C61CBFDC0E00406C44 /* menu */,
 			);
 			path = c;
 			sourceTree = "<group>";
@@ -317,23 +307,12 @@
 		DA6C49BF1CBFDC0E00406C44 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				DA6C49C01CBFDC0E00406C44 /* cloading.h */,
-				DA6C49C11CBFDC0E00406C44 /* cloading.m */,
 				DA6C49C21CBFDC0E00406C44 /* cmain.h */,
 				DA6C49C31CBFDC0E00406C44 /* cmain.m */,
 				DA6C49C41CBFDC0E00406C44 /* cpages.h */,
 				DA6C49C51CBFDC0E00406C44 /* cpages.m */,
 			);
 			path = main;
-			sourceTree = "<group>";
-		};
-		DA6C49C61CBFDC0E00406C44 /* menu */ = {
-			isa = PBXGroup;
-			children = (
-				DA6C49C71CBFDC0E00406C44 /* cmenu.h */,
-				DA6C49C81CBFDC0E00406C44 /* cmenu.m */,
-			);
-			path = menu;
 			sourceTree = "<group>";
 		};
 		DA6C49C91CBFDC0E00406C44 /* m */ = {
@@ -399,8 +378,6 @@
 				DA6C49E51CBFDC0E00406C44 /* valert.m */,
 				DA6C49E61CBFDC0E00406C44 /* vblur.h */,
 				DA6C49E71CBFDC0E00406C44 /* vblur.m */,
-				DA6C49E81CBFDC0E00406C44 /* vmenubutton.h */,
-				DA6C49E91CBFDC0E00406C44 /* vmenubutton.m */,
 				DA6C49EA1CBFDC0E00406C44 /* vspinner.h */,
 				DA6C49EB1CBFDC0E00406C44 /* vspinner.m */,
 			);
@@ -550,14 +527,11 @@
 				DA6C4A041CBFDC0E00406C44 /* updater.m in Sources */,
 				DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */,
 				DA6C4A0C1CBFDC0E00406C44 /* cpages.m in Sources */,
-				DA6C4A191CBFDC0E00406C44 /* vmenubutton.m in Sources */,
 				DA6C4A101CBFDC0E00406C44 /* mdirs.m in Sources */,
 				DA6C4A0E1CBFDC0E00406C44 /* mdb.m in Sources */,
 				DA6C4A0F1CBFDC0E00406C44 /* mdbcreate.m in Sources */,
-				DA6C4A0A1CBFDC0E00406C44 /* cloading.m in Sources */,
 				DA6C4A031CBFDC0E00406C44 /* uifont+uifontmain.m in Sources */,
 				DA6C4A081CBFDC0E00406C44 /* amanager.m in Sources */,
-				DA6C4A0D1CBFDC0E00406C44 /* cmenu.m in Sources */,
 				DA6C4A0B1CBFDC0E00406C44 /* cmain.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
