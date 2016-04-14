@@ -6,6 +6,7 @@
 -(instancetype)init
 {
     self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.statusbarstyle = UIStatusBarStyleDefault;
     [self pagelanding];
     
     return self;
@@ -21,7 +22,7 @@
 
 -(UIStatusBarStyle)preferredStatusBarStyle
 {
-    return UIStatusBarStyleDefault;
+    return self.statusbarstyle;
 }
 
 -(BOOL)prefersStatusBarHidden

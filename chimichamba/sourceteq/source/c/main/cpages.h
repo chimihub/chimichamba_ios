@@ -4,4 +4,6 @@
 
 -(void)pagelogin;
 
+@property(nonatomic)UIStatusBarStyle statusbarstyle;
+
 @end
