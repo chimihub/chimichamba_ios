@@ -1,13 +1,6 @@
-//
-//  vemployee.h
-//  chimichamba
-//
-//  Created by zero on 4/14/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import "vchimi.h"
 
-#import <Foundation/Foundation.h>
-
-@interface vemployee : NSObject
+@interface vemployee:vchimi
 
 @end
