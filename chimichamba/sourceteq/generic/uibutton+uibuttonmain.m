@@ -1,7 +1,7 @@
 #import "uibutton+uibuttonmain.h"
 #import "uicolor+uicolormain.h"
 
-static CGFloat const radius = 6;
+static CGFloat const radius = 4;
 
 @implementation UIButton (uibuttonmain)
 
@@ -31,7 +31,7 @@ static CGFloat const radius = 6;
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor colorWithWhite:1 alpha:0.2] forState:UIControlStateHighlighted];
     [button setTitle:title forState:UIControlStateNormal];
-    [button.titleLabel setFont:[UIFont boldSystemFontOfSize:16]];
+    [button.titleLabel setFont:[UIFont boldSystemFontOfSize:18]];
     [button.layer setCornerRadius:radius];
     
     return button;
