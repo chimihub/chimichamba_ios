@@ -11,6 +11,7 @@
 		DA2913881CBFF0A400A66DCC /* clanding.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913871CBFF0A400A66DCC /* clanding.m */; };
 		DA29138B1CBFF2A300A66DCC /* vlanding.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29138A1CBFF2A300A66DCC /* vlanding.m */; };
 		DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29138E1CBFF4A300A66DCC /* clogin.m */; };
+		DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913921CBFF4E400A66DCC /* vlogin.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -52,6 +53,8 @@
 		DA29138A1CBFF2A300A66DCC /* vlanding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlanding.m; sourceTree = "<group>"; };
 		DA29138D1CBFF4A300A66DCC /* clogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clogin.h; sourceTree = "<group>"; };
 		DA29138E1CBFF4A300A66DCC /* clogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clogin.m; sourceTree = "<group>"; };
+		DA2913911CBFF4E400A66DCC /* vlogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlogin.h; sourceTree = "<group>"; };
+		DA2913921CBFF4E400A66DCC /* vlogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlogin.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -172,6 +175,15 @@
 			children = (
 				DA29138D1CBFF4A300A66DCC /* clogin.h */,
 				DA29138E1CBFF4A300A66DCC /* clogin.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		DA2913901CBFF4DD00A66DCC /* login */ = {
+			isa = PBXGroup;
+			children = (
+				DA2913911CBFF4E400A66DCC /* vlogin.h */,
+				DA2913921CBFF4E400A66DCC /* vlogin.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -386,6 +398,7 @@
 		DA6C49E21CBFDC0E00406C44 /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA2913901CBFF4DD00A66DCC /* login */,
 				DA6C49E31CBFDC0E00406C44 /* general */,
 				DA6C49EC1CBFDC0E00406C44 /* main */,
 			);
@@ -548,6 +561,7 @@
 			files = (
 				DA6C49FE1CBFDC0E00406C44 /* main.m in Sources */,
 				DA6C4A041CBFDC0E00406C44 /* updater.m in Sources */,
+				DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */,
 				DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */,
 				DA6C4A0C1CBFDC0E00406C44 /* cpages.m in Sources */,
 				DA6C4A101CBFDC0E00406C44 /* mdirs.m in Sources */,
