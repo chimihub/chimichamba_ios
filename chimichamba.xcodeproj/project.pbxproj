@@ -10,6 +10,7 @@
 		DA2913851CBFE4C300A66DCC /* brand.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2913841CBFE4C300A66DCC /* brand.xcassets */; };
 		DA2913881CBFF0A400A66DCC /* clanding.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913871CBFF0A400A66DCC /* clanding.m */; };
 		DA29138B1CBFF2A300A66DCC /* vlanding.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29138A1CBFF2A300A66DCC /* vlanding.m */; };
+		DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29138E1CBFF4A300A66DCC /* clogin.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -49,6 +50,8 @@
 		DA2913871CBFF0A400A66DCC /* clanding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clanding.m; sourceTree = "<group>"; };
 		DA2913891CBFF2A300A66DCC /* vlanding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlanding.h; sourceTree = "<group>"; };
 		DA29138A1CBFF2A300A66DCC /* vlanding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlanding.m; sourceTree = "<group>"; };
+		DA29138D1CBFF4A300A66DCC /* clogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clogin.h; sourceTree = "<group>"; };
+		DA29138E1CBFF4A300A66DCC /* clogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clogin.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -162,6 +165,15 @@
 				DA6C49961CBFDC0E00406C44 /* sourceteq */,
 			);
 			path = chimichamba;
+			sourceTree = "<group>";
+		};
+		DA29138C1CBFF49A00A66DCC /* login */ = {
+			isa = PBXGroup;
+			children = (
+				DA29138D1CBFF4A300A66DCC /* clogin.h */,
+				DA29138E1CBFF4A300A66DCC /* clogin.m */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 		DA6C498D1CBFDC0E00406C44 /* db */ = {
@@ -305,6 +317,7 @@
 		DA6C49BE1CBFDC0E00406C44 /* c */ = {
 			isa = PBXGroup;
 			children = (
+				DA29138C1CBFF49A00A66DCC /* login */,
 				DA6C49BF1CBFDC0E00406C44 /* main */,
 			);
 			path = c;
@@ -552,6 +565,7 @@
 				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
 				DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */,
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
+				DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */,
 				DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */,
 				DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */,
 				DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */,
