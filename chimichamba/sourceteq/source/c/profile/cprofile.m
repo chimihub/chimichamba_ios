@@ -25,4 +25,11 @@
     return NO;
 }
 
+#pragma mark public
+
+-(void)back
+{
+    [[cmain singleton] popViewControllerAnimated:YES];
+}
+
 @end

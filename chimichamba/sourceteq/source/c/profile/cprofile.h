@@ -3,5 +3,6 @@
 @interface cprofile:UIViewController
 
 +(void)open;
+-(void)back;
 
 @end
