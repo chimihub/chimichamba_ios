@@ -18,7 +18,6 @@ static NSUInteger const cellheight = 70;
 {
     self = [super init];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:[UIColor collection]];
     self.controller = controller;
     self.model = [cmain singleton].pages.model;
     
