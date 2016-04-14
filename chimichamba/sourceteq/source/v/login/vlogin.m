@@ -72,7 +72,7 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[btnface]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[btnemail]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[logo]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-70-[title(30)]-10-[titleborder(1)]-40-[logo(170)]-10-[motto(25)]-70-[btnface(50)]-20-[btnemail(50)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-70-[title(30)]-10-[titleborder(1)]-40-[logo(170)]-10-[motto(25)]-70-[btnface]-20-[btnemail]" options:0 metrics:metrics views:views]];
     
     return self;
 }

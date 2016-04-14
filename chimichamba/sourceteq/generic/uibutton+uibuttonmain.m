@@ -1,5 +1,6 @@
 #import "uibutton+uibuttonmain.h"
 #import "uicolor+uicolormain.h"
+#import "genericconstants.h"
 
 static CGFloat const radius = 4;
 
@@ -35,6 +36,13 @@ static CGFloat const radius = 4;
     [button.layer setCornerRadius:radius];
     
     return button;
+}
+
+-(CGSize)intrinsicContentSize
+{
+    CGSize size = CGSizeMake(buttonintrinsicwidth, buttonheight);
+    
+    return size;
 }
 
 @end
