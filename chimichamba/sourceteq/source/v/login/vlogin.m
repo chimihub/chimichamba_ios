@@ -3,12 +3,9 @@
 
 @implementation vlogin
 
--(instancetype)init:(clogin*)controller
+-(instancetype)init:(UIViewController*)controller
 {
-    self = [super init];
-    [self setBackgroundColor:[UIColor whiteColor]];
-    [self setClipsToBounds:YES];
-    self.controller = controller;
+    self = [super init:controller];
     
     UILabel *title = [[UILabel alloc] init];
     [title setBackgroundColor:[UIColor clearColor]];

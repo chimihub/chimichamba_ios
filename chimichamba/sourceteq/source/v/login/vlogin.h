@@ -1,11 +1,8 @@
-#import <UIKit/UIKit.h>
+#import "vchimi.h"
 #import "clogin.h"
 
-@interface vlogin:UIView
+@interface vlogin:vchimi
 
--(instancetype)init:(clogin*)controller;
-
-@property(weak, nonatomic)clogin *controller;
 @property(weak, nonatomic)UIButton *buttonfacebook;
 @property(weak, nonatomic)UIButton *buttonemail;
 

@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "vchimi.h"
 
-@interface vlanding:UIView
+@interface vlanding:vchimi
 
 @end

@@ -13,7 +13,7 @@
 
 -(void)loadView
 {
-    self.view = [[vlanding alloc] init];
+    self.view = [[vlanding alloc] init:self];
 }
 
 @end

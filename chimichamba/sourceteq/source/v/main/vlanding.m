@@ -2,11 +2,9 @@
 
 @implementation vlanding
 
--(instancetype)init
+-(instancetype)init:(UIViewController*)controller
 {
-    self = [super init];
-    [self setClipsToBounds:YES];
-    [self setBackgroundColor:[UIColor whiteColor]];
+    self = [super init:controller];
     [self setUserInteractionEnabled:NO];
     
     return self;
