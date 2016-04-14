@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>appid</key>
-	<string>1092349312</string>
+	<string>109</string>
 	<key>version</key>
 	<integer>10</integer>
 	<key>dbname</key>
-	<string>cdmx.db</string>
+	<string>chimichamba.db</string>
 </dict>
 </plist>
