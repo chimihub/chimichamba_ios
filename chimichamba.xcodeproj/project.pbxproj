@@ -22,6 +22,8 @@
 		DA2913AB1CC039DC00A66DCC /* profile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2913AA1CC039DC00A66DCC /* profile.xcassets */; };
 		DA2913AE1CC04A4C00A66DCC /* vprofilealert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913AD1CC04A4C00A66DCC /* vprofilealert.m */; };
 		DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913B01CC0526200A66DCC /* vprofilename.m */; };
+		DA2913B51CC0592B00A66DCC /* cemployee.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913B41CC0592B00A66DCC /* cemployee.m */; };
+		DA2913B91CC0594900A66DCC /* vemployee.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913B81CC0594900A66DCC /* vemployee.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -83,6 +85,10 @@
 		DA2913AD1CC04A4C00A66DCC /* vprofilealert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofilealert.m; sourceTree = "<group>"; };
 		DA2913AF1CC0526200A66DCC /* vprofilename.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vprofilename.h; sourceTree = "<group>"; };
 		DA2913B01CC0526200A66DCC /* vprofilename.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofilename.m; sourceTree = "<group>"; };
+		DA2913B31CC0592B00A66DCC /* cemployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cemployee.h; sourceTree = "<group>"; };
+		DA2913B41CC0592B00A66DCC /* cemployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cemployee.m; sourceTree = "<group>"; };
+		DA2913B71CC0594900A66DCC /* vemployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployee.h; sourceTree = "<group>"; };
+		DA2913B81CC0594900A66DCC /* vemployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployee.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -242,6 +248,24 @@
 			path = profile;
 			sourceTree = "<group>";
 		};
+		DA2913B21CC0592000A66DCC /* employee */ = {
+			isa = PBXGroup;
+			children = (
+				DA2913B31CC0592B00A66DCC /* cemployee.h */,
+				DA2913B41CC0592B00A66DCC /* cemployee.m */,
+			);
+			path = employee;
+			sourceTree = "<group>";
+		};
+		DA2913B61CC0593E00A66DCC /* employee */ = {
+			isa = PBXGroup;
+			children = (
+				DA2913B71CC0594900A66DCC /* vemployee.h */,
+				DA2913B81CC0594900A66DCC /* vemployee.m */,
+			);
+			path = employee;
+			sourceTree = "<group>";
+		};
 		DA6C498D1CBFDC0E00406C44 /* db */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +411,7 @@
 		DA6C49BE1CBFDC0E00406C44 /* c */ = {
 			isa = PBXGroup;
 			children = (
+				DA2913B21CC0592000A66DCC /* employee */,
 				DA2913981CC0054800A66DCC /* profile */,
 				DA29138C1CBFF49A00A66DCC /* login */,
 				DA6C49BF1CBFDC0E00406C44 /* main */,
@@ -457,6 +482,7 @@
 		DA6C49E21CBFDC0E00406C44 /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA2913B61CC0593E00A66DCC /* employee */,
 				DA2913971CC0052600A66DCC /* profile */,
 				DA2913901CBFF4DD00A66DCC /* login */,
 				DA6C49E31CBFDC0E00406C44 /* general */,
@@ -643,6 +669,7 @@
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
+				DA2913B91CC0594900A66DCC /* vemployee.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
 				DA2913AE1CC04A4C00A66DCC /* vprofilealert.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
@@ -655,6 +682,7 @@
 				DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */,
 				DA2913A61CC02AD800A66DCC /* vprofilebar.m in Sources */,
 				DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */,
+				DA2913B51CC0592B00A66DCC /* cemployee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
