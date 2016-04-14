@@ -20,10 +20,12 @@
     UIButton *buttonlibrary = [UIButton main:NSLocalizedString(@"profile_alert_button_library", nil)];
     [buttonlibrary addTarget:self action:@selector(actionlibrary:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *buttoncancel = [UIButton main:NSLocalizedString(@"profile_alert_button_cancel", nil)];
+    UIButton *buttoncancel = [UIButton second:NSLocalizedString(@"profile_alert_button_cancel", nil)];
     [buttoncancel addTarget:self action:@selector(actioncancel:) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:blur];
+    [self addSubview:buttoncamera];
+    [self addSubview:buttonlibrary];
     [self addSubview:buttoncancel];
     
     NSDictionary *views = @{@"blur":blur, @"buttoncancel":buttoncancel, @"buttoncamera":buttoncamera, @"buttonlibrary":buttonlibrary};
@@ -49,11 +51,13 @@
 -(void)actioncamera:(UIButton*)button
 {
     [self.controller picturecamera];
+    [self removeFromSuperview];
 }
 
 -(void)actionlibrary:(UIButton*)button
 {
     [self.controller picturelibrary];
+    [self removeFromSuperview];
 }
 
 @end
