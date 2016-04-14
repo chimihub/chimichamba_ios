@@ -4,7 +4,6 @@
 #import "tools.h"
 #import "updater.h"
 #import "mdirs.h"
-#import "mstations.h"
 
 @implementation mdb
 
