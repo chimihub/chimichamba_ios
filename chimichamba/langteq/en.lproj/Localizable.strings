@@ -6,3 +6,6 @@
 
 "profile_title"="Mi Perfil";
 "profile_button_continue"="Continuar";
+"profile_alert_button_cancel"="Cancelar";
+"profile_alert_button_library"="Rollo fotografico";
+"profile_alert_button_camera"="Camara";

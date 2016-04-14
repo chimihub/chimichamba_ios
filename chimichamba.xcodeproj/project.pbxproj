@@ -20,6 +20,7 @@
 		DA2913A61CC02AD800A66DCC /* vprofilebar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913A51CC02AD800A66DCC /* vprofilebar.m */; };
 		DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913A81CC0340300A66DCC /* vprofilepicture.m */; };
 		DA2913AB1CC039DC00A66DCC /* profile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2913AA1CC039DC00A66DCC /* profile.xcassets */; };
+		DA2913AE1CC04A4C00A66DCC /* vprofilealert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913AD1CC04A4C00A66DCC /* vprofilealert.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -77,6 +78,8 @@
 		DA2913A71CC0340300A66DCC /* vprofilepicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vprofilepicture.h; sourceTree = "<group>"; };
 		DA2913A81CC0340300A66DCC /* vprofilepicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofilepicture.m; sourceTree = "<group>"; };
 		DA2913AA1CC039DC00A66DCC /* profile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = profile.xcassets; sourceTree = "<group>"; };
+		DA2913AC1CC04A4C00A66DCC /* vprofilealert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vprofilealert.h; sourceTree = "<group>"; };
+		DA2913AD1CC04A4C00A66DCC /* vprofilealert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofilealert.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				DA2913A51CC02AD800A66DCC /* vprofilebar.m */,
 				DA2913A71CC0340300A66DCC /* vprofilepicture.h */,
 				DA2913A81CC0340300A66DCC /* vprofilepicture.m */,
+				DA2913AC1CC04A4C00A66DCC /* vprofilealert.h */,
+				DA2913AD1CC04A4C00A66DCC /* vprofilealert.m */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -633,6 +638,7 @@
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
+				DA2913AE1CC04A4C00A66DCC /* vprofilealert.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
 				DA29139E1CC0056300A66DCC /* vprofile.m in Sources */,
 				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
