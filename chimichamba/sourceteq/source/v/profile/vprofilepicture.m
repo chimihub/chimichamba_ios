@@ -20,13 +20,23 @@ static NSInteger const circlemargin = 5;
     [circle.layer setBorderColor:[UIColor colorWithWhite:0 alpha:0.5].CGColor];
     self.circle = circle;
     
-    [self addSubview:circle];
+    UIImageView *placeholder = [[UIImageView alloc] init];
+    [placeholder setClipsToBounds:YES];
+    [placeholder setUserInteractionEnabled:NO];
+    [placeholder setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [placeholder setContentMode:UIViewContentModeCenter];
+    [placeholder setImage:[UIImage imageNamed:@"profile_picplaceholder"]];
     
-    NSDictionary *views = @{@"circle":circle};
+    [self addSubview:circle];
+    [self addSubview:placeholder];
+    
+    NSDictionary *views = @{@"circle":circle, @"placeholder":placeholder};
     NSDictionary *metrics = @{@"circlemargin":@(circlemargin)};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(circlemargin)-[circle]-(circlemargin)-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(circlemargin)-[circle]-(circlemargin)-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[placeholder]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[placeholder]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
