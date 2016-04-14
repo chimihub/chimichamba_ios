@@ -15,6 +15,7 @@
 		DA2913961CBFFF1500A66DCC /* uibutton+uibuttonmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2913951CBFFF1500A66DCC /* uibutton+uibuttonmain.m */; };
 		DA29139B1CC0055200A66DCC /* cprofile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29139A1CC0055200A66DCC /* cprofile.m */; };
 		DA29139E1CC0056300A66DCC /* vprofile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA29139D1CC0056300A66DCC /* vprofile.m */; };
+		DA2913A01CC0066E00A66DCC /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA29139F1CC0066E00A66DCC /* generic.xcassets */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -64,6 +65,7 @@
 		DA29139A1CC0055200A66DCC /* cprofile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cprofile.m; sourceTree = "<group>"; };
 		DA29139C1CC0056300A66DCC /* vprofile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vprofile.h; sourceTree = "<group>"; };
 		DA29139D1CC0056300A66DCC /* vprofile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vprofile.m; sourceTree = "<group>"; };
+		DA29139F1CC0066E00A66DCC /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2913841CBFE4C300A66DCC /* brand.xcassets */,
+				DA29139F1CC0066E00A66DCC /* generic.xcassets */,
 			);
 			path = imateq;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */,
 				DA2913851CBFE4C300A66DCC /* brand.xcassets in Resources */,
 				DA6C49FB1CBFDC0E00406C44 /* Localizable.strings in Resources */,
+				DA2913A01CC0066E00A66DCC /* generic.xcassets in Resources */,
 				DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */,
 				DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */,
 			);
