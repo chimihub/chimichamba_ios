@@ -27,16 +27,28 @@ static NSInteger const circlemargin = 5;
     [placeholder setContentMode:UIViewContentModeCenter];
     [placeholder setImage:[UIImage imageNamed:@"profile_picplaceholder"]];
     
+    UIButton *buttonupload = [[UIButton alloc] init];
+    [buttonupload setClipsToBounds:YES];
+    [buttonupload setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [buttonupload setImage:[UIImage imageNamed:@"profile_picupload"] forState:UIControlStateNormal];
+    [buttonupload.imageView setContentMode:UIViewContentModeCenter];
+    [buttonupload.imageView setClipsToBounds:YES];
+    [buttonupload addTarget:self action:@selector(actionupload:) forControlEvents:UIControlEventTouchUpInside];
+    self.buttonupload = buttonupload;
+    
     [self addSubview:circle];
     [self addSubview:placeholder];
+    [self addSubview:buttonupload];
     
-    NSDictionary *views = @{@"circle":circle, @"placeholder":placeholder};
+    NSDictionary *views = @{@"circle":circle, @"placeholder":placeholder, @"buttonupload":buttonupload};
     NSDictionary *metrics = @{@"circlemargin":@(circlemargin)};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(circlemargin)-[circle]-(circlemargin)-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(circlemargin)-[circle]-(circlemargin)-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[placeholder]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[placeholder]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[buttonupload(50)]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[buttonupload(50)]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -55,6 +67,13 @@ static NSInteger const circlemargin = 5;
                    });
     
     [super layoutSubviews];
+}
+
+#pragma mark actions
+
+-(void)actionupload:(UIButton*)button
+{
+    
 }
 
 @end
