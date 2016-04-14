@@ -1,5 +1,7 @@
 #import "clogin.h"
 #import "vlogin.h"
+#import "cprofile.h"
+#import "cmain.h"
 
 @interface clogin ()
 
@@ -14,6 +16,13 @@
 -(void)loadView
 {
     self.view = [[vlogin alloc] init:self];
+}
+
+#pragma mark public
+
+-(void)openprofile
+{
+    
 }
 
 @end

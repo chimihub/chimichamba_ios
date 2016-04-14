@@ -18,11 +18,15 @@ NSString *documents;
                        [updater update];
                        [[msettings singleton] load];
                        
-                       dispatch_async(dispatch_get_main_queue(),
+                       dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
                                       ^
                                       {
-                                          [[analytics singleton] start];
-                                          [[cmain singleton].pages pagelogin];
+                                          dispatch_async(dispatch_get_main_queue(),
+                                                         ^
+                                                         {
+                                                             [[analytics singleton] start];
+                                                             [[cmain singleton].pages pagelogin];
+                                                         });
                                       });
                    });
 }
