@@ -2,7 +2,7 @@
 
 @interface UIButton (uibuttonmain)
 
-+(UIButton*)main(NSString*)title;
-+(UIButton*)second(NSString*)title;
++(instancetype)main:(NSString*)title;
++(instancetype)second:(NSString*)title;
 
 @end
