@@ -1,6 +1,9 @@
 #import "vemployee.h"
 #import "cemployee.h"
 #import "vemployeebar.h"
+#import "genericconstants.h"
+
+static NSUInteger const interitemspace = 6;
 
 @interface vemployee ()
 
@@ -18,7 +21,26 @@
     
     vemployeebar *bar = [[vemployeebar alloc] init:controller];
     
+    UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setHeaderReferenceSize:CGSizeZero];
+    [flow setFooterReferenceSize:CGSizeZero];
+    [flow setMinimumLineSpacing:0];
+    [flow setMinimumInteritemSpacing:interitemspace];
+    [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, collectionbottom, 0)];
+    
+    UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
+    [collection setClipsToBounds:YES];
+    [collection setBackgroundColor:[UIColor clearColor]];
+    [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [collection setAlwaysBounceVertical:YES];
+    [collection setShowsVerticalScrollIndicator:NO];
+    [collection setShowsHorizontalScrollIndicator:NO];
+    [collection setDelegate:self];
+    [collection setDataSource:self];
+    
     [self addSubview:bar];
+    [self addSubview:collection];
     
     NSDictionary *views = @{@"bar":bar};
     NSDictionary *metrics = @{};
