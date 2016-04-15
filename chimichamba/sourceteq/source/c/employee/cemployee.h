@@ -2,4 +2,6 @@
 
 @interface cemployee:UIViewController<UIGestureRecognizerDelegate>
 
+-(void)back;
+
 @end

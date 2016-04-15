@@ -66,7 +66,7 @@
 
 -(void)back
 {
-    [[cmain singleton] popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)picturecamera
