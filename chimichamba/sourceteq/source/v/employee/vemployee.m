@@ -1,8 +1,10 @@
 #import "vemployee.h"
 #import "cemployee.h"
 #import "vemployeebar.h"
+#import "vemployeecell.h"
 #import "genericconstants.h"
 
+static NSString* const employeecellid = @"employeecell";
 static NSUInteger const interitemspace = 6;
 
 @interface vemployee ()
@@ -38,6 +40,7 @@ static NSUInteger const interitemspace = 6;
     [collection setShowsHorizontalScrollIndicator:NO];
     [collection setDelegate:self];
     [collection setDataSource:self];
+    [collection registerClass:[vemployeecell class] forCellWithReuseIdentifier:employeecellid];
     
     [self addSubview:bar];
     [self addSubview:collection];
