@@ -1,4 +1,5 @@
 #import "vprofilepicture.h"
+#import "uicolor+uicolormain.h"
 
 static NSInteger const circlemargin = 5;
 
@@ -15,7 +16,7 @@ static NSInteger const circlemargin = 5;
     [circle setUserInteractionEnabled:NO];
     [circle setTranslatesAutoresizingMaskIntoConstraints:NO];
     [circle setClipsToBounds:YES];
-    [circle setBackgroundColor:[UIColor colorWithWhite:0.97 alpha:1]];
+    [circle setBackgroundColor:[UIColor background]];
     [circle.layer setBorderWidth:1];
     [circle.layer setBorderColor:[UIColor colorWithWhite:0 alpha:0.5].CGColor];
     self.circle = circle;
