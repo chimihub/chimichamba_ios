@@ -59,6 +59,7 @@
 		DA8F3E561CC51C0000DE2749 /* memployeeitemexperience.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E551CC51C0000DE2749 /* memployeeitemexperience.m */; };
 		DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E581CC51C0F00DE2749 /* memployeeitemdescr.m */; };
 		DA8F3E5C1CC51C2E00DE2749 /* memployeeitemlocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */; };
+		DA8F3E5F1CC51F6E00DE2749 /* vemployeecellacademics.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E5E1CC51F6E00DE2749 /* vemployeecellacademics.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +170,8 @@
 		DA8F3E581CC51C0F00DE2749 /* memployeeitemdescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemdescr.m; sourceTree = "<group>"; };
 		DA8F3E5A1CC51C2E00DE2749 /* memployeeitemlocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemlocation.h; sourceTree = "<group>"; };
 		DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemlocation.m; sourceTree = "<group>"; };
+		DA8F3E5D1CC51F6E00DE2749 /* vemployeecellacademics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeecellacademics.h; sourceTree = "<group>"; };
+		DA8F3E5E1CC51F6E00DE2749 /* vemployeecellacademics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeecellacademics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +296,8 @@
 				DA2913BB1CC061D700A66DCC /* vemployeebar.m */,
 				DA2913BD1CC06DB800A66DCC /* vemployeecell.h */,
 				DA2913BE1CC06DB800A66DCC /* vemployeecell.m */,
+				DA8F3E5D1CC51F6E00DE2749 /* vemployeecellacademics.h */,
+				DA8F3E5E1CC51F6E00DE2749 /* vemployeecellacademics.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -725,6 +730,7 @@
 				DA29138B1CBFF2A300A66DCC /* vlanding.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
+				DA8F3E5F1CC51F6E00DE2749 /* vemployeecellacademics.m in Sources */,
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
