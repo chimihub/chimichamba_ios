@@ -42,7 +42,16 @@ static NSUInteger const interitemspace = 6;
     [collection setShowsHorizontalScrollIndicator:NO];
     [collection setDelegate:self];
     [collection setDataSource:self];
-    [collection registerClass:[vemployeecell class] forCellWithReuseIdentifier:employeecellid];
+    self.collection = collection;
+    
+    NSUInteger count = self.model.items.count;
+    
+    for(NSUInteger i = 0; i < count; i++)
+    {
+        memployeeitem *item = self.model.items[i];
+        NSString *identifier = [self identifieratindex:i];
+        [collection registerClass:item.class forCellWithReuseIdentifier:identifier];
+    }
     
     [self addSubview:bar];
     [self addSubview:collection];
