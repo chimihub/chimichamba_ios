@@ -11,6 +11,14 @@
 
 @dynamic view;
 
+-(instancetype)init:(memployeeitemskill*)model
+{
+    self = [super init];
+    self.model = model;
+    
+    return self;
+}
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];

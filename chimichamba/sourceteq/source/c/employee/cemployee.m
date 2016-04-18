@@ -1,5 +1,6 @@
 #import "cemployee.h"
 #import "vemployee.h"
+#import "cemployeeskill.h"
 
 @interface cemployee ()
 
@@ -43,6 +44,12 @@
 -(void)back
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)skills:(memployeeitemskill*)model
+{
+    cemployeeskill *controller = [[cemployeeskill alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
