@@ -7,6 +7,7 @@
 
 static NSString* const employeecellid = @"employeecell";
 static NSUInteger const interitemspace = 6;
+static NSUInteger const footerheight = 100;
 
 @interface vemployee ()
 
@@ -27,7 +28,6 @@ static NSUInteger const interitemspace = 6;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setHeaderReferenceSize:CGSizeZero];
-    [flow setFooterReferenceSize:CGSizeZero];
     [flow setMinimumLineSpacing:0];
     [flow setMinimumInteritemSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
@@ -76,6 +76,23 @@ static NSUInteger const interitemspace = 6;
 
 #pragma mark -
 #pragma mark col del
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForFooterInSection:(NSInteger)section
+{
+    CGFloat width = col.bounds.size.width;
+    CGSize size = CGSizeMake(width, footerheight);
+    
+    return size;
+}
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
+{
+    CGFloat width = col.bounds.size.width;
+    CGFloat height = self.model.items[index.item].height;
+    CGSize size = CGSizeMake(width, height);
+    
+    return size;
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
