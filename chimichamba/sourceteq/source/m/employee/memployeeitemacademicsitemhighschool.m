@@ -1,13 +1,13 @@
-//
-//  memployeeitemacademicsitemhighschool.m
-//  chimichamba
-//
-//  Created by zero on 4/18/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
-
 #import "memployeeitemacademicsitemhighschool.h"
 
 @implementation memployeeitemacademicsitemhighschool
+
+-(instancetype)init
+{
+    self = [super init];
+    self.name = NSLocalizedString(@"employee_item_academics_item_highschool", nil);
+    
+    return self;
+}
 
 @end

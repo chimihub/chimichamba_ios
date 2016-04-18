@@ -1,13 +1,6 @@
-//
-//  memployeeitemacademicsitembachelor.h
-//  chimichamba
-//
-//  Created by zero on 4/18/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import "memployeeitemacademicsitem.h"
 
-#import <Foundation/Foundation.h>
-
-@interface memployeeitemacademicsitembachelor : NSObject
+@interface memployeeitemacademicsitembachelor:memployeeitemacademicsitem
 
 @end

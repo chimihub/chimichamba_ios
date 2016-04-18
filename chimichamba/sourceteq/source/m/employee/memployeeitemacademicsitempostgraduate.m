@@ -1,13 +1,13 @@
-//
-//  memployeeitemacademicsitempostgraduate.m
-//  chimichamba
-//
-//  Created by zero on 4/18/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
-
 #import "memployeeitemacademicsitempostgraduate.h"
 
 @implementation memployeeitemacademicsitempostgraduate
+
+-(instancetype)init
+{
+    self = [super init];
+    self.name = NSLocalizedString(@"employee_item_academics_item_postgraduate", nil);
+    
+    return self;
+}
 
 @end

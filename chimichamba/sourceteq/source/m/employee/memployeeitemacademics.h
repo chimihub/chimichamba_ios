@@ -1,8 +1,11 @@
 #import <UIKit/UIKit.h>
 #import "memployeeitem.h"
+#import "memployeeitemacademicsitem.h"
 
 @interface memployeeitemacademics:memployeeitem
 
-@property(strong, nonatomic)NSArray<NSString*> *items;
+-(NSArray*)names;
+
+@property(strong, nonatomic)NSArray<memployeeitemacademicsitem*> *items;
 
 @end
