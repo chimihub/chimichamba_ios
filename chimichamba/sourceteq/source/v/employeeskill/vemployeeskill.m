@@ -2,10 +2,16 @@
 #import "vemployeeskillbar.h"
 #import "vemployeeskillcell.h"
 #import "uicolor+uicolormain.h"
+#import "vemployeeskillheader.h"
+#import "vemployeeskillsearch.h"
 
+static NSString* const skillheaderid = @"headerid";
+static NSString* const skillsearchide = @"searchid";
 static NSString* const skillcellid = @"skillcell";
 static NSUInteger const interitemspace = 1;
 static NSUInteger const cellheight = 60;
+static NSUInteger const headerheight = 70;
+static NSUInteger const searchheight = 80;
 
 @implementation vemployeeskill
 
@@ -22,7 +28,6 @@ static NSUInteger const cellheight = 60;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setFooterReferenceSize:CGSizeZero];
-    [flow setHeaderReferenceSize:CGSizeZero];
     [flow setMinimumLineSpacing:0];
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
@@ -38,6 +43,8 @@ static NSUInteger const cellheight = 60;
     [collection setDelegate:self];
     [collection setDataSource:self];
     [collection registerClass:[vemployeeskillcell class] forCellWithReuseIdentifier:skillcellid];
+    [collection registerClass:[vemployeeskillsearch class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:skillsearchide];
+    [collection registerClass:[vemployeeskillheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:skillheaderid];
     self.collection = collection;
     
     [self addSubview:bar];
@@ -55,6 +62,36 @@ static NSUInteger const cellheight = 60;
 
 #pragma mark -
 #pragma mark col del
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    CGFloat width = col.bounds.size.width;
+    CGFloat height;
+    
+    if(section)
+    {
+        if(!self.searching)
+        {
+            height = headerheight;
+        }
+    }
+    else
+    {
+        height = searchheight;
+    }
+    
+    CGSize size = CGSizeMake(width, height);
+    
+    return size;
+}
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
+{
+    CGFloat width = col.bounds.size.width;
+    CGSize size = CGSizeMake(width, cellheight);
+    
+    return size;
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
@@ -83,6 +120,24 @@ static NSUInteger const cellheight = 60;
     }
     
     return count;
+}
+
+-(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
+{
+    UICollectionReusableView *reusable;
+    
+    if(index.section)
+    {
+        vemployeeskillheader *header = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillheaderid forIndexPath:index];
+        reusable = header;
+    }
+    else
+    {
+        vemployeeskillsearch *search = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillsearchide forIndexPath:index];
+        reusable = search;
+    }
+    
+    return reusable;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
