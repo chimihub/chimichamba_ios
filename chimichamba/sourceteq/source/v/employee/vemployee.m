@@ -54,4 +54,12 @@ static NSUInteger const interitemspace = 6;
     return self;
 }
 
+#pragma mark -
+#pragma mark col del
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
+{
+    return 1;
+}
+
 @end
