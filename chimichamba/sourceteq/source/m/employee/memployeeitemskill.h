@@ -1,13 +1,6 @@
-//
-//  memployeeitemskill.h
-//  chimichamba
-//
-//  Created by zero on 4/18/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import "memployeeitem.h"
 
-#import <Foundation/Foundation.h>
-
-@interface memployeeitemskill : NSObject
+@interface memployeeitemskill:memployeeitem
 
 @end
