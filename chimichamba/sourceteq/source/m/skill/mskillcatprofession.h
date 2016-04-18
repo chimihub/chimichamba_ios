@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "mskillcat.h"
 
-@interface mskillcatprofession:NSObject
+@interface mskillcatprofession:mskillcat
 
 @end

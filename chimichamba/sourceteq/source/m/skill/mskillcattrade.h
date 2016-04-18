@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "mskillcat.h"
 
-@interface mskillcattrade:NSObject
+@interface mskillcattrade:mskillcat
 
 @end
