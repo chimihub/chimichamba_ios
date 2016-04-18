@@ -5,9 +5,9 @@
 #import "vemployeefooter.h"
 #import "genericconstants.h"
 
-static NSString* const employeecellid = @"employeecell";
+static NSString* const employeefooterid = @"footercell";
 static NSUInteger const interitemspace = 6;
-static NSUInteger const footerheight = 100;
+static NSUInteger const footerheight = 150;
 
 @interface vemployee ()
 
@@ -29,9 +29,9 @@ static NSUInteger const footerheight = 100;
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setHeaderReferenceSize:CGSizeZero];
     [flow setMinimumLineSpacing:0];
-    [flow setMinimumInteritemSpacing:interitemspace];
+    [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, collectionbottom, 0)];
+    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, interitemspace, 0)];
     
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setClipsToBounds:YES];
@@ -42,6 +42,7 @@ static NSUInteger const footerheight = 100;
     [collection setShowsHorizontalScrollIndicator:NO];
     [collection setDelegate:self];
     [collection setDataSource:self];
+    [collection registerClass:[vemployeefooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:employeefooterid];
     self.collection = collection;
     
     NSUInteger count = self.model.items.count;
@@ -50,17 +51,18 @@ static NSUInteger const footerheight = 100;
     {
         memployeeitem *item = self.model.items[i];
         NSString *identifier = [self identifieratindex:i];
-        [collection registerClass:item.class forCellWithReuseIdentifier:identifier];
+        [collection registerClass:item.cellclass forCellWithReuseIdentifier:identifier];
     }
     
     [self addSubview:bar];
     [self addSubview:collection];
     
-    NSDictionary *views = @{@"bar":bar};
+    NSDictionary *views = @{@"bar":bar, @"col":collection};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -104,6 +106,14 @@ static NSUInteger const footerheight = 100;
     NSUInteger count = self.model.items.count;
     
     return count;
+}
+
+-(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
+{
+    vemployeefooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeefooterid forIndexPath:index];
+    footer.controller = self.controller;
+    
+    return footer;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
