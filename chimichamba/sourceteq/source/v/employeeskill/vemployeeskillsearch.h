@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface vemployeeskillsearch:UICollectionReusableView
+@interface vemployeeskillsearch:UICollectionReusableView<UITextFieldDelegate>
 
 @property(weak, nonatomic)UITextField *field;
 

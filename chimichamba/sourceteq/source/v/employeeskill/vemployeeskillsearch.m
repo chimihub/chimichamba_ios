@@ -24,6 +24,7 @@
     [field setTextColor:[UIColor blackColor]];
     [field setTintColor:[UIColor blackColor]];
     [field setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [field setDelegate:self];
     self.field = field;
     
     UIView *background = [[UIView alloc] init];
@@ -31,6 +32,8 @@
     [background setTranslatesAutoresizingMaskIntoConstraints:NO];
     [background setBackgroundColor:[UIColor background]];
     [background.layer setCornerRadius:6];
+    [background.layer setBorderWidth:1];
+    [background.layer setBorderColor:[UIColor colorWithWhite:0 alpha:0.1].CGColor];
     
     [background addSubview:field];
     [self addSubview:background];
@@ -44,6 +47,16 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[back(50)]" options:0 metrics:metrics views:views]];
     
     return self;
+}
+
+#pragma mark -
+#pragma mark field del
+
+-(BOOL)textFieldShouldReturn:(UITextField*)field
+{
+    [field resignFirstResponder];
+    
+    return YES;
 }
 
 @end
