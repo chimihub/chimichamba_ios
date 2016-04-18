@@ -35,22 +35,30 @@
     [labeldegree setBackgroundColor:[UIColor clearColor]];
     [labeldegree setUserInteractionEnabled:NO];
     [labeldegree setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [labeldegree setFont:[UIFont systemFontOfSize:16]];
+    [labeldegree setFont:[UIFont systemFontOfSize:18]];
     [labeldegree setTextColor:[UIColor main]];
     [labeldegree setText:NSLocalizedString(@"employee_inside_degree", nil)];
+    
+    UISwitch *degree = [[UISwitch alloc] init];
+    [degree setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [degree setOnTintColor:[UIColor main]];
+    [degree addTarget:self action:@selector(actionswitch:) forControlEvents:UIControlEventValueChanged];
+    self.degree = degree;
     
     [self addSubview:labeldegree];
     [self addSubview:icon];
     [self addSubview:title];
+    [self addSubview:degree];
     
-    NSDictionary *views = @{@"title":title, @"icon":icon, @"labeldegree":labeldegree};
+    NSDictionary *views = @{@"title":title, @"icon":icon, @"labeldegree":labeldegree, @"degree":degree};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[title]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[icon(29)]-6-[labeldegree]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[icon(29)]-6-[labeldegree]-6-[degree]-10-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[icon(29)]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[labeldegree(29)]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[degree]-20-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -60,6 +68,11 @@
 -(void)actionsegmented:(UISegmentedControl*)segmented
 {
     self.model.selected = segmented.selectedSegmentIndex;
+}
+
+-(void)actionswitch:(UISwitch*)degree
+{
+    self.model.degree = degree.isOn;
 }
 
 #pragma mark functionality
@@ -96,6 +109,7 @@
     }
     
     [self.segmented setSelectedSegmentIndex:self.model.selected];
+    [self.degree setOn:model.degree];
 }
 
 @end

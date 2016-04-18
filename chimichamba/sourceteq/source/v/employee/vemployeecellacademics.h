@@ -4,5 +4,6 @@
 @interface vemployeecellacademics:vemployeecell
 
 @property(weak, nonatomic)UISegmentedControl *segmented;
+@property(weak, nonatomic)UISwitch *degree;
 
 @end

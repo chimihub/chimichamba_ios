@@ -8,5 +8,6 @@
 
 @property(strong, nonatomic)NSArray<memployeeitemacademicsitem*> *items;
 @property(nonatomic)NSUInteger selected;
+@property(nonatomic)BOOL degree;
 
 @end
