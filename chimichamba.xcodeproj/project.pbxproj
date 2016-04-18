@@ -70,6 +70,7 @@
 		DA8F3E7D1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E7C1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m */; };
 		DA8F3E801CC53FC500DE2749 /* memployeeitemacademicsitemother.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E7F1CC53FC500DE2749 /* memployeeitemacademicsitemother.m */; };
 		DA8F3E821CC55B6700DE2749 /* employee.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8F3E811CC55B6700DE2749 /* employee.xcassets */; };
+		DA8F3E851CC572A300DE2749 /* cemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E841CC572A300DE2749 /* cemployeeskill.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -201,6 +202,8 @@
 		DA8F3E7E1CC53FC500DE2749 /* memployeeitemacademicsitemother.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemacademicsitemother.h; sourceTree = "<group>"; };
 		DA8F3E7F1CC53FC500DE2749 /* memployeeitemacademicsitemother.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemacademicsitemother.m; sourceTree = "<group>"; };
 		DA8F3E811CC55B6700DE2749 /* employee.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = employee.xcassets; sourceTree = "<group>"; };
+		DA8F3E831CC572A300DE2749 /* cemployeeskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cemployeeskill.h; sourceTree = "<group>"; };
+		DA8F3E841CC572A300DE2749 /* cemployeeskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cemployeeskill.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +315,8 @@
 			children = (
 				DA2913B31CC0592B00A66DCC /* cemployee.h */,
 				DA2913B41CC0592B00A66DCC /* cemployee.m */,
+				DA8F3E831CC572A300DE2749 /* cemployeeskill.h */,
+				DA8F3E841CC572A300DE2749 /* cemployeeskill.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -757,6 +762,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6C49FE1CBFDC0E00406C44 /* main.m in Sources */,
+				DA8F3E851CC572A300DE2749 /* cemployeeskill.m in Sources */,
 				DA8F3E501CC51B7B00DE2749 /* memployeeitemacademics.m in Sources */,
 				DA6C4A041CBFDC0E00406C44 /* updater.m in Sources */,
 				DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */,
