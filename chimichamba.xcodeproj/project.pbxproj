@@ -54,6 +54,11 @@
 		DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C49EB1CBFDC0E00406C44 /* vspinner.m */; };
 		DA8F3E4A1CC51B2900DE2749 /* memployee.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E491CC51B2900DE2749 /* memployee.m */; };
 		DA8F3E4D1CC51B4700DE2749 /* memployeeitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E4C1CC51B4700DE2749 /* memployeeitem.m */; };
+		DA8F3E501CC51B7B00DE2749 /* memployeeitemacademics.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E4F1CC51B7B00DE2749 /* memployeeitemacademics.m */; };
+		DA8F3E531CC51BF300DE2749 /* memployeeitemskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E521CC51BF300DE2749 /* memployeeitemskill.m */; };
+		DA8F3E561CC51C0000DE2749 /* memployeeitemexperience.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E551CC51C0000DE2749 /* memployeeitemexperience.m */; };
+		DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E581CC51C0F00DE2749 /* memployeeitemdescr.m */; };
+		DA8F3E5C1CC51C2E00DE2749 /* memployeeitemlocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -154,6 +159,16 @@
 		DA8F3E491CC51B2900DE2749 /* memployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployee.m; sourceTree = "<group>"; };
 		DA8F3E4B1CC51B4700DE2749 /* memployeeitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitem.h; sourceTree = "<group>"; };
 		DA8F3E4C1CC51B4700DE2749 /* memployeeitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitem.m; sourceTree = "<group>"; };
+		DA8F3E4E1CC51B7B00DE2749 /* memployeeitemacademics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemacademics.h; sourceTree = "<group>"; };
+		DA8F3E4F1CC51B7B00DE2749 /* memployeeitemacademics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemacademics.m; sourceTree = "<group>"; };
+		DA8F3E511CC51BF300DE2749 /* memployeeitemskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemskill.h; sourceTree = "<group>"; };
+		DA8F3E521CC51BF300DE2749 /* memployeeitemskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemskill.m; sourceTree = "<group>"; };
+		DA8F3E541CC51C0000DE2749 /* memployeeitemexperience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemexperience.h; sourceTree = "<group>"; };
+		DA8F3E551CC51C0000DE2749 /* memployeeitemexperience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemexperience.m; sourceTree = "<group>"; };
+		DA8F3E571CC51C0F00DE2749 /* memployeeitemdescr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemdescr.h; sourceTree = "<group>"; };
+		DA8F3E581CC51C0F00DE2749 /* memployeeitemdescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemdescr.m; sourceTree = "<group>"; };
+		DA8F3E5A1CC51C2E00DE2749 /* memployeeitemlocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemlocation.h; sourceTree = "<group>"; };
+		DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemlocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,6 +562,16 @@
 				DA8F3E491CC51B2900DE2749 /* memployee.m */,
 				DA8F3E4B1CC51B4700DE2749 /* memployeeitem.h */,
 				DA8F3E4C1CC51B4700DE2749 /* memployeeitem.m */,
+				DA8F3E4E1CC51B7B00DE2749 /* memployeeitemacademics.h */,
+				DA8F3E4F1CC51B7B00DE2749 /* memployeeitemacademics.m */,
+				DA8F3E511CC51BF300DE2749 /* memployeeitemskill.h */,
+				DA8F3E521CC51BF300DE2749 /* memployeeitemskill.m */,
+				DA8F3E541CC51C0000DE2749 /* memployeeitemexperience.h */,
+				DA8F3E551CC51C0000DE2749 /* memployeeitemexperience.m */,
+				DA8F3E571CC51C0F00DE2749 /* memployeeitemdescr.h */,
+				DA8F3E581CC51C0F00DE2749 /* memployeeitemdescr.m */,
+				DA8F3E5A1CC51C2E00DE2749 /* memployeeitemlocation.h */,
+				DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -678,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6C49FE1CBFDC0E00406C44 /* main.m in Sources */,
+				DA8F3E501CC51B7B00DE2749 /* memployeeitemacademics.m in Sources */,
 				DA6C4A041CBFDC0E00406C44 /* updater.m in Sources */,
 				DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */,
 				DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */,
@@ -688,8 +714,10 @@
 				DA8F3E4D1CC51B4700DE2749 /* memployeeitem.m in Sources */,
 				DA2913BC1CC061D700A66DCC /* vemployeebar.m in Sources */,
 				DA6C4A0E1CBFDC0E00406C44 /* mdb.m in Sources */,
+				DA8F3E5C1CC51C2E00DE2749 /* memployeeitemlocation.m in Sources */,
 				DA6C4A0F1CBFDC0E00406C44 /* mdbcreate.m in Sources */,
 				DA29139B1CC0055200A66DCC /* cprofile.m in Sources */,
+				DA8F3E561CC51C0000DE2749 /* memployeeitemexperience.m in Sources */,
 				DA6C4A031CBFDC0E00406C44 /* uifont+uifontmain.m in Sources */,
 				DA2913A31CC0079500A66DCC /* vchimi.m in Sources */,
 				DA6C4A081CBFDC0E00406C44 /* amanager.m in Sources */,
@@ -697,6 +725,7 @@
 				DA29138B1CBFF2A300A66DCC /* vlanding.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
+				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
@@ -710,6 +739,7 @@
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
 				DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */,
 				DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */,
+				DA8F3E531CC51BF300DE2749 /* memployeeitemskill.m in Sources */,
 				DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */,
 				DA2913A61CC02AD800A66DCC /* vprofilebar.m in Sources */,
 				DA6C4A181CBFDC0E00406C44 /* vblur.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  memployee.h
+//  memployeeitemdescr.h
 //  chimichamba
 //
 //  Created by zero on 4/18/16.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface memployee : NSObject
+@interface memployeeitemdescr : NSObject
 
 @end
