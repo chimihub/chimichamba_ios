@@ -4,8 +4,9 @@
 
 @interface memployeeitemacademics:memployeeitem
 
--(NSArray*)names;
+-(NSArray<NSString*>*)names;
 
 @property(strong, nonatomic)NSArray<memployeeitemacademicsitem*> *items;
+@property(nonatomic)NSUInteger selected;
 
 @end

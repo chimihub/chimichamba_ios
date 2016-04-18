@@ -13,8 +13,9 @@
 
 "employee_title"="Busco chamba";
 "employee_title_inside"="Tu perfil para buscar chamba";
+"employee_inside_degree"="Titulado";
 "employee_item_academics_title"="ESCOLARIDAD";
 "employee_item_academics_item_highschool"="Prepa";
 "employee_item_academics_item_bachelor"="Licenciatura";
 "employee_item_academics_item_postgraduate"="Posgrado";
-"employee_item_academics_item_other"="Otro"";
+"employee_item_academics_item_other"="Otro";

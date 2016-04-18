@@ -69,6 +69,7 @@
 		DA8F3E7A1CC53F9400DE2749 /* memployeeitemacademicsitembachelor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E791CC53F9400DE2749 /* memployeeitemacademicsitembachelor.m */; };
 		DA8F3E7D1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E7C1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m */; };
 		DA8F3E801CC53FC500DE2749 /* memployeeitemacademicsitemother.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E7F1CC53FC500DE2749 /* memployeeitemacademicsitemother.m */; };
+		DA8F3E821CC55B6700DE2749 /* employee.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8F3E811CC55B6700DE2749 /* employee.xcassets */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +200,7 @@
 		DA8F3E7C1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemacademicsitempostgraduate.m; sourceTree = "<group>"; };
 		DA8F3E7E1CC53FC500DE2749 /* memployeeitemacademicsitemother.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemacademicsitemother.h; sourceTree = "<group>"; };
 		DA8F3E7F1CC53FC500DE2749 /* memployeeitemacademicsitemother.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemacademicsitemother.m; sourceTree = "<group>"; };
+		DA8F3E811CC55B6700DE2749 /* employee.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = employee.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 				DA2913841CBFE4C300A66DCC /* brand.xcassets */,
 				DA29139F1CC0066E00A66DCC /* generic.xcassets */,
 				DA2913AA1CC039DC00A66DCC /* profile.xcassets */,
+				DA8F3E811CC55B6700DE2749 /* employee.xcassets */,
 			);
 			path = imateq;
 			sourceTree = "<group>";
@@ -692,6 +695,7 @@
 				DA6C49FB1CBFDC0E00406C44 /* Localizable.strings in Resources */,
 				DA2913A01CC0066E00A66DCC /* generic.xcassets in Resources */,
 				DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */,
+				DA8F3E821CC55B6700DE2749 /* employee.xcassets in Resources */,
 				DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */,
 				DA2913AB1CC039DC00A66DCC /* profile.xcassets in Resources */,
 			);

@@ -14,6 +14,7 @@ static NSUInteger const cellheight = 150;
     self = [super init];
     self.cellclass = [vemployeecellacademics class];
     self.height = cellheight;
+    self.selected = 0;
     self.items = @[
                    [[memployeeitemacademicsitemhighschool alloc] init],
                    [[memployeeitemacademicsitembachelor alloc] init],
@@ -26,9 +27,18 @@ static NSUInteger const cellheight = 150;
 
 #pragma mark public
 
--(NSArray*)names
+-(NSArray<NSString*>*)names
 {
+    NSMutableArray<NSString*> *names = [NSMutableArray array];
+    NSUInteger count = self.items.count;
     
+    for(NSUInteger i = 0; i < count; i++)
+    {
+        memployeeitemacademicsitem *item = self.items[i];
+        [names addObject:item.name];
+    }
+    
+    return names;
 }
 
 @end
