@@ -1,15 +1,9 @@
 #import "vemployee.h"
 #import "vemployeebar.h"
 #import "vemployeecell.h"
-#import "vemployeefooter.h"
-#import "vemployeeheader.h"
 #import "genericconstants.h"
 
-static NSString* const employeefooterid = @"footercell";
-static NSString* const employeeheaderid = @"headercell";
 static NSUInteger const interitemspace = 15;
-static NSUInteger const footerheight = 350;
-static NSUInteger const headerheight = 500;
 
 @implementation vemployee
 
@@ -23,6 +17,8 @@ static NSUInteger const headerheight = 500;
     vemployeebar *bar = [[vemployeebar alloc] init:controller];
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setFooterReferenceSize:CGSizeZero];
+    [flow setHeaderReferenceSize:CGSizeZero];
     [flow setMinimumLineSpacing:0];
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
@@ -37,8 +33,6 @@ static NSUInteger const headerheight = 500;
     [collection setShowsHorizontalScrollIndicator:NO];
     [collection setDelegate:self];
     [collection setDataSource:self];
-    [collection registerClass:[vemployeefooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:employeefooterid];
-    [collection registerClass:[vemployeeheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:employeeheaderid];
     self.collection = collection;
     
     NSUInteger count = self.model.items.count;
@@ -75,22 +69,6 @@ static NSUInteger const headerheight = 500;
 #pragma mark -
 #pragma mark col del
 
--(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    CGFloat width = col.bounds.size.width;
-    CGSize size = CGSizeMake(width, headerheight);
-    
-    return size;
-}
-
--(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForFooterInSection:(NSInteger)section
-{
-    CGFloat width = col.bounds.size.width;
-    CGSize size = CGSizeMake(width, footerheight);
-    
-    return size;
-}
-
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
 {
     CGFloat width = col.bounds.size.width;
@@ -110,25 +88,6 @@ static NSUInteger const headerheight = 500;
     NSUInteger count = self.model.items.count;
     
     return count;
-}
-
--(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
-{
-    UICollectionReusableView *reusable;
-    
-    if(kind == UICollectionElementKindSectionHeader)
-    {
-        vemployeeheader *header = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeeheaderid forIndexPath:index];
-        reusable = header;
-    }
-    else
-    {
-        vemployeefooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeefooterid forIndexPath:index];
-        footer.controller = self.controller;
-        reusable = footer;
-    }
-    
-    return reusable;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
