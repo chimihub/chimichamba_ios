@@ -4,14 +4,15 @@
 #import "uicolor+uicolormain.h"
 #import "vemployeeskillheader.h"
 #import "vemployeeskillsearch.h"
+#import "genericconstants.h"
 
 static NSString* const skillheaderid = @"headerid";
 static NSString* const skillsearchide = @"searchid";
 static NSString* const skillcellid = @"skillcell";
 static NSUInteger const interitemspace = 1;
 static NSUInteger const cellheight = 60;
-static NSUInteger const headerheight = 70;
-static NSUInteger const searchheight = 80;
+static NSUInteger const headerheight = 40;
+static NSUInteger const searchheight = 90;
 
 @implementation vemployeeskill
 
@@ -31,7 +32,7 @@ static NSUInteger const searchheight = 80;
     [flow setMinimumLineSpacing:0];
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, interitemspace, 0)];
+    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, collectionbottom, 0)];
     
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setClipsToBounds:YES];

@@ -23,6 +23,7 @@
 "employee_item_skill_noskill"="Elije uno";
 
 "employeeskill_title"="Profesión / Oficio";
+"employeeskill_search_placeholder"="Buscar";
 
 "skill_cat_profession_name"="Profesión";
 "skill_cat_trade_name"="Oficio";
