@@ -77,6 +77,13 @@
 		DA8F3E961CC581F700DE2749 /* mskillcatprofession.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E951CC581F700DE2749 /* mskillcatprofession.m */; };
 		DA8F3E991CC5820300DE2749 /* mskillcattrade.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E981CC5820300DE2749 /* mskillcattrade.m */; };
 		DA8F3E9C1CC5828E00DE2749 /* mskillitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E9B1CC5828E00DE2749 /* mskillitem.m */; };
+		DA8F3E9F1CC583F500DE2749 /* mskillitemprofessor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E9E1CC583F500DE2749 /* mskillitemprofessor.m */; };
+		DA8F3EA21CC5840700DE2749 /* mskillitemdoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EA11CC5840700DE2749 /* mskillitemdoctor.m */; };
+		DA8F3EA51CC5841A00DE2749 /* mskillitemcarpenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EA41CC5841A00DE2749 /* mskillitemcarpenter.m */; };
+		DA8F3EA81CC5842500DE2749 /* mskillitemmecanic.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EA71CC5842500DE2749 /* mskillitemmecanic.m */; };
+		DA8F3EAB1CC5845400DE2749 /* mskillitemdesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EAA1CC5845400DE2749 /* mskillitemdesigner.m */; };
+		DA8F3EAE1CC5845D00DE2749 /* mskillitemguard.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EAD1CC5845D00DE2749 /* mskillitemguard.m */; };
+		DA8F3EB11CC5846700DE2749 /* mskillitemdriver.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EB01CC5846700DE2749 /* mskillitemdriver.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -222,6 +229,20 @@
 		DA8F3E981CC5820300DE2749 /* mskillcattrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillcattrade.m; sourceTree = "<group>"; };
 		DA8F3E9A1CC5828E00DE2749 /* mskillitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitem.h; sourceTree = "<group>"; };
 		DA8F3E9B1CC5828E00DE2749 /* mskillitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitem.m; sourceTree = "<group>"; };
+		DA8F3E9D1CC583F500DE2749 /* mskillitemprofessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemprofessor.h; sourceTree = "<group>"; };
+		DA8F3E9E1CC583F500DE2749 /* mskillitemprofessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemprofessor.m; sourceTree = "<group>"; };
+		DA8F3EA01CC5840700DE2749 /* mskillitemdoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemdoctor.h; sourceTree = "<group>"; };
+		DA8F3EA11CC5840700DE2749 /* mskillitemdoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemdoctor.m; sourceTree = "<group>"; };
+		DA8F3EA31CC5841A00DE2749 /* mskillitemcarpenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemcarpenter.h; sourceTree = "<group>"; };
+		DA8F3EA41CC5841A00DE2749 /* mskillitemcarpenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemcarpenter.m; sourceTree = "<group>"; };
+		DA8F3EA61CC5842500DE2749 /* mskillitemmecanic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemmecanic.h; sourceTree = "<group>"; };
+		DA8F3EA71CC5842500DE2749 /* mskillitemmecanic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemmecanic.m; sourceTree = "<group>"; };
+		DA8F3EA91CC5845400DE2749 /* mskillitemdesigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemdesigner.h; sourceTree = "<group>"; };
+		DA8F3EAA1CC5845400DE2749 /* mskillitemdesigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemdesigner.m; sourceTree = "<group>"; };
+		DA8F3EAC1CC5845D00DE2749 /* mskillitemguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemguard.h; sourceTree = "<group>"; };
+		DA8F3EAD1CC5845D00DE2749 /* mskillitemguard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemguard.m; sourceTree = "<group>"; };
+		DA8F3EAF1CC5846700DE2749 /* mskillitemdriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemdriver.h; sourceTree = "<group>"; };
+		DA8F3EB01CC5846700DE2749 /* mskillitemdriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemdriver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -676,6 +697,20 @@
 				DA8F3E981CC5820300DE2749 /* mskillcattrade.m */,
 				DA8F3E9A1CC5828E00DE2749 /* mskillitem.h */,
 				DA8F3E9B1CC5828E00DE2749 /* mskillitem.m */,
+				DA8F3E9D1CC583F500DE2749 /* mskillitemprofessor.h */,
+				DA8F3E9E1CC583F500DE2749 /* mskillitemprofessor.m */,
+				DA8F3EA01CC5840700DE2749 /* mskillitemdoctor.h */,
+				DA8F3EA11CC5840700DE2749 /* mskillitemdoctor.m */,
+				DA8F3EA31CC5841A00DE2749 /* mskillitemcarpenter.h */,
+				DA8F3EA41CC5841A00DE2749 /* mskillitemcarpenter.m */,
+				DA8F3EA61CC5842500DE2749 /* mskillitemmecanic.h */,
+				DA8F3EA71CC5842500DE2749 /* mskillitemmecanic.m */,
+				DA8F3EA91CC5845400DE2749 /* mskillitemdesigner.h */,
+				DA8F3EAA1CC5845400DE2749 /* mskillitemdesigner.m */,
+				DA8F3EAC1CC5845D00DE2749 /* mskillitemguard.h */,
+				DA8F3EAD1CC5845D00DE2749 /* mskillitemguard.m */,
+				DA8F3EAF1CC5846700DE2749 /* mskillitemdriver.h */,
+				DA8F3EB01CC5846700DE2749 /* mskillitemdriver.m */,
 			);
 			path = skill;
 			sourceTree = "<group>";
@@ -826,6 +861,8 @@
 				DA6C4A0E1CBFDC0E00406C44 /* mdb.m in Sources */,
 				DA8F3E5C1CC51C2E00DE2749 /* memployeeitemlocation.m in Sources */,
 				DA8F3E901CC581CD00DE2749 /* mskill.m in Sources */,
+				DA8F3EB11CC5846700DE2749 /* mskillitemdriver.m in Sources */,
+				DA8F3EA51CC5841A00DE2749 /* mskillitemcarpenter.m in Sources */,
 				DA6C4A0F1CBFDC0E00406C44 /* mdbcreate.m in Sources */,
 				DA8F3E621CC51FAC00DE2749 /* vemployeecellskill.m in Sources */,
 				DA29139B1CC0055200A66DCC /* cprofile.m in Sources */,
@@ -840,20 +877,24 @@
 				DA8F3E7A1CC53F9400DE2749 /* memployeeitemacademicsitembachelor.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
 				DA8F3E681CC51FC300DE2749 /* vemployeecelldescr.m in Sources */,
+				DA8F3EAE1CC5845D00DE2749 /* mskillitemguard.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
 				DA8F3E5F1CC51F6E00DE2749 /* vemployeecellacademics.m in Sources */,
 				DA8F3E741CC53EED00DE2749 /* memployeeitemacademicsitem.m in Sources */,
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
 				DA8F3E7D1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m in Sources */,
+				DA8F3EA21CC5840700DE2749 /* mskillitemdoctor.m in Sources */,
 				DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
 				DA8F3E651CC51FB700DE2749 /* vemployeecellexperience.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
 				DA2913B91CC0594900A66DCC /* vemployee.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
+				DA8F3EAB1CC5845400DE2749 /* mskillitemdesigner.m in Sources */,
 				DA8F3E6B1CC51FCE00DE2749 /* vemployeecelllocation.m in Sources */,
 				DA2913AE1CC04A4C00A66DCC /* vprofilealert.m in Sources */,
+				DA8F3E9F1CC583F500DE2749 /* mskillitemprofessor.m in Sources */,
 				DA6C4A071CBFDC0E00406C44 /* acall.m in Sources */,
 				DA29139E1CC0056300A66DCC /* vprofile.m in Sources */,
 				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
@@ -861,6 +902,7 @@
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
 				DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */,
 				DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */,
+				DA8F3EA81CC5842500DE2749 /* mskillitemmecanic.m in Sources */,
 				DA8F3E531CC51BF300DE2749 /* memployeeitemskill.m in Sources */,
 				DA6C4A1A1CBFDC0E00406C44 /* vspinner.m in Sources */,
 				DA2913A61CC02AD800A66DCC /* vprofilebar.m in Sources */,
