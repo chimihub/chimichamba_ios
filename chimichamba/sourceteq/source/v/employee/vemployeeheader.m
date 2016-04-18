@@ -14,6 +14,9 @@
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
     [label setTextAlignment:NSTextAlignmentCenter];
     [label setNumberOfLines:0];
+    [label setText:NSLocalizedString(@"employee_title_inside", nil)];
+    [label setFont:[UIFont systemFontOfSize:18]];
+    [label setTextColor:[UIColor colorWithWhite:0 alpha:0.6]];
     
     [self addSubview:label];
     
