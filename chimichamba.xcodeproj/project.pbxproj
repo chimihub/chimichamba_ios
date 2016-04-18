@@ -72,6 +72,8 @@
 		DA8F3E821CC55B6700DE2749 /* employee.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8F3E811CC55B6700DE2749 /* employee.xcassets */; };
 		DA8F3E851CC572A300DE2749 /* cemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E841CC572A300DE2749 /* cemployeeskill.m */; };
 		DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */; };
+		DA8F3E901CC581CD00DE2749 /* mskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E8F1CC581CD00DE2749 /* mskill.m */; };
+		DA8F3E931CC581D900DE2749 /* mskillcat.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E921CC581D900DE2749 /* mskillcat.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +209,10 @@
 		DA8F3E841CC572A300DE2749 /* cemployeeskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cemployeeskill.m; sourceTree = "<group>"; };
 		DA8F3E8A1CC573D900DE2749 /* vemployeeskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeeskill.h; sourceTree = "<group>"; };
 		DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeeskill.m; sourceTree = "<group>"; };
+		DA8F3E8E1CC581CD00DE2749 /* mskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskill.h; sourceTree = "<group>"; };
+		DA8F3E8F1CC581CD00DE2749 /* mskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskill.m; sourceTree = "<group>"; };
+		DA8F3E911CC581D900DE2749 /* mskillcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillcat.h; sourceTree = "<group>"; };
+		DA8F3E921CC581D900DE2749 /* mskillcat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillcat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,6 +523,7 @@
 		DA6C49C91CBFDC0E00406C44 /* m */ = {
 			isa = PBXGroup;
 			children = (
+				DA8F3E8D1CC581C300DE2749 /* skill */,
 				DA8F3E471CC51B1C00DE2749 /* employee */,
 				DA6C49CA1CBFDC0E00406C44 /* db */,
 				DA6C49CF1CBFDC0E00406C44 /* dirs */,
@@ -645,6 +652,17 @@
 				DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */,
 			);
 			path = employeeskill;
+			sourceTree = "<group>";
+		};
+		DA8F3E8D1CC581C300DE2749 /* skill */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F3E8E1CC581CD00DE2749 /* mskill.h */,
+				DA8F3E8F1CC581CD00DE2749 /* mskill.m */,
+				DA8F3E911CC581D900DE2749 /* mskillcat.h */,
+				DA8F3E921CC581D900DE2749 /* mskillcat.m */,
+			);
+			path = skill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -784,11 +802,13 @@
 				DA2913BF1CC06DB800A66DCC /* vemployeecell.m in Sources */,
 				DA6C4A0C1CBFDC0E00406C44 /* cpages.m in Sources */,
 				DA2913961CBFFF1500A66DCC /* uibutton+uibuttonmain.m in Sources */,
+				DA8F3E931CC581D900DE2749 /* mskillcat.m in Sources */,
 				DA6C4A101CBFDC0E00406C44 /* mdirs.m in Sources */,
 				DA8F3E4D1CC51B4700DE2749 /* memployeeitem.m in Sources */,
 				DA2913BC1CC061D700A66DCC /* vemployeebar.m in Sources */,
 				DA6C4A0E1CBFDC0E00406C44 /* mdb.m in Sources */,
 				DA8F3E5C1CC51C2E00DE2749 /* memployeeitemlocation.m in Sources */,
+				DA8F3E901CC581CD00DE2749 /* mskill.m in Sources */,
 				DA6C4A0F1CBFDC0E00406C44 /* mdbcreate.m in Sources */,
 				DA8F3E621CC51FAC00DE2749 /* vemployeecellskill.m in Sources */,
 				DA29139B1CC0055200A66DCC /* cprofile.m in Sources */,
