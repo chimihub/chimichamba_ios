@@ -42,4 +42,9 @@ static NSUInteger const cellheight = 150;
     return names;
 }
 
+-(memployeeitemacademicsitem*)current
+{
+    return self.items[self.selected];
+}
+
 @end
