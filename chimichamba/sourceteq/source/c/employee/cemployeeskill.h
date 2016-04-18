@@ -3,8 +3,8 @@
 
 @interface cemployeeskill:UIViewController<UIGestureRecognizerDelegate>
 
--(instancetype)init:(meployeeitemskill*)model;
+-(instancetype)init:(memployeeitemskill*)model;
 
-@property(weak, nonatomic)meployeeitemskill *model;
+@property(weak, nonatomic)memployeeitemskill *model;
 
 @end

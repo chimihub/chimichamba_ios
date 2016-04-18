@@ -12,7 +12,7 @@ static NSUInteger const interitemspace = 15;
     self = [super init];
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor whiteColor]];
-    
+    self.controller = controller;
     self.model = [[memployee alloc] init];
     vemployeebar *bar = [[vemployeebar alloc] init:controller];
     
