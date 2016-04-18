@@ -81,7 +81,7 @@ static NSUInteger const searchheight = 80;
             {
                 mskillitem *initem = self.model.cats[i].items[j];
                 
-                if(initem == current)
+                if([current equalsskill:initem])
                 {
                     indexpath = [NSIndexPath indexPathForItem:j inSection:i + 1];
                     j = countitems;
