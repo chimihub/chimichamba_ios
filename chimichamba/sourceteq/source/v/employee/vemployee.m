@@ -2,11 +2,14 @@
 #import "vemployeebar.h"
 #import "vemployeecell.h"
 #import "vemployeefooter.h"
+#import "vemployeeheader.h"
 #import "genericconstants.h"
 
 static NSString* const employeefooterid = @"footercell";
+static NSString* const employeeheaderid = @"headercell";
 static NSUInteger const interitemspace = 15;
 static NSUInteger const footerheight = 350;
+static NSUInteger const headerheight = 150;
 
 @implementation vemployee
 
@@ -20,7 +23,6 @@ static NSUInteger const footerheight = 350;
     vemployeebar *bar = [[vemployeebar alloc] init:controller];
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
-    [flow setHeaderReferenceSize:CGSizeZero];
     [flow setMinimumLineSpacing:0];
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
@@ -36,6 +38,7 @@ static NSUInteger const footerheight = 350;
     [collection setDelegate:self];
     [collection setDataSource:self];
     [collection registerClass:[vemployeefooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:employeefooterid];
+    [collection registerClass:[vemployeeheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:employeeheaderid];
     self.collection = collection;
     
     UIImageView *background = [[UIImageView alloc] init];
@@ -83,6 +86,14 @@ static NSUInteger const footerheight = 350;
 #pragma mark -
 #pragma mark col del
 
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    CGFloat width = col.bounds.size.width;
+    CGSize size = CGSizeMake(width, headerheight);
+    
+    return size;
+}
+
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForFooterInSection:(NSInteger)section
 {
     CGFloat width = col.bounds.size.width;
@@ -114,11 +125,22 @@ static NSUInteger const footerheight = 350;
 
 -(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
 {
-    vemployeefooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeefooterid forIndexPath:index];
-    footer.controller = self.controller;
-    [self.collection sendSubviewToBack:self.background];
+    UICollectionReusableView *reusable;
     
-    return footer;
+    if(kind == UICollectionElementKindSectionHeader)
+    {
+        vemployeeheader *header = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeeheaderid forIndexPath:index];
+        reusable = header;
+    }
+    else
+    {
+        vemployeefooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeefooterid forIndexPath:index];
+        footer.controller = self.controller;
+        [self.collection sendSubviewToBack:self.background];
+        reusable = footer;
+    }
+    
+    return reusable;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
