@@ -1,13 +1,13 @@
-//
-//  mskillitemprofessor.m
-//  chimichamba
-//
-//  Created by zero on 4/18/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
-
 #import "mskillitemprofessor.h"
 
 @implementation mskillitemprofessor
+
+-(instancetype)init
+{
+    self = [super init];
+    self.name = NSLocalizedString(@"skill_professor_name", nil);
+    
+    return self;
+}
 
 @end

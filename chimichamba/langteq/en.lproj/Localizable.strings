@@ -20,3 +20,14 @@
 "employee_item_academics_item_postgraduate"="Posgrado";
 "employee_item_academics_item_other"="Otro";
 "employee_item_skills_title"="PROFESIÓN / OFICIO";
+
+"skill_cat_profession_name"="Profesión";
+"skill_cat_trade_name"="Oficio";
+
+"skill_carpenter_name"="Carpintero";
+"skill_designer_name"="Diseñador";
+"skill_doctor_name"="Doctor";
+"skill_driver_name"="Chofer";
+"skill_guard_name"="Guardia";
+"skill_mecanic_name"="Mecanico";
+"skill_professor_name"="Profesor";
