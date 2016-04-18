@@ -2,6 +2,7 @@
 #import "cemployee.h"
 #import "vemployeebar.h"
 #import "vemployeecell.h"
+#import "vemployeefooter.h"
 #import "genericconstants.h"
 
 static NSString* const employeecellid = @"employeecell";
@@ -21,6 +22,7 @@ static NSUInteger const interitemspace = 6;
 {
     self = [super init:controller];
     
+    self.model = [[memployee alloc] init];
     vemployeebar *bar = [[vemployeebar alloc] init:controller];
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
@@ -54,12 +56,37 @@ static NSUInteger const interitemspace = 6;
     return self;
 }
 
+#pragma mark functionality
+
+-(NSString*)identifieratindex:(NSUInteger)index
+{
+    NSString *identifier = NSStringFromClass([self.model.items[index] class]);
+    
+    return identifier;
+}
+
 #pragma mark -
 #pragma mark col del
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
     return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView*)col numberOfItemsInSection:(NSInteger)section
+{
+    NSUInteger count = self.model.items.count;
+    
+    return count;
+}
+
+-(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
+{
+    NSUInteger item = index.item;
+    NSString *identifier = [self identifieratindex:item];
+    vemployeecell *cell = [col dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:index];
+    
+    return cell;
 }
 
 @end
