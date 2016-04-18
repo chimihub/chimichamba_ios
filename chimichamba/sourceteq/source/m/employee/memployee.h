@@ -1,13 +1,8 @@
-//
-//  memployee.h
-//  chimichamba
-//
-//  Created by zero on 4/18/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import "memployeeitem.h"
 
-#import <Foundation/Foundation.h>
+@interface memployee:NSObject
 
-@interface memployee : NSObject
+@property(strong, nonatomic)NSArray<memployeeitem*> *items;
 
 @end
