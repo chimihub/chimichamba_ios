@@ -124,11 +124,13 @@ static NSUInteger const searchheight = 80;
 
 -(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
 {
+    NSUInteger section = index.section;
     UICollectionReusableView *reusable;
     
-    if(index.section)
+    if(section)
     {
         vemployeeskillheader *header = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillheaderid forIndexPath:index];
+        [header config:self.model.cats[section - 1]];
         reusable = header;
     }
     else
