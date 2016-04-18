@@ -97,6 +97,7 @@ static NSUInteger const interitemspace = 15;
     memployeeitem *model = self.model.items[item];
     vemployeecell *cell = [col dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:index];
     [cell config:model];
+    cell.controller = self.controller;
     
     return cell;
 }

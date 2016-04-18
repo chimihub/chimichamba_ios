@@ -48,7 +48,7 @@
 
 -(void)skills:(memployeeitemskill*)model
 {
-    cemployeeskill *controller = [[cemployeeskill alloc] init];
+    cemployeeskill *controller = [[cemployeeskill alloc] init:model];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
