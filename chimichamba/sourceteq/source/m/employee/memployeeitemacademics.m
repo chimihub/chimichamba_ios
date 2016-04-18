@@ -10,6 +10,7 @@ static NSUInteger const cellheight = 150;
     self = [super init];
     self.cellclass = [vemployeecellacademics class];
     self.height = cellheight;
+    self.items = @[@"A", @"B"];
     
     return self;
 }

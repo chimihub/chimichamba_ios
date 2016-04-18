@@ -64,6 +64,8 @@
 		DA8F3E651CC51FB700DE2749 /* vemployeecellexperience.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E641CC51FB700DE2749 /* vemployeecellexperience.m */; };
 		DA8F3E681CC51FC300DE2749 /* vemployeecelldescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E671CC51FC300DE2749 /* vemployeecelldescr.m */; };
 		DA8F3E6B1CC51FCE00DE2749 /* vemployeecelllocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E6A1CC51FCE00DE2749 /* vemployeecelllocation.m */; };
+		DA8F3E741CC53EED00DE2749 /* memployeeitemacademicsitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E731CC53EED00DE2749 /* memployeeitemacademicsitem.m */; };
+		DA8F3E771CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E761CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +186,10 @@
 		DA8F3E671CC51FC300DE2749 /* vemployeecelldescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeecelldescr.m; sourceTree = "<group>"; };
 		DA8F3E691CC51FCE00DE2749 /* vemployeecelllocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeecelllocation.h; sourceTree = "<group>"; };
 		DA8F3E6A1CC51FCE00DE2749 /* vemployeecelllocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeecelllocation.m; sourceTree = "<group>"; };
+		DA8F3E721CC53EED00DE2749 /* memployeeitemacademicsitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemacademicsitem.h; sourceTree = "<group>"; };
+		DA8F3E731CC53EED00DE2749 /* memployeeitemacademicsitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemacademicsitem.m; sourceTree = "<group>"; };
+		DA8F3E751CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memployeeitemacademicsitemhighschool.h; sourceTree = "<group>"; };
+		DA8F3E761CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memployeeitemacademicsitemhighschool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +595,8 @@
 				DA8F3E4C1CC51B4700DE2749 /* memployeeitem.m */,
 				DA8F3E4E1CC51B7B00DE2749 /* memployeeitemacademics.h */,
 				DA8F3E4F1CC51B7B00DE2749 /* memployeeitemacademics.m */,
+				DA8F3E721CC53EED00DE2749 /* memployeeitemacademicsitem.h */,
+				DA8F3E731CC53EED00DE2749 /* memployeeitemacademicsitem.m */,
 				DA8F3E511CC51BF300DE2749 /* memployeeitemskill.h */,
 				DA8F3E521CC51BF300DE2749 /* memployeeitemskill.m */,
 				DA8F3E541CC51C0000DE2749 /* memployeeitemexperience.h */,
@@ -597,6 +605,8 @@
 				DA8F3E581CC51C0F00DE2749 /* memployeeitemdescr.m */,
 				DA8F3E5A1CC51C2E00DE2749 /* memployeeitemlocation.h */,
 				DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */,
+				DA8F3E751CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.h */,
+				DA8F3E761CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -731,6 +741,7 @@
 				DA8F3E501CC51B7B00DE2749 /* memployeeitemacademics.m in Sources */,
 				DA6C4A041CBFDC0E00406C44 /* updater.m in Sources */,
 				DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */,
+				DA8F3E771CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.m in Sources */,
 				DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */,
 				DA2913BF1CC06DB800A66DCC /* vemployeecell.m in Sources */,
 				DA6C4A0C1CBFDC0E00406C44 /* cpages.m in Sources */,
@@ -753,6 +764,7 @@
 				DA8F3E681CC51FC300DE2749 /* vemployeecelldescr.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
 				DA8F3E5F1CC51F6E00DE2749 /* vemployeecellacademics.m in Sources */,
+				DA8F3E741CC53EED00DE2749 /* memployeeitemacademicsitem.m in Sources */,
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,

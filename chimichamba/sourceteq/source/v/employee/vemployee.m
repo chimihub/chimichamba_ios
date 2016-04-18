@@ -94,7 +94,9 @@ static NSUInteger const interitemspace = 15;
 {
     NSUInteger item = index.item;
     NSString *identifier = [self identifieratindex:item];
+    memployeeitem *model = self.model.items[item];
     vemployeecell *cell = [col dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:index];
+    [cell config:model];
     
     return cell;
 }

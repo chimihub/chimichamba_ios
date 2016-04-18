@@ -3,4 +3,6 @@
 
 @interface memployeeitemacademics:memployeeitem
 
+@property(strong, nonatomic)NSArray<NSString*> *items;
+
 @end
