@@ -1,7 +1,7 @@
 #import "memployeeitemlocation.h"
 #import "vemployeecelllocation.h"
 
-static NSUInteger const cellheight = 100;
+static NSUInteger const cellheight = 260;
 
 @implementation memployeeitemlocation
 

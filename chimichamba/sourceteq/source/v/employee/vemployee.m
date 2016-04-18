@@ -1,27 +1,20 @@
 #import "vemployee.h"
-#import "cemployee.h"
 #import "vemployeebar.h"
 #import "vemployeecell.h"
 #import "vemployeefooter.h"
 #import "genericconstants.h"
 
 static NSString* const employeefooterid = @"footercell";
-static NSUInteger const interitemspace = 6;
-static NSUInteger const footerheight = 150;
-
-@interface vemployee ()
-
-@property(weak, nonatomic)cemployee *controller;
-
-@end
+static NSUInteger const interitemspace = 15;
+static NSUInteger const footerheight = 350;
 
 @implementation vemployee
 
-@dynamic controller;
-
 -(instancetype)init:(cemployee*)controller
 {
-    self = [super init:controller];
+    self = [super init];
+    [self setClipsToBounds:YES];
+    [self setBackgroundColor:[UIColor whiteColor]];
     
     self.model = [[memployee alloc] init];
     vemployeebar *bar = [[vemployeebar alloc] init:controller];
@@ -45,6 +38,14 @@ static NSUInteger const footerheight = 150;
     [collection registerClass:[vemployeefooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:employeefooterid];
     self.collection = collection;
     
+    UIImageView *background = [[UIImageView alloc] init];
+    [background setClipsToBounds:YES];
+    [background setUserInteractionEnabled:NO];
+    [background setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [background setContentMode:UIViewContentModeCenter];
+    [background setImage:[UIImage imageNamed:@"generic_background"]];
+    self.background = background;
+    
     NSUInteger count = self.model.items.count;
     
     for(NSUInteger i = 0; i < count; i++)
@@ -54,15 +55,18 @@ static NSUInteger const footerheight = 150;
         [collection registerClass:item.cellclass forCellWithReuseIdentifier:identifier];
     }
     
+    [collection addSubview:background];
     [self addSubview:bar];
     [self addSubview:collection];
     
-    NSDictionary *views = @{@"bar":bar, @"col":collection};
+    NSDictionary *views = @{@"bar":bar, @"col":collection, @"background":background};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[background]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[background]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -112,6 +116,7 @@ static NSUInteger const footerheight = 150;
 {
     vemployeefooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeefooterid forIndexPath:index];
     footer.controller = self.controller;
+    [self.collection sendSubviewToBack:self.background];
     
     return footer;
 }
@@ -121,6 +126,7 @@ static NSUInteger const footerheight = 150;
     NSUInteger item = index.item;
     NSString *identifier = [self identifieratindex:item];
     vemployeecell *cell = [col dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:index];
+    [self.collection sendSubviewToBack:self.background];
     
     return cell;
 }
