@@ -13,7 +13,7 @@
     [label setBackgroundColor:[UIColor clearColor]];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
     [label setFont:[UIFont boldSystemFontOfSize:15]];
-    [label setTextColor:[UIColor colorWithWhite:0 alpha:0.5]];
+    [label setTextColor:[UIColor colorWithWhite:0 alpha:0.4]];
     self.label = label;
     
     [self addSubview:label];
@@ -22,7 +22,7 @@
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[label]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[label]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label]-10-|" options:0 metrics:metrics views:views]];
     
     return self;
 }

@@ -14,6 +14,7 @@
                    [[mskillitemdoctor alloc] init],
                    [[mskillitemprofessor alloc] init]
                    ];
+    [self sort];
     
     return self;
 }

@@ -2,4 +2,6 @@
 
 @interface vemployeeskillsearch:UICollectionReusableView
 
+@property(weak, nonatomic)UITextField *field;
+
 @end

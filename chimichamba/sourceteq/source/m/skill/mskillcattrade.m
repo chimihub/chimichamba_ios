@@ -16,6 +16,7 @@
                    [[mskillitemguard alloc] init],
                    [[mskillitemdriver alloc] init]
                    ];
+    [self sort];
     
     return self;
 }

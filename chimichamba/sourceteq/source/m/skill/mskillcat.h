@@ -3,6 +3,8 @@
 
 @interface mskillcat:NSObject
 
+-(void)sort;
+
 @property(strong, nonatomic)NSArray<mskillitem*> *items;
 @property(copy, nonatomic)NSString *name;
 
