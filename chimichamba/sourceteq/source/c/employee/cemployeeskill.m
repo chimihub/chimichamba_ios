@@ -1,6 +1,15 @@
 #import "cemployeeskill.h"
+#import "vemployeeskill.h"
+
+@interface cemployeeskill ()
+
+@property(strong, nonatomic)vemployeeskill *view;
+
+@end
 
 @implementation cemployeeskill
+
+@dynamic view;
 
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -16,7 +25,7 @@
 
 -(void)loadView
 {
-    self.view = [[vemployee alloc] init:self];
+    self.view = [[vemployeeskill alloc] init:self];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle

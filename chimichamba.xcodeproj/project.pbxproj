@@ -71,7 +71,7 @@
 		DA8F3E801CC53FC500DE2749 /* memployeeitemacademicsitemother.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E7F1CC53FC500DE2749 /* memployeeitemacademicsitemother.m */; };
 		DA8F3E821CC55B6700DE2749 /* employee.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8F3E811CC55B6700DE2749 /* employee.xcassets */; };
 		DA8F3E851CC572A300DE2749 /* cemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E841CC572A300DE2749 /* cemployeeskill.m */; };
-		DA8F3E881CC5737F00DE2749 /* vemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E871CC5737F00DE2749 /* vemployeeskill.m */; };
+		DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -205,8 +205,8 @@
 		DA8F3E811CC55B6700DE2749 /* employee.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = employee.xcassets; sourceTree = "<group>"; };
 		DA8F3E831CC572A300DE2749 /* cemployeeskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cemployeeskill.h; sourceTree = "<group>"; };
 		DA8F3E841CC572A300DE2749 /* cemployeeskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cemployeeskill.m; sourceTree = "<group>"; };
-		DA8F3E861CC5737F00DE2749 /* vemployeeskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeeskill.h; sourceTree = "<group>"; };
-		DA8F3E871CC5737F00DE2749 /* vemployeeskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeeskill.m; sourceTree = "<group>"; };
+		DA8F3E8A1CC573D900DE2749 /* vemployeeskill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeeskill.h; sourceTree = "<group>"; };
+		DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeeskill.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,8 +343,6 @@
 				DA8F3E671CC51FC300DE2749 /* vemployeecelldescr.m */,
 				DA8F3E691CC51FCE00DE2749 /* vemployeecelllocation.h */,
 				DA8F3E6A1CC51FCE00DE2749 /* vemployeecelllocation.m */,
-				DA8F3E861CC5737F00DE2749 /* vemployeeskill.h */,
-				DA8F3E871CC5737F00DE2749 /* vemployeeskill.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -567,6 +565,7 @@
 		DA6C49E21CBFDC0E00406C44 /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA8F3E891CC573D000DE2749 /* employeeskill */,
 				DA2913B61CC0593E00A66DCC /* employee */,
 				DA2913971CC0052600A66DCC /* profile */,
 				DA2913901CBFF4DD00A66DCC /* login */,
@@ -637,6 +636,15 @@
 				DA8F3E5B1CC51C2E00DE2749 /* memployeeitemlocation.m */,
 			);
 			path = employee;
+			sourceTree = "<group>";
+		};
+		DA8F3E891CC573D000DE2749 /* employeeskill */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F3E8A1CC573D900DE2749 /* vemployeeskill.h */,
+				DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */,
+			);
+			path = employeeskill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -800,7 +808,7 @@
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
 				DA8F3E7D1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m in Sources */,
-				DA8F3E881CC5737F00DE2749 /* vemployeeskill.m in Sources */,
+				DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
 				DA8F3E651CC51FB700DE2749 /* vemployeecellexperience.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
