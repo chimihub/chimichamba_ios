@@ -74,6 +74,8 @@
 		DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E8B1CC573D900DE2749 /* vemployeeskill.m */; };
 		DA8F3E901CC581CD00DE2749 /* mskill.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E8F1CC581CD00DE2749 /* mskill.m */; };
 		DA8F3E931CC581D900DE2749 /* mskillcat.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E921CC581D900DE2749 /* mskillcat.m */; };
+		DA8F3E961CC581F700DE2749 /* mskillcatprofession.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E951CC581F700DE2749 /* mskillcatprofession.m */; };
+		DA8F3E991CC5820300DE2749 /* mskillcattrade.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E981CC5820300DE2749 /* mskillcattrade.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -213,6 +215,10 @@
 		DA8F3E8F1CC581CD00DE2749 /* mskill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskill.m; sourceTree = "<group>"; };
 		DA8F3E911CC581D900DE2749 /* mskillcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillcat.h; sourceTree = "<group>"; };
 		DA8F3E921CC581D900DE2749 /* mskillcat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillcat.m; sourceTree = "<group>"; };
+		DA8F3E941CC581F700DE2749 /* mskillcatprofession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillcatprofession.h; sourceTree = "<group>"; };
+		DA8F3E951CC581F700DE2749 /* mskillcatprofession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillcatprofession.m; sourceTree = "<group>"; };
+		DA8F3E971CC5820300DE2749 /* mskillcattrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillcattrade.h; sourceTree = "<group>"; };
+		DA8F3E981CC5820300DE2749 /* mskillcattrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillcattrade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -661,6 +667,10 @@
 				DA8F3E8F1CC581CD00DE2749 /* mskill.m */,
 				DA8F3E911CC581D900DE2749 /* mskillcat.h */,
 				DA8F3E921CC581D900DE2749 /* mskillcat.m */,
+				DA8F3E941CC581F700DE2749 /* mskillcatprofession.h */,
+				DA8F3E951CC581F700DE2749 /* mskillcatprofession.m */,
+				DA8F3E971CC5820300DE2749 /* mskillcattrade.h */,
+				DA8F3E981CC5820300DE2749 /* mskillcattrade.m */,
 			);
 			path = skill;
 			sourceTree = "<group>";
@@ -796,6 +806,7 @@
 				DA8F3E851CC572A300DE2749 /* cemployeeskill.m in Sources */,
 				DA8F3E501CC51B7B00DE2749 /* memployeeitemacademics.m in Sources */,
 				DA6C4A041CBFDC0E00406C44 /* updater.m in Sources */,
+				DA8F3E961CC581F700DE2749 /* mskillcatprofession.m in Sources */,
 				DA2913931CBFF4E400A66DCC /* vlogin.m in Sources */,
 				DA8F3E771CC53F3100DE2749 /* memployeeitemacademicsitemhighschool.m in Sources */,
 				DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */,
@@ -816,6 +827,7 @@
 				DA6C4A031CBFDC0E00406C44 /* uifont+uifontmain.m in Sources */,
 				DA2913A31CC0079500A66DCC /* vchimi.m in Sources */,
 				DA6C4A081CBFDC0E00406C44 /* amanager.m in Sources */,
+				DA8F3E991CC5820300DE2749 /* mskillcattrade.m in Sources */,
 				DA6C4A0B1CBFDC0E00406C44 /* cmain.m in Sources */,
 				DA29138B1CBFF2A300A66DCC /* vlanding.m in Sources */,
 				DA8F3E801CC53FC500DE2749 /* memployeeitemacademicsitemother.m in Sources */,
