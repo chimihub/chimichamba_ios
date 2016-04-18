@@ -9,7 +9,7 @@ static NSString* const employeefooterid = @"footercell";
 static NSString* const employeeheaderid = @"headercell";
 static NSUInteger const interitemspace = 15;
 static NSUInteger const footerheight = 350;
-static NSUInteger const headerheight = 150;
+static NSUInteger const headerheight = 500;
 
 @implementation vemployee
 
@@ -27,10 +27,10 @@ static NSUInteger const headerheight = 150;
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
     [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, interitemspace, 0)];
-    
+
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setClipsToBounds:YES];
-    [collection setBackgroundColor:[UIColor clearColor]];
+    [collection setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"generic_background"]]];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     [collection setAlwaysBounceVertical:YES];
     [collection setShowsVerticalScrollIndicator:NO];
@@ -41,14 +41,6 @@ static NSUInteger const headerheight = 150;
     [collection registerClass:[vemployeeheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:employeeheaderid];
     self.collection = collection;
     
-    UIImageView *background = [[UIImageView alloc] init];
-    [background setClipsToBounds:YES];
-    [background setUserInteractionEnabled:NO];
-    [background setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [background setContentMode:UIViewContentModeCenter];
-    [background setImage:[UIImage imageNamed:@"generic_background"]];
-    self.background = background;
-    
     NSUInteger count = self.model.items.count;
     
     for(NSUInteger i = 0; i < count; i++)
@@ -58,18 +50,15 @@ static NSUInteger const headerheight = 150;
         [collection registerClass:item.cellclass forCellWithReuseIdentifier:identifier];
     }
     
-    [collection addSubview:background];
     [self addSubview:bar];
     [self addSubview:collection];
     
-    NSDictionary *views = @{@"bar":bar, @"col":collection, @"background":background};
+    NSDictionary *views = @{@"bar":bar, @"col":collection};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[background]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[background]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -136,7 +125,6 @@ static NSUInteger const headerheight = 150;
     {
         vemployeefooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:employeefooterid forIndexPath:index];
         footer.controller = self.controller;
-        [self.collection sendSubviewToBack:self.background];
         reusable = footer;
     }
     
@@ -148,7 +136,6 @@ static NSUInteger const headerheight = 150;
     NSUInteger item = index.item;
     NSString *identifier = [self identifieratindex:item];
     vemployeecell *cell = [col dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:index];
-    [self.collection sendSubviewToBack:self.background];
     
     return cell;
 }

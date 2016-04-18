@@ -3,4 +3,6 @@
 
 @interface vemployeecellacademics:vemployeecell
 
+@property(weak, nonatomic)UISegmentedControl *segmented;
+
 @end

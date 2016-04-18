@@ -9,6 +9,5 @@
 @property(weak, nonatomic)cemployee *controller;
 @property(strong, nonatomic)memployee *model;
 @property(weak, nonatomic)UICollectionView *collection;
-@property(weak, nonatomic)UIImageView *background;
 
 @end
