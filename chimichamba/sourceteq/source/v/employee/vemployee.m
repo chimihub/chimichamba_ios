@@ -115,4 +115,9 @@ static NSUInteger const footerheight = 100;
     return cell;
 }
 
+-(BOOL)collectionView:(UICollectionView*)col shouldSelectItemAtIndexPath:(NSIndexPath*)index
+{
+    return NO;
+}
+
 @end
