@@ -8,6 +8,7 @@
 -(instancetype)init
 {
     self = [super init];
+    self.name = NSLocalizedString(@"skill_cat_profession_name", nil);
     self.items = @[
                    [[mskillitemdesigner alloc] init],
                    [[mskillitemdoctor alloc] init],
