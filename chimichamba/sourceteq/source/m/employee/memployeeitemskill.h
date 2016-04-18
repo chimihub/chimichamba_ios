@@ -4,6 +4,6 @@
 
 @interface memployeeitemskill:memployeeitem
 
-@property(strong, nonatomic)mskillitem *model;
+@property(strong, nonatomic)mskillitem *skill;
 
 @end

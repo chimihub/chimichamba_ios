@@ -19,7 +19,8 @@
 "employee_item_academics_item_bachelor"="Licenciatura";
 "employee_item_academics_item_postgraduate"="Posgrado";
 "employee_item_academics_item_other"="Otro";
-"employee_item_skills_title"="PROFESIÓN / OFICIO";
+"employee_item_skill_title"="PROFESIÓN / OFICIO";
+"employee_item_skill_noskill"="Elije uno";
 
 "skill_cat_profession_name"="Profesión";
 "skill_cat_trade_name"="Oficio";

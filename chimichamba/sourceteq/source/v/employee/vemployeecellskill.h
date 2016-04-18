@@ -3,6 +3,7 @@
 
 @interface vemployeecellskill:vemployeecell
 
+@property(weak, nonatomic)UILabel *title;
 @property(weak, nonatomic)UILabel *label;
 
 @end

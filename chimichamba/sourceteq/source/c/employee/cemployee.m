@@ -9,13 +9,33 @@
 @end
 
 @implementation cemployee
+{
+    BOOL firsttime;
+}
 
 @dynamic view;
+
+-(instancetype)init
+{
+    self = [super init];
+    firsttime = YES;
+    
+    return self;
+}
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    
+    if(firsttime)
+    {
+        firsttime = NO;
+    }
+    else
+    {
+        [self.view.collection reloadData];
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated

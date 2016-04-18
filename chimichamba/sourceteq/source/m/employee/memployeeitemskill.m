@@ -1,7 +1,7 @@
 #import "memployeeitemskill.h"
 #import "vemployeecellskill.h"
 
-static NSUInteger const cellheight = 100;
+static NSUInteger const cellheight = 85;
 
 @implementation memployeeitemskill
 

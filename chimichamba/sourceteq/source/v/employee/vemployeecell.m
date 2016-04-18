@@ -13,13 +13,13 @@
     [bordertop setUserInteractionEnabled:NO];
     [bordertop setTranslatesAutoresizingMaskIntoConstraints:NO];
     [bordertop setClipsToBounds:YES];
-    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.1]];
+    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.15]];
     
     UIView *borderbottom = [[UIView alloc] init];
     [borderbottom setUserInteractionEnabled:NO];
     [borderbottom setTranslatesAutoresizingMaskIntoConstraints:NO];
     [borderbottom setClipsToBounds:YES];
-    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.1]];
+    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.15]];
     
     [self addSubview:bordertop];
     [self addSubview:borderbottom];

@@ -20,8 +20,8 @@
     [title setUserInteractionEnabled:NO];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
     [title setFont:[UIFont systemFontOfSize:14]];
-    [title setTextColor:[UIColor main]];
-    [title setText:NSLocalizedString(@"employee_item_skills_title", nil)];
+    [title setText:NSLocalizedString(@"employee_item_skill_title", nil)];
+    self.title = title;
     
     UIButton *button = [[UIButton alloc] init];
     [button setClipsToBounds:YES];
@@ -42,7 +42,9 @@
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[title]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]-5-[label]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[label]-10-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[button]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[button]-0-|" options:0 metrics:metrics views:views]];
     
@@ -53,7 +55,28 @@
 
 -(void)actionedit:(UIButton*)button
 {
+    [self setBackgroundColor:[UIColor main]];
+    [self.title setTextColor:[UIColor whiteColor]];
+    [self.label setTextColor:[UIColor whiteColor]];
     [self.controller skills:self.model];
+}
+
+#pragma mark functionality
+
+-(void)checkskill
+{
+    if(self.model.skill)
+    {
+        [self.label setText:self.model.skill.name];
+        [self.label setFont:[UIFont boldSystemFontOfSize:20]];
+        [self.label setTextColor:[UIColor main]];
+    }
+    else
+    {
+        [self.label setText:NSLocalizedString(@"employee_item_skill_noskill", nil)];
+        [self.label setFont:[UIFont systemFontOfSize:18]];
+        [self.label setTextColor:[UIColor colorWithWhite:0 alpha:0.5]];
+    }
 }
 
 #pragma mark -
@@ -62,6 +85,9 @@
 -(void)config:(memployeeitemskill*)model
 {
     self.model = model;
+    [self checkskill];
+    [self.title setTextColor:[UIColor main]];
+    [self setBackgroundColor:[UIColor whiteColor]];
 }
 
 @end
