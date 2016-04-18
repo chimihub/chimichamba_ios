@@ -28,7 +28,7 @@
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
     [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor whiteColor]];
-    [label setText:NSLocalizedString(@"employee_title", nil)];
+    [label setText:NSLocalizedString(@"employeeskill_title", nil)];
     
     [self addSubview:label];
     [self addSubview:buttonback];

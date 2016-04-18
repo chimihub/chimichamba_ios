@@ -46,4 +46,11 @@
     return NO;
 }
 
+#pragma mark public
+
+-(void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end
