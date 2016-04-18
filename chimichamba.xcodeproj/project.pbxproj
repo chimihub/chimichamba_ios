@@ -64,6 +64,7 @@
 		DA8F3E651CC51FB700DE2749 /* vemployeecellexperience.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E641CC51FB700DE2749 /* vemployeecellexperience.m */; };
 		DA8F3E681CC51FC300DE2749 /* vemployeecelldescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E671CC51FC300DE2749 /* vemployeecelldescr.m */; };
 		DA8F3E6B1CC51FCE00DE2749 /* vemployeecelllocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E6A1CC51FCE00DE2749 /* vemployeecelllocation.m */; };
+		DA8F3E6E1CC5203B00DE2749 /* vemployeefooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3E6D1CC5203B00DE2749 /* vemployeefooter.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +185,8 @@
 		DA8F3E671CC51FC300DE2749 /* vemployeecelldescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeecelldescr.m; sourceTree = "<group>"; };
 		DA8F3E691CC51FCE00DE2749 /* vemployeecelllocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeecelllocation.h; sourceTree = "<group>"; };
 		DA8F3E6A1CC51FCE00DE2749 /* vemployeecelllocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeecelllocation.m; sourceTree = "<group>"; };
+		DA8F3E6C1CC5203B00DE2749 /* vemployeefooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeefooter.h; sourceTree = "<group>"; };
+		DA8F3E6D1CC5203B00DE2749 /* vemployeefooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeefooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +321,8 @@
 				DA8F3E671CC51FC300DE2749 /* vemployeecelldescr.m */,
 				DA8F3E691CC51FCE00DE2749 /* vemployeecelllocation.h */,
 				DA8F3E6A1CC51FCE00DE2749 /* vemployeecelllocation.m */,
+				DA8F3E6C1CC5203B00DE2749 /* vemployeefooter.h */,
+				DA8F3E6D1CC5203B00DE2749 /* vemployeefooter.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -734,6 +739,7 @@
 				DA6C4A171CBFDC0E00406C44 /* valert.m in Sources */,
 				DA2913BF1CC06DB800A66DCC /* vemployeecell.m in Sources */,
 				DA6C4A0C1CBFDC0E00406C44 /* cpages.m in Sources */,
+				DA8F3E6E1CC5203B00DE2749 /* vemployeefooter.m in Sources */,
 				DA2913961CBFFF1500A66DCC /* uibutton+uibuttonmain.m in Sources */,
 				DA6C4A101CBFDC0E00406C44 /* mdirs.m in Sources */,
 				DA8F3E4D1CC51B4700DE2749 /* memployeeitem.m in Sources */,
