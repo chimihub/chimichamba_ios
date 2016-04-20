@@ -7,20 +7,20 @@
 {
     self = [super initWithFrame:frame];
     [self setClipsToBounds:YES];
-    self.colorbackground = [UIColor colorWithWhite:1 alpha:0.7];
+    self.colorbackground = [UIColor colorWithWhite:1 alpha:0.85];
     [self setBackgroundColor:self.colorbackground];
 
     UIView *bordertop = [[UIView alloc] init];
     [bordertop setUserInteractionEnabled:NO];
     [bordertop setTranslatesAutoresizingMaskIntoConstraints:NO];
     [bordertop setClipsToBounds:YES];
-    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.15]];
+    [bordertop setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.2]];
     
     UIView *borderbottom = [[UIView alloc] init];
     [borderbottom setUserInteractionEnabled:NO];
     [borderbottom setTranslatesAutoresizingMaskIntoConstraints:NO];
     [borderbottom setClipsToBounds:YES];
-    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.15]];
+    [borderbottom setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.2]];
     
     [self addSubview:bordertop];
     [self addSubview:borderbottom];
