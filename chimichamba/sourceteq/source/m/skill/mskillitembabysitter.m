@@ -1,13 +1,12 @@
-//
-//  mskillitembabysitter.m
-//  chimichamba
-//
-//  Created by zero on 4/20/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
-
 #import "mskillitembabysitter.h"
 
 @implementation mskillitembabysitter
+
+-(instancetype)init
+{
+    self = [super init:NSLocalizedString(@"skill_babysitter_name", nil)];
+    
+    return self;
+}
 
 @end

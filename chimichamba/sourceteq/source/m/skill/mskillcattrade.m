@@ -1,4 +1,5 @@
 #import "mskillcattrade.h"
+#import "mskillitembabysitter.h"
 #import "mskillitemcaretaker.h"
 #import "mskillitemcarpenter.h"
 #import "mskillitemdriver.h"
@@ -13,6 +14,7 @@
     self = [super init];
     self.name = NSLocalizedString(@"skill_cat_trade_name", nil);
     self.items = @[
+                   [[mskillitembabysitter alloc] init],
                    [[mskillitemcaretaker alloc] init],
                    [[mskillitemcarpenter alloc] init],
                    [[mskillitemmecanic alloc] init],
