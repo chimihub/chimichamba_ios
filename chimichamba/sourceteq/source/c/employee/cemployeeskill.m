@@ -1,5 +1,6 @@
 #import "cemployeeskill.h"
 #import "vemployeeskill.h"
+#import "tools.h"
 
 @interface cemployeeskill ()
 
@@ -51,6 +52,7 @@
 -(void)performsearch:(NSString*)string
 {
     __weak typeof(self) welf = self;
+    NSString *cleanstring = [tools softcleanlatin:string.lowercaseString];
     
     if(string.length)
     {
@@ -59,7 +61,7 @@
         
         for(mskillitem *skill in skills)
         {
-            if([skill resultforquery:string])
+            if([skill resultforquery:cleanstring])
             {
                 [results addObject:skill];
             }
