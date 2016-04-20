@@ -102,9 +102,4 @@ static NSUInteger const interitemspace = 20;
     return cell;
 }
 
--(BOOL)collectionView:(UICollectionView*)col shouldSelectItemAtIndexPath:(NSIndexPath*)index
-{
-    return NO;
-}
-
 @end

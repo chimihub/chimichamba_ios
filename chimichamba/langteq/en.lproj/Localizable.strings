@@ -26,6 +26,7 @@
 "employee_item_experience_master"="%@ años ó mas";
 "employee_item_experience_amount"="%@ años";
 "employee_item_experience_amount_1"="%@ año ó menos";
+"employee_item_descr_title"="Sobre mi";
 
 "employeeskill_search_placeholder"="Profesión/Oficio";
 
