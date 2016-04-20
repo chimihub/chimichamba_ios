@@ -1,9 +1,10 @@
 #import "mskillcatprofession.h"
+#import "mskillitemaccountant.h"
 #import "mskillitemdesigner.h"
 #import "mskillitemdoctor.h"
 #import "mskillitemlawyer.h"
-#import "mskillitemprofessor.h"
 #import "mskillitempersonalassistant.h"
+#import "mskillitemprofessor.h"
 
 @implementation mskillcatprofession
 
@@ -12,11 +13,12 @@
     self = [super init];
     self.name = NSLocalizedString(@"skill_cat_profession_name", nil);
     self.items = @[
+                   [[mskillitemaccountant alloc] init],
                    [[mskillitemdesigner alloc] init],
                    [[mskillitemdoctor alloc] init],
-                   [[mskillitemprofessor alloc] init],
+                   [[mskillitemlawyer alloc] init],
                    [[mskillitempersonalassistant alloc] init],
-                   [[mskillitemlawyer alloc] init]
+                   [[mskillitemprofessor alloc] init]
                    ];
     [self sort];
     

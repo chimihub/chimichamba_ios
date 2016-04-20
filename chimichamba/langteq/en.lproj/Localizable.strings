@@ -27,6 +27,7 @@
 "skill_cat_profession_name"="Profesión";
 "skill_cat_trade_name"="Oficio";
 
+"skill_accountant_name"="Contador";
 "skill_carpenter_name"="Carpintero";
 "skill_designer_name"="Diseñador";
 "skill_doctor_name"="Doctor";
