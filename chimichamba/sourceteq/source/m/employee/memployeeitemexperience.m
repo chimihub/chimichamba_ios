@@ -1,7 +1,7 @@
 #import "memployeeitemexperience.h"
 #import "vemployeecellexperience.h"
 
-static NSUInteger const cellheight = 120;
+static NSUInteger const cellheight = 150;
 
 @implementation memployeeitemexperience
 
@@ -10,6 +10,8 @@ static NSUInteger const cellheight = 120;
     self = [super init];
     self.cellclass = [vemployeecellexperience class];
     self.height = cellheight;
+    self.years = 0;
+    self.rookie = YES;
     
     return self;
 }

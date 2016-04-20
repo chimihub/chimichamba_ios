@@ -4,5 +4,6 @@
 @interface vemployeecellexperience:vemployeecell
 
 @property(weak, nonatomic)UISwitch *rookie;
+@property(weak, nonatomic)UISlider *slider;
 
 @end
