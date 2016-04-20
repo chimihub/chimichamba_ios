@@ -50,7 +50,37 @@
 
 -(void)performsearch:(NSString*)string
 {
-    for(id i in self.view.model.cats)
+    __weak typeof(self) welf = self;
+    
+    if(string.length)
+    {
+        NSMutableArray<mskillitem*> *results = [NSMutableArray array];
+        NSArray<mskillitem*> *skills = self.view.model.allskills;
+        
+        for(mskillitem *skill in skills)
+        {
+            if([skill resultforquery:string])
+            {
+                [results addObject:skill];
+            }
+        }
+        
+        dispatch_async(dispatch_get_main_queue(),
+                       ^
+                       {
+                           welf.view.results = results;
+                           [welf.view.collection reloadData];
+                       });
+    }
+    else
+    {
+        dispatch_async(dispatch_get_main_queue(),
+                       ^
+                       {
+                           welf.view.results = nil;
+                           [welf.view.collection reloadData];
+                       });
+    }
 }
 
 #pragma mark public
@@ -83,8 +113,6 @@
 
 -(BOOL)textField:(UITextField*)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string
 {
-    [self.view scrolltop];
-    
     __weak typeof(self) welf = self;
     NSString *newstring = [field.text stringByReplacingCharactersInRange:range withString:string];
     

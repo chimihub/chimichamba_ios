@@ -21,7 +21,6 @@ static NSUInteger const headerheight = 40;
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor background]];
     self.controller = controller;
-    self.searching = NO;
     self.model = [[mskill alloc] init];
     rectscroll = CGRectMake(0, 0, 1, 1);
     
@@ -180,7 +179,7 @@ static NSUInteger const headerheight = 40;
     
     if(section)
     {
-        if(!self.searching)
+        if(!self.results)
         {
             height = headerheight;
         }
@@ -210,7 +209,7 @@ static NSUInteger const headerheight = 40;
 {
     NSUInteger count = 0;
     
-    if(self.searching)
+    if(self.results)
     {
         if(!section)
         {

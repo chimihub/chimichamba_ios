@@ -14,6 +14,5 @@
 @property(weak, nonatomic)NSLayoutConstraint *layoutcolbottom;
 @property(strong, nonatomic)mskill *model;
 @property(strong, nonatomic)NSMutableArray<mskillitem*> *results;
-@property(nonatomic)BOOL searching;
 
 @end

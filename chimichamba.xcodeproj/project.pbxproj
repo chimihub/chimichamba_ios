@@ -29,7 +29,6 @@
 		DA3E77261CC58E1400840500 /* vemployeeskillbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E77251CC58E1400840500 /* vemployeeskillbar.m */; };
 		DA3E77291CC58F6900840500 /* vemployeeskillcell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E77281CC58F6900840500 /* vemployeeskillcell.m */; };
 		DA3E772C1CC591E100840500 /* vemployeeskillheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E772B1CC591E100840500 /* vemployeeskillheader.m */; };
-		DA3E772F1CC591F000840500 /* vemployeeskillsearch.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E772E1CC591F000840500 /* vemployeeskillsearch.m */; };
 		DA6C49F81CBFDC0E00406C44 /* chimichamba.db in Resources */ = {isa = PBXBuildFile; fileRef = DA6C498E1CBFDC0E00406C44 /* chimichamba.db */; };
 		DA6C49F91CBFDC0E00406C44 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49911CBFDC0E00406C44 /* analytics.plist */; };
 		DA6C49FA1CBFDC0E00406C44 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C49921CBFDC0E00406C44 /* defs.plist */; };
@@ -137,8 +136,6 @@
 		DA3E77281CC58F6900840500 /* vemployeeskillcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeeskillcell.m; sourceTree = "<group>"; };
 		DA3E772A1CC591E100840500 /* vemployeeskillheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeeskillheader.h; sourceTree = "<group>"; };
 		DA3E772B1CC591E100840500 /* vemployeeskillheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeeskillheader.m; sourceTree = "<group>"; };
-		DA3E772D1CC591F000840500 /* vemployeeskillsearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeeskillsearch.h; sourceTree = "<group>"; };
-		DA3E772E1CC591F000840500 /* vemployeeskillsearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeeskillsearch.m; sourceTree = "<group>"; };
 		DA6C498E1CBFDC0E00406C44 /* chimichamba.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chimichamba.db; sourceTree = "<group>"; };
 		DA6C49911CBFDC0E00406C44 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA6C49921CBFDC0E00406C44 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -698,8 +695,6 @@
 				DA3E77281CC58F6900840500 /* vemployeeskillcell.m */,
 				DA3E772A1CC591E100840500 /* vemployeeskillheader.h */,
 				DA3E772B1CC591E100840500 /* vemployeeskillheader.m */,
-				DA3E772D1CC591F000840500 /* vemployeeskillsearch.h */,
-				DA3E772E1CC591F000840500 /* vemployeeskillsearch.m */,
 			);
 			path = employeeskill;
 			sourceTree = "<group>";
@@ -897,7 +892,6 @@
 				DA8F3E7A1CC53F9400DE2749 /* memployeeitemacademicsitembachelor.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
 				DA8F3E681CC51FC300DE2749 /* vemployeecelldescr.m in Sources */,
-				DA3E772F1CC591F000840500 /* vemployeeskillsearch.m in Sources */,
 				DA8F3EAE1CC5845D00DE2749 /* mskillitemguard.m in Sources */,
 				DA3E77261CC58E1400840500 /* vemployeeskillbar.m in Sources */,
 				DA3E772C1CC591E100840500 /* vemployeeskillheader.m in Sources */,
