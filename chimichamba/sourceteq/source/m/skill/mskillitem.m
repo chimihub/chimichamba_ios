@@ -27,7 +27,7 @@
 {
     BOOL result = NO;
     
-    if([self.name rangeOfString:query].location != NSNotFound)
+    if([self.comparename rangeOfString:query].location != NSNotFound)
     {
         result = YES;
     }

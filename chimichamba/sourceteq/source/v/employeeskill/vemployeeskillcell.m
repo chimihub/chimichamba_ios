@@ -12,7 +12,7 @@
     [label setBackgroundColor:[UIColor clearColor]];
     [label setUserInteractionEnabled:NO];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [label setFont:[UIFont systemFontOfSize:18]];
+    [label setFont:[UIFont systemFontOfSize:17]];
     self.label = label;
     
     [self addSubview:label];

@@ -74,8 +74,8 @@
     else
     {
         [self.label setText:NSLocalizedString(@"employee_item_skill_noskill", nil)];
-        [self.label setFont:[UIFont systemFontOfSize:18]];
-        [self.label setTextColor:[UIColor colorWithWhite:0 alpha:0.5]];
+        [self.label setFont:[UIFont systemFontOfSize:16]];
+        [self.label setTextColor:[UIColor second]];
     }
 }
 

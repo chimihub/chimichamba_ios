@@ -7,7 +7,7 @@
 static NSString* const skillheaderid = @"headerid";
 static NSString* const skillcellid = @"skillcell";
 static NSUInteger const interitemspace = 1;
-static NSUInteger const cellheight = 60;
+static NSUInteger const cellheight = 54;
 static NSUInteger const headerheight = 40;
 
 @implementation vemployeeskill
@@ -160,7 +160,7 @@ static NSUInteger const headerheight = 40;
 {
     UIEdgeInsets insets;
     
-    if(section)
+    if(section == self.model.cats.count - 1)
     {
         insets = UIEdgeInsetsMake(0, 0, collectionbottom, 0);
     }
