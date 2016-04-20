@@ -72,7 +72,7 @@ static NSInteger const minfieldmargin = 20;
 
 -(CGSize)intrinsicContentSize
 {
-    CGSize size = CGSizeMake(navbarintrinsicwidth, navbarheight);
+    CGSize size = CGSizeMake(UIViewNoIntrinsicMetric, navbarheight);
     
     return size;
 }

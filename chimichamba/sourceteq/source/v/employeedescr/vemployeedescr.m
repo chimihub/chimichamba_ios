@@ -1,6 +1,7 @@
 #import "vemployeedescr.h"
 #import "uifont+uifontmain.h"
 #import "nsnotification+nsnotificationmain.h"
+#import "vemployeedescraccessory.h"
 
 static NSInteger const insetsleft = 10;
 static NSInteger const insetsright = 10;
@@ -36,6 +37,7 @@ static NSInteger const insetsbottom = 10;
     [textview setShowsVerticalScrollIndicator:NO];
     [textview setTranslatesAutoresizingMaskIntoConstraints:NO];
     [textview setScrollEnabled:NO];
+    [textview setInputAccessoryView:[[vemployeedescraccessory alloc] init]];
     self.textview = textview;
     
     [self addSubview:textview];

@@ -96,6 +96,7 @@
 		DA94A9CC1CC7FE9F00828624 /* mskillitemchef.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */; };
 		DA94A9CF1CC8205600828624 /* cemployeedescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9CE1CC8205600828624 /* cemployeedescr.m */; };
 		DA94A9D31CC821CB00828624 /* vemployeedescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9D21CC821CB00828624 /* vemployeedescr.m */; };
+		DA94A9D61CC839C400828624 /* vemployeedescraccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9D51CC839C400828624 /* vemployeedescraccessory.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -279,6 +280,8 @@
 		DA94A9CE1CC8205600828624 /* cemployeedescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cemployeedescr.m; sourceTree = "<group>"; };
 		DA94A9D11CC821CB00828624 /* vemployeedescr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeedescr.h; sourceTree = "<group>"; };
 		DA94A9D21CC821CB00828624 /* vemployeedescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeedescr.m; sourceTree = "<group>"; };
+		DA94A9D41CC839C400828624 /* vemployeedescraccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeedescraccessory.h; sourceTree = "<group>"; };
+		DA94A9D51CC839C400828624 /* vemployeedescraccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeedescraccessory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -779,6 +782,8 @@
 			children = (
 				DA94A9D11CC821CB00828624 /* vemployeedescr.h */,
 				DA94A9D21CC821CB00828624 /* vemployeedescr.m */,
+				DA94A9D41CC839C400828624 /* vemployeedescraccessory.h */,
+				DA94A9D51CC839C400828624 /* vemployeedescraccessory.m */,
 			);
 			path = employeedescr;
 			sourceTree = "<group>";
@@ -949,6 +954,7 @@
 				DA8F3E7A1CC53F9400DE2749 /* memployeeitemacademicsitembachelor.m in Sources */,
 				DA6C49FC1CBFDC0E00406C44 /* appdel.m in Sources */,
 				DA8F3E681CC51FC300DE2749 /* vemployeecelldescr.m in Sources */,
+				DA94A9D61CC839C400828624 /* vemployeedescraccessory.m in Sources */,
 				DA8F3EAE1CC5845D00DE2749 /* mskillitemguard.m in Sources */,
 				DA3E77261CC58E1400840500 /* vemployeeskillbar.m in Sources */,
 				DA3E772C1CC591E100840500 /* vemployeeskillheader.m in Sources */,
