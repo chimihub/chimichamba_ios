@@ -10,7 +10,7 @@ static NSString* const skillcellid = @"skillcell";
 static NSUInteger const interitemspace = 1;
 static NSUInteger const cellheight = 60;
 static NSUInteger const headerheight = 40;
-static NSUInteger const searchheight = 80;
+static NSUInteger const searchheight = 50;
 
 @implementation vemployeeskill
 {
@@ -56,13 +56,14 @@ static NSUInteger const searchheight = 80;
     [self addSubview:collection];
     [self addSubview:search];
     
-    NSDictionary *views = @{@"bar":bar, @"col":collection};
+    NSDictionary *views = @{@"bar":bar, @"col":collection, @"search":search};
     NSDictionary *metrics = @{@"searchheight":@(searchheight)};
     
     self.layoutcolbottom = [NSLayoutConstraint constraintWithItem:collection attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[search(searchheight)]-0-[col]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[search]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraint:self.layoutcolbottom];
     
     [self selectcurrent];
