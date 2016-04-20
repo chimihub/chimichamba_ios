@@ -1,6 +1,7 @@
 #import "mskillcatprofession.h"
 #import "mskillitemdesigner.h"
 #import "mskillitemdoctor.h"
+#import "mskillitemlawyer.h"
 #import "mskillitemprofessor.h"
 #import "mskillitempersonalassistant.h"
 
@@ -14,7 +15,8 @@
                    [[mskillitemdesigner alloc] init],
                    [[mskillitemdoctor alloc] init],
                    [[mskillitemprofessor alloc] init],
-                   [[mskillitempersonalassistant alloc] init]
+                   [[mskillitempersonalassistant alloc] init],
+                   [[mskillitemlawyer alloc] init]
                    ];
     [self sort];
     

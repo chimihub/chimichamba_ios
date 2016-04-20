@@ -89,6 +89,7 @@
 		DA8F3EB11CC5846700DE2749 /* mskillitemdriver.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F3EB01CC5846700DE2749 /* mskillitemdriver.m */; };
 		DA94A9BA1CC7F7BD00828624 /* mskillitemplumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9B91CC7F7BD00828624 /* mskillitemplumber.m */; };
 		DA94A9BD1CC7F84900828624 /* mskillitempersonalassistant.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9BC1CC7F84900828624 /* mskillitempersonalassistant.m */; };
+		DA94A9C01CC7F95400828624 /* mskillitemlawyer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9BF1CC7F95400828624 /* mskillitemlawyer.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -258,6 +259,8 @@
 		DA94A9B91CC7F7BD00828624 /* mskillitemplumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemplumber.m; sourceTree = "<group>"; };
 		DA94A9BB1CC7F84900828624 /* mskillitempersonalassistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitempersonalassistant.h; sourceTree = "<group>"; };
 		DA94A9BC1CC7F84900828624 /* mskillitempersonalassistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitempersonalassistant.m; sourceTree = "<group>"; };
+		DA94A9BE1CC7F95400828624 /* mskillitemlawyer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemlawyer.h; sourceTree = "<group>"; };
+		DA94A9BF1CC7F95400828624 /* mskillitemlawyer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemlawyer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -736,6 +739,8 @@
 				DA94A9B91CC7F7BD00828624 /* mskillitemplumber.m */,
 				DA94A9BB1CC7F84900828624 /* mskillitempersonalassistant.h */,
 				DA94A9BC1CC7F84900828624 /* mskillitempersonalassistant.m */,
+				DA94A9BE1CC7F95400828624 /* mskillitemlawyer.h */,
+				DA94A9BF1CC7F95400828624 /* mskillitemlawyer.m */,
 			);
 			path = skill;
 			sourceTree = "<group>";
@@ -912,6 +917,7 @@
 				DA8F3E741CC53EED00DE2749 /* memployeeitemacademicsitem.m in Sources */,
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
+				DA94A9C01CC7F95400828624 /* mskillitemlawyer.m in Sources */,
 				DA8F3E7D1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m in Sources */,
 				DA8F3EA21CC5840700DE2749 /* mskillitemdoctor.m in Sources */,
 				DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */,
