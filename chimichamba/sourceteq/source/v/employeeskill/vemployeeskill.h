@@ -5,6 +5,7 @@
 @interface vemployeeskill:UIView<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 -(instancetype)init:(cemployeeskill*)controller;
+-(void)scrolltop;
 
 @property(weak, nonatomic)cemployeeskill *controller;
 @property(weak, nonatomic)UICollectionView *collection;

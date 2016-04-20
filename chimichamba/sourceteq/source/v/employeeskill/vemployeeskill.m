@@ -15,6 +15,9 @@ static NSUInteger const headerheight = 40;
 static NSUInteger const searchheight = 90;
 
 @implementation vemployeeskill
+{
+    CGRect rectscroll;
+}
 
 -(instancetype)init:(cemployeeskill*)controller
 {
@@ -24,6 +27,7 @@ static NSUInteger const searchheight = 90;
     self.controller = controller;
     self.searching = NO;
     self.model = [[mskill alloc] init];
+    rectscroll = CGRectMake(0, 0, 1, 1);
     
     vemployeeskillbar *bar = [[vemployeeskillbar alloc] init:controller];
     
@@ -146,6 +150,13 @@ static NSUInteger const searchheight = 90;
     }
     
     return model;
+}
+
+#pragma mark public
+
+-(void)scrolltop
+{
+    [self.collection scrollRectToVisible:rectscroll animated:YES];
 }
 
 #pragma mark -

@@ -29,10 +29,10 @@
     UIView *background = [[UIView alloc] init];
     [background setClipsToBounds:YES];
     [background setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [background setBackgroundColor:[UIColor background]];
+    [background setBackgroundColor:[UIColor whiteColor]];
     [background.layer setCornerRadius:6];
     [background.layer setBorderWidth:1];
-    [background.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [background.layer setBorderColor:[UIColor colorWithWhite:0 alpha:0.1].CGColor];
     
     [background addSubview:field];
     [self addSubview:background];
