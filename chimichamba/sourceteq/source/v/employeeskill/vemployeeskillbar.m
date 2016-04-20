@@ -57,12 +57,14 @@ static NSInteger const minfieldmargin = 20;
     NSDictionary *metrics = @{};
     
     self.layoutfieldleft = [NSLayoutConstraint constraintWithItem:field attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:maxfieldmargin];
-    self.layoutfieldright = [NSLayoutConstraint constraintWithItem:field attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:maxfieldmargin];
+    self.layoutfieldright = [NSLayoutConstraint constraintWithItem:field attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-maxfieldmargin];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[buttonback(60)]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[buttonback(55)]-(-5)-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[back(28)]-9-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[back(30)]-8-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-5-[field]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[field]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraint:self.layoutfieldleft];
+    [self addConstraint:self.layoutfieldright];
     
     return self;
 }
@@ -86,7 +88,7 @@ static NSInteger const minfieldmargin = 20;
 -(void)expandfield
 {
     self.layoutfieldleft.constant = minfieldmargin;
-    self.layoutfieldright.constant = minfieldmargin;
+    self.layoutfieldright.constant = -minfieldmargin;
     
     [UIView animateWithDuration:0.4 animations:
      ^
@@ -98,8 +100,8 @@ static NSInteger const minfieldmargin = 20;
 
 -(void)contractfield
 {
-    self.layoutfieldleft.constant = minfieldmargin;
-    self.layoutfieldright.constant = minfieldmargin;
+    self.layoutfieldleft.constant = maxfieldmargin;
+    self.layoutfieldright.constant = -maxfieldmargin;
     
     [UIView animateWithDuration:0.4 animations:
      ^
