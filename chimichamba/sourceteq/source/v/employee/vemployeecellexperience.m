@@ -39,7 +39,7 @@ static NSInteger const maximumexperience = 10;
     [labelamount setBackgroundColor:[UIColor clearColor]];
     [labelamount setUserInteractionEnabled:NO];
     [labelamount setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [labelamount setFont:[UIFont systemFontOfSize:22]];
+    [labelamount setFont:[UIFont boldSystemFontOfSize:20]];
     [labelamount setTextAlignment:NSTextAlignmentCenter];
     self.labelamount = labelamount;
     
@@ -55,6 +55,7 @@ static NSInteger const maximumexperience = 10;
     [slider setContinuous:YES];
     [slider setMinimumValue:minimumexperience];
     [slider setMaximumValue:maximumexperience];
+    [slider addTarget:self action:@selector(actionslider:) forControlEvents:UIControlEventValueChanged];
     self.slider = slider;
     
     [self addSubview:labelamount];
@@ -74,7 +75,7 @@ static NSInteger const maximumexperience = 10;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-52-[rookie]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-25-[slider]-25-|" options:0 metrics:metrics views:
                           views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-110-[slider]-10-[labelamount(40)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[labelamount(40)]-10-[slider]" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -85,6 +86,12 @@ static NSInteger const maximumexperience = 10;
 {
     self.model.rookie = rookie.isOn;
     [self checkrookie];
+}
+
+-(void)actionslider:(UISlider*)slider
+{
+    self.model.years = slider.value;
+    [self printamount];
 }
 
 #pragma mark functionality
@@ -109,11 +116,15 @@ static NSInteger const maximumexperience = 10;
 -(void)printamount
 {
     NSString *stringamount;
-    NSInteger amount = roundf(self.slider.value);
+    NSInteger amount = roundf(self.model.years);
     
     if(amount == maximumexperience)
     {
         stringamount = [NSString stringWithFormat:NSLocalizedString(@"employee_item_experience_master", nil), @(amount)];
+    }
+    else if(amount == 1)
+    {
+        stringamount = [NSString stringWithFormat:NSLocalizedString(@"employee_item_experience_amount_1", nil), @(amount)];
     }
     else
     {

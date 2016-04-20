@@ -25,6 +25,7 @@
 "employee_item_experience_rookie"="Primer empleo";
 "employee_item_experience_master"="Mas de %@ años";
 "employee_item_experience_amount"="%@ años";
+"employee_item_experience_amount_1"="%@ año o menos";
 
 "employeeskill_search_placeholder"="Profesión/Oficio";
 
