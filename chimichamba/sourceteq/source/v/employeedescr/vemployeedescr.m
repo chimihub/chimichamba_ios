@@ -1,8 +1,9 @@
 #import "vemployeedescr.h"
 #import "uifont+uifontmain.h"
+#import "nsnotification+nsnotificationmain.h"
 
-static NSInteger const insetsleft = 20;
-static NSInteger const insetsright = 20;
+static NSInteger const insetsleft = 10;
+static NSInteger const insetsright = 10;
 static NSInteger const insetstop = 10;
 static NSInteger const insetsbottom = 10;
 
@@ -18,7 +19,7 @@ static NSInteger const insetsbottom = 10;
     UITextView *textview = [[UITextView alloc] init];
     [textview setBackgroundColor:[UIColor clearColor]];
     [textview setClipsToBounds:YES];
-    [textview setFont:[UIFont regularsize:20]];
+    [textview setFont:[UIFont regularsize:24]];
     [textview setTintColor:[UIColor blackColor]];
     [textview setTextColor:[UIColor blackColor]];
     [textview setClipsToBounds:YES];
@@ -34,6 +35,7 @@ static NSInteger const insetsbottom = 10;
     [textview setShowsHorizontalScrollIndicator:NO];
     [textview setShowsVerticalScrollIndicator:NO];
     [textview setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [textview setScrollEnabled:NO];
     self.textview = textview;
     
     [self addSubview:textview];
@@ -46,7 +48,37 @@ static NSInteger const insetsbottom = 10;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[text]" options:0 metrics:metrics views:views]];
     [self addConstraint:self.layouttextbottom];
     
+    [NSNotification observe:self keyboardchange:@selector(notifiedkeyboardchange:)];
+    
     return self;
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark notified
+
+-(void)notifiedkeyboardchange:(NSNotification*)notification
+{
+    CGFloat ypos = 0;
+    CGRect keyrect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGFloat origin = keyrect.origin.y;
+    CGFloat screenheight = [UIScreen mainScreen].bounds.size.height;
+    
+    if(origin < screenheight)
+    {
+        ypos = -(screenheight - origin);
+    }
+    
+    self.layouttextbottom.constant = ypos;
+    
+    [UIView animateWithDuration:1.5 animations:
+     ^
+     {
+         [self layoutIfNeeded];
+     }];
 }
 
 @end

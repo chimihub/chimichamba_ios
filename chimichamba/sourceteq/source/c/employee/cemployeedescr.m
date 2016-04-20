@@ -23,6 +23,7 @@
 {
     [super viewDidAppear:animated];
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    [self.view.textview becomeFirstResponder];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -51,6 +52,14 @@
 -(void)back
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark textview del
+
+-(void)textViewDidEndEditing:(UITextView*)text
+{
+    [self back];
 }
 
 @end

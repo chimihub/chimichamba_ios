@@ -3,6 +3,7 @@
 #import "uicolor+uicolormain.h"
 #import "vemployeeskillheader.h"
 #import "genericconstants.h"
+#import "nsnotification+nsnotificationmain.h"
 
 static NSString* const skillheaderid = @"headerid";
 static NSString* const skillcellid = @"skillcell";
@@ -60,7 +61,7 @@ static NSUInteger const headerheight = 40;
     
     [self selectcurrent];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedkeyboardchange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    [NSNotification observe:self keyboardchange:@selector(notifiedkeyboardchange:)];
     
     return self;
 }
