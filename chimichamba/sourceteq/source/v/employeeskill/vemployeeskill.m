@@ -54,13 +54,45 @@ static NSUInteger const searchheight = 90;
     NSDictionary *views = @{@"bar":bar, @"col":collection};
     NSDictionary *metrics = @{};
     
+    self.layoutcolbottom = [NSLayoutConstraint constraintWithItem:collection attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraint:self.layoutcolbottom];
     
     [self selectcurrent];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedkeyboardchange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
     return self;
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark notified
+
+-(void)notifiedkeyboardchange:(NSNotification*)notification
+{
+    CGFloat ypos = 0;
+    CGRect keyrect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGFloat origin = keyrect.origin.y;
+    CGFloat screenheight = [UIScreen mainScreen].bounds.size.height;
+    
+    if(origin < screenheight)
+    {
+        ypos = -(screenheight - origin);
+    }
+    
+    self.layoutcolbottom.constant = ypos;
+    
+    [UIView animateWithDuration:1.5 animations:
+     ^
+     {
+         [self layoutIfNeeded];
+     }];
 }
 
 #pragma mark functionality
@@ -192,6 +224,7 @@ static NSUInteger const searchheight = 90;
     else
     {
         vemployeeskillsearch *search = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillsearchide forIndexPath:index];
+        [search config:self.controller];
         reusable = search;
     }
     

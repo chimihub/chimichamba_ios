@@ -58,6 +58,8 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField*)field
 {
+    [field resignFirstResponder];
+    
     return YES;
 }
 

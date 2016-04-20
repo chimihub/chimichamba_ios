@@ -8,6 +8,7 @@
 
 @property(weak, nonatomic)cemployeeskill *controller;
 @property(weak, nonatomic)UICollectionView *collection;
+@property(weak, nonatomic)NSLayoutConstraint *layoutcolbottom;
 @property(strong, nonatomic)mskill *model;
 @property(strong, nonatomic)NSMutableArray<mskillitem*> *results;
 @property(nonatomic)BOOL searching;

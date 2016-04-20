@@ -7,7 +7,7 @@
 {
     self = [super initWithFrame:frame];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:[UIColor whiteColor]];
+    [self setBackgroundColor:[UIColor clearColor]];
     
     UITextField *field = [[UITextField alloc] init];
     [field setAutocapitalizationType:UITextAutocapitalizationTypeNone];
@@ -32,7 +32,7 @@
     [background setBackgroundColor:[UIColor background]];
     [background.layer setCornerRadius:6];
     [background.layer setBorderWidth:1];
-    [background.layer setBorderColor:[UIColor colorWithWhite:0 alpha:0.1].CGColor];
+    [background.layer setBorderColor:[UIColor whiteColor].CGColor];
     
     [background addSubview:field];
     [self addSubview:background];
