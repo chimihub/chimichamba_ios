@@ -93,6 +93,7 @@
 		DA94A9C31CC7FA1500828624 /* mskillitemaccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C21CC7FA1500828624 /* mskillitemaccountant.m */; };
 		DA94A9C61CC7FBA100828624 /* mskillitemcaretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */; };
 		DA94A9C91CC7FC4200828624 /* mskillitembabysitter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */; };
+		DA94A9CC1CC7FE9F00828624 /* mskillitemchef.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -270,6 +271,8 @@
 		DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemcaretaker.m; sourceTree = "<group>"; };
 		DA94A9C71CC7FC4200828624 /* mskillitembabysitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitembabysitter.h; sourceTree = "<group>"; };
 		DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitembabysitter.m; sourceTree = "<group>"; };
+		DA94A9CA1CC7FE9F00828624 /* mskillitemchef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemchef.h; sourceTree = "<group>"; };
+		DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemchef.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -756,6 +759,8 @@
 				DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */,
 				DA94A9C71CC7FC4200828624 /* mskillitembabysitter.h */,
 				DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */,
+				DA94A9CA1CC7FE9F00828624 /* mskillitemchef.h */,
+				DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */,
 			);
 			path = skill;
 			sourceTree = "<group>";
@@ -931,6 +936,7 @@
 				DA3E772C1CC591E100840500 /* vemployeeskillheader.m in Sources */,
 				DA6C4A111CBFDC0E00406C44 /* msettings.m in Sources */,
 				DA8F3E5F1CC51F6E00DE2749 /* vemployeecellacademics.m in Sources */,
+				DA94A9CC1CC7FE9F00828624 /* mskillitemchef.m in Sources */,
 				DA8F3E741CC53EED00DE2749 /* memployeeitemacademicsitem.m in Sources */,
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,

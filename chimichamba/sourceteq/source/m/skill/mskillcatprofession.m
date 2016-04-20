@@ -1,5 +1,6 @@
 #import "mskillcatprofession.h"
 #import "mskillitemaccountant.h"
+#import "mskillitemchef.h"
 #import "mskillitemdesigner.h"
 #import "mskillitemdoctor.h"
 #import "mskillitemlawyer.h"
@@ -14,6 +15,7 @@
     self.name = NSLocalizedString(@"skill_cat_profession_name", nil);
     self.items = @[
                    [[mskillitemaccountant alloc] init],
+                   [[mskillitemchef alloc] init],
                    [[mskillitemdesigner alloc] init],
                    [[mskillitemdoctor alloc] init],
                    [[mskillitemlawyer alloc] init],
