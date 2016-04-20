@@ -52,18 +52,19 @@ static NSInteger const maximumexperience = 10;
     [self addSubview:labelrookie];
     [self addSubview:title];
     [self addSubview:rookie];
+    [self addSubview:slider];
     
     NSDictionary *views = @{@"title":title, @"labelrookie":labelrookie, @"rookie":rookie, @"slider":slider};
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[title]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[rookie]-10-[labelrookie]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-25-[rookie]-10-[labelrookie]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-52-[labelrookie(29)]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-52-[rookie]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[slider]-20-|" options:0 metrics:metrics views:
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-25-[slider]-25-|" options:0 metrics:metrics views:
                           views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[slider]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-110-[slider]" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -83,6 +84,7 @@ static NSInteger const maximumexperience = 10;
     if(self.model.rookie)
     {
         [self.slider setEnabled:NO];
+        [self.slider setValue:minimumexperience animated:YES];
     }
     else
     {
