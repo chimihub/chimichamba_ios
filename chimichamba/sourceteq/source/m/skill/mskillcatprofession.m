@@ -2,7 +2,7 @@
 #import "mskillitemdesigner.h"
 #import "mskillitemdoctor.h"
 #import "mskillitemprofessor.h"
-#import "mskillitemplumber.h"
+#import "mskillitempersonalassistant.h"
 
 @implementation mskillcatprofession
 
@@ -13,7 +13,8 @@
     self.items = @[
                    [[mskillitemdesigner alloc] init],
                    [[mskillitemdoctor alloc] init],
-                   [[mskillitemprofessor alloc] init]
+                   [[mskillitemprofessor alloc] init],
+                   [[mskillitempersonalassistant alloc] init]
                    ];
     [self sort];
     

@@ -2,7 +2,7 @@
 #import "uicolor+uicolormain.h"
 #import "genericconstants.h"
 
-static NSInteger const maxfieldmargin = 80;
+static NSInteger const maxfieldmargin = 90;
 static NSInteger const minfieldmargin = 20;
 
 @implementation vemployeeskillbar

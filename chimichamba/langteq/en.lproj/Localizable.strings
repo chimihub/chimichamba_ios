@@ -22,7 +22,7 @@
 "employee_item_skill_title"="PROFESIÓN / OFICIO";
 "employee_item_skill_noskill"="Elije uno";
 
-"employeeskill_search_placeholder"="Profesión / Oficio";
+"employeeskill_search_placeholder"="Profesión/Oficio";
 
 "skill_cat_profession_name"="Profesión";
 "skill_cat_trade_name"="Oficio";
@@ -33,5 +33,6 @@
 "skill_driver_name"="Chofer";
 "skill_guard_name"="Guardia";
 "skill_mecanic_name"="Mecanico";
-"skill_professor_name"="Profesor";
+"skill_personalassistant_name"="Secretaria";
 "skill_plumber_name"="Plomero";
+"skill_professor_name"="Profesor";

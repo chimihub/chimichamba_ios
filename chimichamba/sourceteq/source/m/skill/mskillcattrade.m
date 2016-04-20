@@ -3,6 +3,7 @@
 #import "mskillitemmecanic.h"
 #import "mskillitemguard.h"
 #import "mskillitemdriver.h"
+#import "mskillitemplumber.h"
 
 @implementation mskillcattrade
 
@@ -14,7 +15,8 @@
                    [[mskillitemcarpenter alloc] init],
                    [[mskillitemmecanic alloc] init],
                    [[mskillitemguard alloc] init],
-                   [[mskillitemdriver alloc] init]
+                   [[mskillitemdriver alloc] init],
+                   [[mskillitemplumber alloc] init]
                    ];
     [self sort];
     

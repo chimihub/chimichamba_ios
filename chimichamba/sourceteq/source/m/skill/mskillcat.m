@@ -9,7 +9,7 @@
     self.items = [self.items sortedArrayUsingComparator:
                   ^NSComparisonResult(mskillitem *obj1, mskillitem *obj2)
     {
-        return [obj1.name compare:obj2.name];
+        return [obj1.comparename compare:obj2.comparename];
     }];
 }
 
