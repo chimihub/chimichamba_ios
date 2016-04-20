@@ -24,7 +24,6 @@
     [field setTextColor:[UIColor blackColor]];
     [field setTintColor:[UIColor blackColor]];
     [field setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [field setDelegate:self];
     self.field = field;
     
     UIView *background = [[UIView alloc] init];
@@ -49,14 +48,12 @@
     return self;
 }
 
-#pragma mark -
-#pragma mark field del
+#pragma mark public
 
--(BOOL)textFieldShouldReturn:(UITextField*)field
+-(void)config:(cemployeeskill*)controller
 {
-    [field resignFirstResponder];
-    
-    return YES;
+    self.controller = controller;
+    [self.field setDelegate:controller];
 }
 
 @end

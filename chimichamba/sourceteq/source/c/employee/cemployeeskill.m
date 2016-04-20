@@ -53,4 +53,12 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark -
+#pragma mark field del
+
+-(BOOL)textFieldShouldReturn:(UITextField*)field
+{
+    return YES;
+}
+
 @end
