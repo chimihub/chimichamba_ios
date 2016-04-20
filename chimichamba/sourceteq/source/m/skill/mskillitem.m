@@ -1,6 +1,16 @@
 #import "mskillitem.h"
+#import "tools.h"
 
 @implementation mskillitem
+
+-(instancetype)init:(NSString*)name
+{
+    self = [super init];
+    self.name = name;
+    self.comparename = name.lowercaseString;
+    
+    return self;
+}
 
 #pragma mark public
 

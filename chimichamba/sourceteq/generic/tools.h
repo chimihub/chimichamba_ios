@@ -7,6 +7,7 @@
 +(NSDictionary*)defaultdict;
 +(NSInteger)timestamp;
 +(UIImage*)qrcode:(NSString*)string;
++(NSString*)softcleanlatin:(NSString*)string;
 -(NSString*)urlencode:(NSString*)string;
 
 @end

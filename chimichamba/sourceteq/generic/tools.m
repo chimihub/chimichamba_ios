@@ -53,6 +53,18 @@
     return uiimage;
 }
 
++(NSString*)softcleanlatin:(NSString*)string
+{
+    NSString *str = [string stringByReplacingOccurrencesOfString:@"á" withString:@"a"];
+    str = [str stringByReplacingOccurrencesOfString:@"é" withString:@"e"];
+    str = [str stringByReplacingOccurrencesOfString:@"í" withString:@"i"];
+    str = [str stringByReplacingOccurrencesOfString:@"ó" withString:@"o"];
+    str = [str stringByReplacingOccurrencesOfString:@"ú" withString:@"u"];
+    str = [str stringByReplacingOccurrencesOfString:@"ü" withString:@"u"];
+    
+    return str;
+}
+
 #pragma mark -
 
 -(instancetype)init
