@@ -94,6 +94,8 @@
 		DA94A9C61CC7FBA100828624 /* mskillitemcaretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */; };
 		DA94A9C91CC7FC4200828624 /* mskillitembabysitter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */; };
 		DA94A9CC1CC7FE9F00828624 /* mskillitemchef.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */; };
+		DA94A9CF1CC8205600828624 /* cemployeedescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9CE1CC8205600828624 /* cemployeedescr.m */; };
+		DA94A9D31CC821CB00828624 /* vemployeedescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9D21CC821CB00828624 /* vemployeedescr.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -273,6 +275,10 @@
 		DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitembabysitter.m; sourceTree = "<group>"; };
 		DA94A9CA1CC7FE9F00828624 /* mskillitemchef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemchef.h; sourceTree = "<group>"; };
 		DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemchef.m; sourceTree = "<group>"; };
+		DA94A9CD1CC8205600828624 /* cemployeedescr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cemployeedescr.h; sourceTree = "<group>"; };
+		DA94A9CE1CC8205600828624 /* cemployeedescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cemployeedescr.m; sourceTree = "<group>"; };
+		DA94A9D11CC821CB00828624 /* vemployeedescr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeedescr.h; sourceTree = "<group>"; };
+		DA94A9D21CC821CB00828624 /* vemployeedescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeedescr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +392,8 @@
 				DA2913B41CC0592B00A66DCC /* cemployee.m */,
 				DA8F3E831CC572A300DE2749 /* cemployeeskill.h */,
 				DA8F3E841CC572A300DE2749 /* cemployeeskill.m */,
+				DA94A9CD1CC8205600828624 /* cemployeedescr.h */,
+				DA94A9CE1CC8205600828624 /* cemployeedescr.m */,
 			);
 			path = employee;
 			sourceTree = "<group>";
@@ -632,6 +640,7 @@
 		DA6C49E21CBFDC0E00406C44 /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA94A9D01CC821BA00828624 /* employeedescr */,
 				DA8F3E891CC573D000DE2749 /* employeeskill */,
 				DA2913B61CC0593E00A66DCC /* employee */,
 				DA2913971CC0052600A66DCC /* profile */,
@@ -763,6 +772,15 @@
 				DA94A9CB1CC7FE9F00828624 /* mskillitemchef.m */,
 			);
 			path = skill;
+			sourceTree = "<group>";
+		};
+		DA94A9D01CC821BA00828624 /* employeedescr */ = {
+			isa = PBXGroup;
+			children = (
+				DA94A9D11CC821CB00828624 /* vemployeedescr.h */,
+				DA94A9D21CC821CB00828624 /* vemployeedescr.m */,
+			);
+			path = employeedescr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -940,6 +958,7 @@
 				DA8F3E741CC53EED00DE2749 /* memployeeitemacademicsitem.m in Sources */,
 				DA8F3E591CC51C0F00DE2749 /* memployeeitemdescr.m in Sources */,
 				DA2913B11CC0526200A66DCC /* vprofilename.m in Sources */,
+				DA94A9D31CC821CB00828624 /* vemployeedescr.m in Sources */,
 				DA94A9C01CC7F95400828624 /* mskillitemlawyer.m in Sources */,
 				DA8F3E7D1CC53FBC00DE2749 /* memployeeitemacademicsitempostgraduate.m in Sources */,
 				DA8F3EA21CC5840700DE2749 /* mskillitemdoctor.m in Sources */,
@@ -959,6 +978,7 @@
 				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
 				DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */,
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
+				DA94A9CF1CC8205600828624 /* cemployeedescr.m in Sources */,
 				DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */,
 				DA6C49FF1CBFDC0E00406C44 /* analytics.m in Sources */,
 				DA8F3EA81CC5842500DE2749 /* mskillitemmecanic.m in Sources */,
