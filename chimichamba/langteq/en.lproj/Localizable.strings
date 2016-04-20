@@ -23,6 +23,8 @@
 "employee_item_skill_noskill"="Elije uno";
 "employee_item_experience_title"="EXPERIENCIA";
 "employee_item_experience_rookie"="Primer empleo";
+"employee_item_experience_master"="Mas de %@ años";
+"employee_item_experience_amount"="%@ años";
 
 "employeeskill_search_placeholder"="Profesión/Oficio";
 

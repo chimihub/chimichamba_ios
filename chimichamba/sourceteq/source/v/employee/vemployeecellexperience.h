@@ -5,5 +5,6 @@
 
 @property(weak, nonatomic)UISwitch *rookie;
 @property(weak, nonatomic)UISlider *slider;
+@property(weak, nonatomic)UILabel *labelamount;
 
 @end
