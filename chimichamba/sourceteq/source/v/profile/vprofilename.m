@@ -1,4 +1,5 @@
 #import "vprofilename.h"
+#import "uifont+uifontmain.h"
 
 @implementation vprofilename
 
@@ -27,7 +28,7 @@
     [field setBackgroundColor:[UIColor clearColor]];
     [field setBorderStyle:UITextBorderStyleNone];
     [field setClearButtonMode:UITextFieldViewModeNever];
-    [field setFont:[UIFont systemFontOfSize:25]];
+    [field setFont:[UIFont regularsize:25]];
     [field setKeyboardType:UIKeyboardTypeAlphabet];
     [field setKeyboardAppearance:UIKeyboardAppearanceLight];
     [field setPlaceholder:NSLocalizedString(@"profile_name_placeholder", nil)];

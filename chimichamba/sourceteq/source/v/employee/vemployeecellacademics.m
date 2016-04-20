@@ -1,5 +1,6 @@
 #import "vemployeecellacademics.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 #import "memployeeitemacademics.h"
 
 @interface vemployeecellacademics ()
@@ -20,7 +21,7 @@
     [title setBackgroundColor:[UIColor clearColor]];
     [title setUserInteractionEnabled:NO];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [title setFont:[UIFont systemFontOfSize:14]];
+    [title setFont:[UIFont regularsize:14]];
     [title setTextColor:[UIColor main]];
     [title setText:NSLocalizedString(@"employee_item_academics_title", nil)];
     
@@ -36,7 +37,7 @@
     [labeldegree setBackgroundColor:[UIColor clearColor]];
     [labeldegree setUserInteractionEnabled:NO];
     [labeldegree setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [labeldegree setFont:[UIFont systemFontOfSize:18]];
+    [labeldegree setFont:[UIFont regularsize:18]];
     [labeldegree setTextAlignment:NSTextAlignmentRight];
     [labeldegree setText:NSLocalizedString(@"employee_item_academics_degree", nil)];
     self.labeldegree = labeldegree;

@@ -1,5 +1,6 @@
 #import "vemployeeskillcell.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 
 @implementation vemployeeskillcell
 
@@ -12,7 +13,7 @@
     [label setBackgroundColor:[UIColor clearColor]];
     [label setUserInteractionEnabled:NO];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [label setFont:[UIFont systemFontOfSize:16]];
+    [label setFont:[UIFont regularsize:16]];
     self.label = label;
     
     [self addSubview:label];

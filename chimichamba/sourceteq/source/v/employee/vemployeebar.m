@@ -1,5 +1,6 @@
 #import "vemployeebar.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 #import "genericconstants.h"
 
 @implementation vemployeebar
@@ -24,7 +25,7 @@
     UILabel *label = [[UILabel alloc] init];
     [label setBackgroundColor:[UIColor clearColor]];
     [label setUserInteractionEnabled:NO];
-    [label setFont:[UIFont systemFontOfSize:16]];
+    [label setFont:[UIFont regularsize:16]];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
     [label setTextAlignment:NSTextAlignmentCenter];
     [label setTextColor:[UIColor whiteColor]];

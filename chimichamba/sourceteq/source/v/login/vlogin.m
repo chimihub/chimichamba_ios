@@ -1,6 +1,7 @@
 #import "vlogin.h"
 #import "uibutton+uibuttonmain.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 #import "clogin.h"
 
 @interface vlogin ()
@@ -20,7 +21,7 @@
     UILabel *title = [[UILabel alloc] init];
     [title setBackgroundColor:[UIColor clearColor]];
     [title setUserInteractionEnabled:NO];
-    [title setFont:[UIFont systemFontOfSize:24]];
+    [title setFont:[UIFont regularsize:24]];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
     [title setTextColor:[UIColor blackColor]];
     [title setTextAlignment:NSTextAlignmentCenter];
@@ -29,7 +30,7 @@
     UILabel *motto = [[UILabel alloc] init];
     [motto setBackgroundColor:[UIColor clearColor]];
     [motto setUserInteractionEnabled:NO];
-    [motto setFont:[UIFont systemFontOfSize:18]];
+    [motto setFont:[UIFont regularsize:18]];
     [motto setTranslatesAutoresizingMaskIntoConstraints:NO];
     [motto setTextColor:[UIColor second]];
     [motto setTextAlignment:NSTextAlignmentCenter];

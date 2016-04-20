@@ -1,6 +1,7 @@
 #import "vemployeecellexperience.h"
 #import "memployeeitemexperience.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 
 static NSInteger const minimumexperience = 1;
 static NSInteger const maximumexperience = 10;
@@ -23,7 +24,7 @@ static NSInteger const maximumexperience = 10;
     [title setBackgroundColor:[UIColor clearColor]];
     [title setUserInteractionEnabled:NO];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [title setFont:[UIFont systemFontOfSize:14]];
+    [title setFont:[UIFont regularsize:14]];
     [title setTextColor:[UIColor main]];
     [title setText:NSLocalizedString(@"employee_item_experience_title", nil)];
     
@@ -31,7 +32,7 @@ static NSInteger const maximumexperience = 10;
     [labelrookie setBackgroundColor:[UIColor clearColor]];
     [labelrookie setUserInteractionEnabled:NO];
     [labelrookie setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [labelrookie setFont:[UIFont systemFontOfSize:18]];
+    [labelrookie setFont:[UIFont regularsize:18]];
     [labelrookie setText:NSLocalizedString(@"employee_item_experience_rookie", nil)];
     [labelrookie setTextColor:[UIColor main]];
     
@@ -39,7 +40,7 @@ static NSInteger const maximumexperience = 10;
     [labelamount setBackgroundColor:[UIColor clearColor]];
     [labelamount setUserInteractionEnabled:NO];
     [labelamount setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [labelamount setFont:[UIFont boldSystemFontOfSize:20]];
+    [labelamount setFont:[UIFont boldsize:20]];
     [labelamount setTextAlignment:NSTextAlignmentCenter];
     self.labelamount = labelamount;
     

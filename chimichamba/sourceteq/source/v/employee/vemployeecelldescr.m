@@ -21,7 +21,7 @@
     [title setBackgroundColor:[UIColor clearColor]];
     [title setUserInteractionEnabled:NO];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [title setFont:[UIFont systemFontOfSize:18]];
+    [title setFont:[UIFont regularsize:18]];
     [title setText:NSLocalizedString(@"employee_item_descr_title", nil)];
     self.title = title;
     

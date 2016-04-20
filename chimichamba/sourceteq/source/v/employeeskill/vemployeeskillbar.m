@@ -1,5 +1,6 @@
 #import "vemployeeskillbar.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 #import "genericconstants.h"
 
 static NSInteger const maxfieldmargin = 90;
@@ -31,7 +32,7 @@ static NSInteger const minfieldmargin = 20;
     [field setBackgroundColor:[UIColor clearColor]];
     [field setBorderStyle:UITextBorderStyleNone];
     [field setClearButtonMode:UITextFieldViewModeNever];
-    [field setFont:[UIFont systemFontOfSize:16]];
+    [field setFont:[UIFont regularsize:16]];
     [field setKeyboardType:UIKeyboardTypeAlphabet];
     [field setKeyboardAppearance:UIKeyboardAppearanceLight];
     [field setPlaceholder:NSLocalizedString(@"employeeskill_search_placeholder", nil)];

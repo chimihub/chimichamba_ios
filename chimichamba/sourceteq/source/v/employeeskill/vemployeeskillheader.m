@@ -1,4 +1,5 @@
 #import "vemployeeskillheader.h"
+#import "uifont+uifontmain.h"
 
 @implementation vemployeeskillheader
 
@@ -12,7 +13,7 @@
     [label setUserInteractionEnabled:NO];
     [label setBackgroundColor:[UIColor clearColor]];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [label setFont:[UIFont boldSystemFontOfSize:13]];
+    [label setFont:[UIFont boldsize:13]];
     [label setTextColor:[UIColor colorWithWhite:0 alpha:0.3]];
     self.label = label;
     

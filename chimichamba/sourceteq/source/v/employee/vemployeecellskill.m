@@ -1,5 +1,6 @@
 #import "vemployeecellskill.h"
 #import "uicolor+uicolormain.h"
+#import "uifont+uifontmain.h"
 
 @interface vemployeecellskill ()
 
@@ -19,7 +20,7 @@
     [title setBackgroundColor:[UIColor clearColor]];
     [title setUserInteractionEnabled:NO];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [title setFont:[UIFont systemFontOfSize:14]];
+    [title setFont:[UIFont regularsize:14]];
     [title setText:NSLocalizedString(@"employee_item_skill_title", nil)];
     self.title = title;
     
@@ -68,13 +69,13 @@
     if(self.model.skill)
     {
         [self.label setText:self.model.skill.name];
-        [self.label setFont:[UIFont boldSystemFontOfSize:20]];
+        [self.label setFont:[UIFont boldsize:20]];
         [self.label setTextColor:[UIColor main]];
     }
     else
     {
         [self.label setText:NSLocalizedString(@"employee_item_skill_noskill", nil)];
-        [self.label setFont:[UIFont systemFontOfSize:16]];
+        [self.label setFont:[UIFont regularsize:16]];
         [self.label setTextColor:[UIColor second]];
     }
 }
