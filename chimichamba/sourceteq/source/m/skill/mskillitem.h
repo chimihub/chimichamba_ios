@@ -2,6 +2,7 @@
 
 @interface mskillitem:NSObject
 
+-(instancetype)init:(NSString*)name;
 -(BOOL)equalsskill:(mskillitem*)skill;
 -(BOOL)resultforquery:(NSString*)query;
 

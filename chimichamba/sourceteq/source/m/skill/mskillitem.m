@@ -7,7 +7,7 @@
 {
     self = [super init];
     self.name = name;
-    self.comparename = name.lowercaseString;
+    self.comparename = [tools softcleanlatin:name.lowercaseString];
     
     return self;
 }
