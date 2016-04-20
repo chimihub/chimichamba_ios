@@ -12,6 +12,15 @@
                   [[mskillcattrade alloc] init]
                   ];
     
+    NSMutableArray *allskills = [NSMutableArray array];
+    
+    for(mskillcat *cat in self.cats)
+    {
+        [allskills addObjectsFromArray:cat.items];
+    }
+    
+    self.allskills = allskills;
+    
     return self;
 }
 

@@ -46,6 +46,13 @@
     return NO;
 }
 
+#pragma mark functionality
+
+-(void)performsearch:(NSString*)string
+{
+    for(id i in self.view.model.cats)
+}
+
 #pragma mark public
 
 -(void)back
@@ -78,7 +85,14 @@
 {
     [self.view scrolltop];
     
+    __weak typeof(self) welf = self;
     NSString *newstring = [field.text stringByReplacingCharactersInRange:range withString:string];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
+                   ^
+                   {
+                       [welf performsearch:newstring];
+                   });
     
     return YES;
 }

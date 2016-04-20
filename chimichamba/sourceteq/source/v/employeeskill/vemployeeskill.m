@@ -33,7 +33,6 @@ static NSUInteger const headerheight = 40;
     [flow setMinimumLineSpacing:0];
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, collectionbottom, 0)];
     
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setClipsToBounds:YES];
@@ -157,6 +156,22 @@ static NSUInteger const headerheight = 40;
 
 #pragma mark -
 #pragma mark col del
+
+-(UIEdgeInsets)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout insetForSectionAtIndex:(NSInteger)section
+{
+    UIEdgeInsets insets;
+    
+    if(section)
+    {
+        insets = UIEdgeInsetsMake(0, 0, collectionbottom, 0);
+    }
+    else
+    {
+        insets = UIEdgeInsetsZero;
+    }
+    
+    return insets;
+}
 
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
 {
