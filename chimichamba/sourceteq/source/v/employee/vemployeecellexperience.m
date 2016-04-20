@@ -70,12 +70,12 @@ static NSInteger const maximumexperience = 10;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[labelamount]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[title]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-25-[rookie]-10-[labelrookie]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[rookie]-10-[labelrookie]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-52-[labelrookie(29)]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-52-[rookie]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-25-[slider]-25-|" options:0 metrics:metrics views:
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[slider]-30-|" options:0 metrics:metrics views:
                           views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[labelamount(40)]-10-[slider]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-110-[labelamount(40)]-10-[slider]" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -103,10 +103,11 @@ static NSInteger const maximumexperience = 10;
         [self.slider setEnabled:NO];
         [self.slider setValue:minimumexperience animated:YES];
         [self.labelamount setTextColor:[UIColor colorWithWhite:0.6 alpha:1]];
-        [self.labelamount setText:NSLocalizedString(@"employee_item_experience_rookie", nil)];
+        [self.labelamount setText:@""];
     }
     else
     {
+        self.model.years = minimumexperience;
         [self.slider setEnabled:YES];
         [self.labelamount setTextColor:[UIColor main]];
         [self printamount];
