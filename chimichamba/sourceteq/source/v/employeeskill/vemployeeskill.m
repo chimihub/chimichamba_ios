@@ -10,7 +10,6 @@ static NSString* const skillcellid = @"skillcell";
 static NSUInteger const interitemspace = 1;
 static NSUInteger const cellheight = 60;
 static NSUInteger const headerheight = 40;
-static NSUInteger const searchheight = 50;
 
 @implementation vemployeeskill
 {
@@ -28,9 +27,6 @@ static NSUInteger const searchheight = 50;
     rectscroll = CGRectMake(0, 0, 1, 1);
     
     vemployeeskillbar *bar = [[vemployeeskillbar alloc] init:controller];
-    
-    vemployeeskillsearch *search = [[vemployeeskillsearch alloc] init:controller];
-    self.search = search;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setFooterReferenceSize:CGSizeZero];
@@ -54,16 +50,14 @@ static NSUInteger const searchheight = 50;
     
     [self addSubview:bar];
     [self addSubview:collection];
-    [self addSubview:search];
     
-    NSDictionary *views = @{@"bar":bar, @"col":collection, @"search":search};
-    NSDictionary *metrics = @{@"searchheight":@(searchheight)};
+    NSDictionary *views = @{@"bar":bar, @"col":collection};
+    NSDictionary *metrics = @{};
     
     self.layoutcolbottom = [NSLayoutConstraint constraintWithItem:collection attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[search(searchheight)]-0-[col]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[search]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraint:self.layoutcolbottom];
     
     [self selectcurrent];

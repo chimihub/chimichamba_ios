@@ -6,5 +6,6 @@
 -(instancetype)init:(cemployeeskill*)controller;
 
 @property(weak, nonatomic)cemployeeskill *controller;
+@property(weak, nonatomic)UITextField *field;
 
 @end
