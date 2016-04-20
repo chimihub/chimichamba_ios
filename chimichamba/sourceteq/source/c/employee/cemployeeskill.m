@@ -66,6 +66,12 @@
 -(void)textFieldDidBeginEditing:(UITextField*)field
 {
     [self.view scrolltop];
+    [self.view.bar expandfield];
+}
+
+-(void)textFieldDidEndEditing:(UITextField*)field
+{
+    [self.view.bar contractfield];
 }
 
 -(BOOL)textField:(UITextField*)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string

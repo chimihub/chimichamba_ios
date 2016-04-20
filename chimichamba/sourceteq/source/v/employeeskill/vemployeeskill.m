@@ -1,5 +1,4 @@
 #import "vemployeeskill.h"
-#import "vemployeeskillbar.h"
 #import "vemployeeskillcell.h"
 #import "uicolor+uicolormain.h"
 #import "vemployeeskillheader.h"
@@ -27,6 +26,7 @@ static NSUInteger const headerheight = 40;
     rectscroll = CGRectMake(0, 0, 1, 1);
     
     vemployeeskillbar *bar = [[vemployeeskillbar alloc] init:controller];
+    self.bar = bar;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setFooterReferenceSize:CGSizeZero];
