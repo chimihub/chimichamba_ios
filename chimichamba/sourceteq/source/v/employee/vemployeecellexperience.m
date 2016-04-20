@@ -30,6 +30,7 @@
     [labelrookie setTranslatesAutoresizingMaskIntoConstraints:NO];
     [labelrookie setFont:[UIFont systemFontOfSize:18]];
     [labelrookie setText:NSLocalizedString(@"employee_item_experience_rookie", nil)];
+    [labelrookie setTextColor:[UIColor main]];
     
     UISwitch *rookie = [[UISwitch alloc] init];
     [rookie setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -46,9 +47,9 @@
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[title]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[labelrookie]-12-[rookie]-14-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[labelrookie(29)]-20-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[rookie]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-14-[rookie]-10-[labelrookie]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[labelrookie(29)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[rookie]" options:0 metrics:metrics views:views]];
     
     return self;
 }

@@ -3,7 +3,7 @@
 #import "vemployeecell.h"
 #import "genericconstants.h"
 
-static NSUInteger const interitemspace = 15;
+static NSUInteger const interitemspace = 20;
 
 @implementation vemployee
 
