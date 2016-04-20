@@ -6,5 +6,7 @@
 -(instancetype)init:(cemployeedescr*)controller;
 
 @property(weak, nonatomic)cemployeedescr *controller;
+@property(weak, nonatomic)UITextView *textview;
+@property(weak, nonatomic)NSLayoutConstraint *layouttextbottom;
 
 @end
