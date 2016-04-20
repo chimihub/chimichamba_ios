@@ -2,6 +2,7 @@
 #import "mskillitemdesigner.h"
 #import "mskillitemdoctor.h"
 #import "mskillitemprofessor.h"
+#import "mskillitemplumber.h"
 
 @implementation mskillcatprofession
 

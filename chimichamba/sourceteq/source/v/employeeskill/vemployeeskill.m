@@ -160,7 +160,7 @@ static NSUInteger const headerheight = 40;
 {
     UIEdgeInsets insets;
     
-    if(section == self.model.cats.count - 1)
+    if(section == self.model.cats.count)
     {
         insets = UIEdgeInsetsMake(0, 0, collectionbottom, 0);
     }
