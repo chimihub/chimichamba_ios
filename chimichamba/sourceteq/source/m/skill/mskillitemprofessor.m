@@ -4,8 +4,7 @@
 
 -(instancetype)init
 {
-    self = [super init];
-    self.name = NSLocalizedString(@"skill_professor_name", nil);
+    self = [super init:NSLocalizedString(@"skill_professor_name", nil)];
     
     return self;
 }
