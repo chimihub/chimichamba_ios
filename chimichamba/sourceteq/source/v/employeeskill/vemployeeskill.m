@@ -3,16 +3,14 @@
 #import "vemployeeskillcell.h"
 #import "uicolor+uicolormain.h"
 #import "vemployeeskillheader.h"
-#import "vemployeeskillsearch.h"
 #import "genericconstants.h"
 
 static NSString* const skillheaderid = @"headerid";
-static NSString* const skillsearchide = @"searchid";
 static NSString* const skillcellid = @"skillcell";
 static NSUInteger const interitemspace = 1;
 static NSUInteger const cellheight = 60;
 static NSUInteger const headerheight = 40;
-static NSUInteger const searchheight = 90;
+static NSUInteger const searchheight = 80;
 
 @implementation vemployeeskill
 {
@@ -31,6 +29,9 @@ static NSUInteger const searchheight = 90;
     
     vemployeeskillbar *bar = [[vemployeeskillbar alloc] init:controller];
     
+    vemployeeskillsearch *search = [[vemployeeskillsearch alloc] init:controller];
+    self.search = search;
+    
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setFooterReferenceSize:CGSizeZero];
     [flow setMinimumLineSpacing:0];
@@ -48,19 +49,19 @@ static NSUInteger const searchheight = 90;
     [collection setDelegate:self];
     [collection setDataSource:self];
     [collection registerClass:[vemployeeskillcell class] forCellWithReuseIdentifier:skillcellid];
-    [collection registerClass:[vemployeeskillsearch class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:skillsearchide];
     [collection registerClass:[vemployeeskillheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:skillheaderid];
     self.collection = collection;
     
     [self addSubview:bar];
     [self addSubview:collection];
+    [self addSubview:search];
     
     NSDictionary *views = @{@"bar":bar, @"col":collection};
-    NSDictionary *metrics = @{};
+    NSDictionary *metrics = @{@"searchheight":@(searchheight)};
     
     self.layoutcolbottom = [NSLayoutConstraint constraintWithItem:collection attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[col]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar]-0-[search(searchheight)]-0-[col]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraint:self.layoutcolbottom];
     
@@ -165,7 +166,7 @@ static NSUInteger const searchheight = 90;
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
 {
     CGFloat width = col.bounds.size.width;
-    CGFloat height;
+    CGFloat height = 0;
     
     if(section)
     {
@@ -173,10 +174,6 @@ static NSUInteger const searchheight = 90;
         {
             height = headerheight;
         }
-    }
-    else
-    {
-        height = searchheight;
     }
     
     CGSize size = CGSizeMake(width, height);
@@ -224,22 +221,10 @@ static NSUInteger const searchheight = 90;
 -(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
 {
     NSUInteger section = index.section;
-    UICollectionReusableView *reusable;
+    vemployeeskillheader *header = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillheaderid forIndexPath:index];
+    [header config:self.model.cats[section - 1]];
     
-    if(section)
-    {
-        vemployeeskillheader *header = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillheaderid forIndexPath:index];
-        [header config:self.model.cats[section - 1]];
-        reusable = header;
-    }
-    else
-    {
-        vemployeeskillsearch *search = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:skillsearchide forIndexPath:index];
-        [search config:self.controller];
-        reusable = search;
-    }
-    
-    return reusable;
+    return header;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index

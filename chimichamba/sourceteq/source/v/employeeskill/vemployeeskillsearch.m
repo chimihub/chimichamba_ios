@@ -3,11 +3,13 @@
 
 @implementation vemployeeskillsearch
 
--(instancetype)initWithFrame:(CGRect)frame
+-(instancetype)init:(cemployeeskill*)controller
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor clearColor]];
+    [self setTranslatesAutoresizingMaskIntoConstraints:NO];
+    self.controller = controller;
     
     UITextField *field = [[UITextField alloc] init];
     [field setAutocapitalizationType:UITextAutocapitalizationTypeNone];
@@ -24,6 +26,7 @@
     [field setTextColor:[UIColor blackColor]];
     [field setTintColor:[UIColor blackColor]];
     [field setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [field setDelegate:controller];
     self.field = field;
     
     UIView *background = [[UIView alloc] init];
@@ -43,17 +46,9 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[field]-2-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[field]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[back]-20-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[back(50)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[back(40)]" options:0 metrics:metrics views:views]];
     
     return self;
-}
-
-#pragma mark public
-
--(void)config:(cemployeeskill*)controller
-{
-    self.controller = controller;
-    [self.field setDelegate:controller];
 }
 
 @end

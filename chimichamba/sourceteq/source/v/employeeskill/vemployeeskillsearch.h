@@ -1,9 +1,9 @@
 #import <UIKit/UIKit.h>
 #import "cemployeeskill.h"
 
-@interface vemployeeskillsearch:UICollectionReusableView
+@interface vemployeeskillsearch:UIView
 
--(void)config:(cemployeeskill*)controller;
+-(instancetype)init:(cemployeeskill*)controller;
 
 @property(weak, nonatomic)cemployeeskill *controller;
 @property(weak, nonatomic)UITextField *field;

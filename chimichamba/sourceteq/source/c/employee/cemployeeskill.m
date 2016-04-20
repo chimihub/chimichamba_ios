@@ -63,4 +63,18 @@
     return YES;
 }
 
+-(void)textFieldDidBeginEditing:(UITextField*)field
+{
+    [self.view scrolltop];
+}
+
+-(BOOL)textField:(UITextField*)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string
+{
+    [self.view scrolltop];
+    
+    NSString *newstring = [field.text stringByReplacingCharactersInRange:range withString:string];
+    
+    return YES;
+}
+
 @end
