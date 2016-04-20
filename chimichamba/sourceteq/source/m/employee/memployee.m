@@ -11,8 +11,8 @@
 {
     self = [super init];
     self.items = @[
-                   [[memployeeitemacademics alloc] init],
                    [[memployeeitemskill alloc] init],
+                   [[memployeeitemacademics alloc] init],
                    [[memployeeitemexperience alloc] init],
                    [[memployeeitemdescr alloc] init],
                    [[memployeeitemlocation alloc] init]

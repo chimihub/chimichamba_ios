@@ -22,7 +22,7 @@ static NSUInteger const interitemspace = 15;
     [flow setMinimumLineSpacing:0];
     [flow setMinimumLineSpacing:interitemspace];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flow setSectionInset:UIEdgeInsetsMake(interitemspace, 0, interitemspace, 0)];
+    [flow setSectionInset:UIEdgeInsetsMake(0, 0, interitemspace, 0)];
 
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setClipsToBounds:YES];

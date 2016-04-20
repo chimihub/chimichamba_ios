@@ -8,5 +8,6 @@
 
 @property(weak, nonatomic)memployeeitem *model;
 @property(weak, nonatomic)cemployee *controller;
+@property(strong, nonatomic)UIColor *colorbackground;
 
 @end

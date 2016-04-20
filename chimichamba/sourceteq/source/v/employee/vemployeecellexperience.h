@@ -3,4 +3,6 @@
 
 @interface vemployeecellexperience:vemployeecell
 
+@property(weak, nonatomic)UISwitch *rookie;
+
 @end

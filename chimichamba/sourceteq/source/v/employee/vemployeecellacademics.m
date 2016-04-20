@@ -37,7 +37,7 @@
     [labeldegree setUserInteractionEnabled:NO];
     [labeldegree setTranslatesAutoresizingMaskIntoConstraints:NO];
     [labeldegree setFont:[UIFont systemFontOfSize:18]];
-    [labeldegree setText:NSLocalizedString(@"employee_inside_degree", nil)];
+    [labeldegree setText:NSLocalizedString(@"employee_item_academics_degree", nil)];
     self.labeldegree = labeldegree;
     
     UISwitch *degree = [[UISwitch alloc] init];
@@ -56,7 +56,7 @@
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[title]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[title]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[icon(29)]-5-[labeldegree]-12-[degree]-10-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[icon(29)]-5-[labeldegree]-12-[degree]-14-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[icon(29)]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[labeldegree(29)]-20-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[degree]-20-|" options:0 metrics:metrics views:views]];

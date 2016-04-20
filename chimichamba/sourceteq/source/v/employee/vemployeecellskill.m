@@ -87,7 +87,7 @@
     self.model = model;
     [self checkskill];
     [self.title setTextColor:[UIColor main]];
-    [self setBackgroundColor:[UIColor whiteColor]];
+    [self setBackgroundColor:self.colorbackground];
 }
 
 @end
