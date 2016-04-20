@@ -91,6 +91,8 @@
 		DA94A9BD1CC7F84900828624 /* mskillitempersonalassistant.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9BC1CC7F84900828624 /* mskillitempersonalassistant.m */; };
 		DA94A9C01CC7F95400828624 /* mskillitemlawyer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9BF1CC7F95400828624 /* mskillitemlawyer.m */; };
 		DA94A9C31CC7FA1500828624 /* mskillitemaccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C21CC7FA1500828624 /* mskillitemaccountant.m */; };
+		DA94A9C61CC7FBA100828624 /* mskillitemcaretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */; };
+		DA94A9C91CC7FC4200828624 /* mskillitembabysitter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +266,10 @@
 		DA94A9BF1CC7F95400828624 /* mskillitemlawyer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemlawyer.m; sourceTree = "<group>"; };
 		DA94A9C11CC7FA1500828624 /* mskillitemaccountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemaccountant.h; sourceTree = "<group>"; };
 		DA94A9C21CC7FA1500828624 /* mskillitemaccountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemaccountant.m; sourceTree = "<group>"; };
+		DA94A9C41CC7FBA100828624 /* mskillitemcaretaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitemcaretaker.h; sourceTree = "<group>"; };
+		DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitemcaretaker.m; sourceTree = "<group>"; };
+		DA94A9C71CC7FC4200828624 /* mskillitembabysitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mskillitembabysitter.h; sourceTree = "<group>"; };
+		DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mskillitembabysitter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -746,6 +752,10 @@
 				DA94A9BF1CC7F95400828624 /* mskillitemlawyer.m */,
 				DA94A9C11CC7FA1500828624 /* mskillitemaccountant.h */,
 				DA94A9C21CC7FA1500828624 /* mskillitemaccountant.m */,
+				DA94A9C41CC7FBA100828624 /* mskillitemcaretaker.h */,
+				DA94A9C51CC7FBA100828624 /* mskillitemcaretaker.m */,
+				DA94A9C71CC7FC4200828624 /* mskillitembabysitter.h */,
+				DA94A9C81CC7FC4200828624 /* mskillitembabysitter.m */,
 			);
 			path = skill;
 			sourceTree = "<group>";
@@ -906,6 +916,7 @@
 				DA6C4A031CBFDC0E00406C44 /* uifont+uifontmain.m in Sources */,
 				DA2913A31CC0079500A66DCC /* vchimi.m in Sources */,
 				DA94A9BA1CC7F7BD00828624 /* mskillitemplumber.m in Sources */,
+				DA94A9C91CC7FC4200828624 /* mskillitembabysitter.m in Sources */,
 				DA6C4A081CBFDC0E00406C44 /* amanager.m in Sources */,
 				DA8F3E991CC5820300DE2749 /* mskillcattrade.m in Sources */,
 				DA6C4A0B1CBFDC0E00406C44 /* cmain.m in Sources */,
@@ -929,6 +940,7 @@
 				DA8F3E8C1CC573D900DE2749 /* vemployeeskill.m in Sources */,
 				DA2913A91CC0340300A66DCC /* vprofilepicture.m in Sources */,
 				DA8F3E651CC51FB700DE2749 /* vemployeecellexperience.m in Sources */,
+				DA94A9C61CC7FBA100828624 /* mskillitemcaretaker.m in Sources */,
 				DA6C4A021CBFDC0E00406C44 /* uicolor+uicolormain.m in Sources */,
 				DA2913B91CC0594900A66DCC /* vemployee.m in Sources */,
 				DA6C4A001CBFDC0E00406C44 /* nsnotification+nsnotificationmain.m in Sources */,
