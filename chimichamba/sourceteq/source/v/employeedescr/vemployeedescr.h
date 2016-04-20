@@ -1,13 +1,10 @@
-//
-//  vemployeedescr.h
-//  chimichamba
-//
-//  Created by zero on 4/20/16.
-//  Copyright © 2016 chimi. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import "cemployeedescr.h"
 
-#import <Foundation/Foundation.h>
+@interface vemployeedescr:UIView
 
-@interface vemployeedescr : NSObject
+-(instancetype)init:(cemployeedescr*)controller;
+
+@property(weak, nonatomic)cemployeedescr *controller;
 
 @end

@@ -1,8 +1,17 @@
 #import "vemployeecelldescr.h"
 #import "uicolor+uicolormain.h"
 #import "uifont+uifontmain.h"
+#import "memployeeitemdescr.h"
+
+@interface vemployeecelldescr ()
+
+@property(weak, nonatomic)memployeeitemdescr *model;
+
+@end
 
 @implementation vemployeecelldescr
+
+@dynamic model;
 
 -(instancetype)initWithFrame:(CGRect)frame
 {
@@ -50,6 +59,11 @@
 {
     [super setSelected:selected];
     [self hover];
+    
+    if(selected)
+    {
+        [self.controller descr:self.model];
+    }
 }
 
 -(void)setHighlighted:(BOOL)highlighted
@@ -77,7 +91,7 @@
 #pragma mark -
 #pragma mark employee cell
 
--(void)config:(memployeeitem*)model
+-(void)config:(memployeeitemdescr*)model
 {
     self.model = model;
     [self hover];

@@ -1,6 +1,15 @@
 #import "cemployeedescr.h"
+#import "vemployeedescr.h"
+
+@interface cemployeedescr ()
+
+@property(strong, nonatomic)vemployeedescr *view;
+
+@end
 
 @implementation cemployeedescr
+
+@dynamic view;
 
 -(instancetype)init:(memployeeitemdescr*)model
 {
@@ -24,7 +33,7 @@
 
 -(void)loadView
 {
-    self.view = [[vemployeeskill alloc] init:self];
+    self.view = [[vemployeedescr alloc] init:self];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle
