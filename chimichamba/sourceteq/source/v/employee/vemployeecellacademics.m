@@ -104,7 +104,7 @@
 {
     if([self.model current].degreeable)
     {
-        [self.degree setUserInteractionEnabled:YES];
+        [self.degree setEnabled:YES];
         [self.degree setAlpha:1];
         [self.icon setAlpha:1];
         [self.labeldegree setTextColor:[UIColor main]];
@@ -113,8 +113,8 @@
     else
     {
         self.model.degree = NO;
+        [self.degree setEnabled:NO];
         [self.degree setOn:NO];
-        [self.degree setUserInteractionEnabled:NO];
         [self.degree setAlpha:0.4];
         [self.labeldegree setTextColor:[UIColor colorWithWhite:0.7 alpha:1]];
         [self.icon setAlpha:0.2];

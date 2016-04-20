@@ -82,11 +82,11 @@ static NSInteger const maximumexperience = 10;
 {
     if(self.model.rookie)
     {
-        
+        [self.slider setEnabled:NO];
     }
     else
     {
-        
+        [self.slider setEnabled:YES];
     }
 }
 
