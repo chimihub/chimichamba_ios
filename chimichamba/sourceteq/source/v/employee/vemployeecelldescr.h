@@ -4,5 +4,6 @@
 @interface vemployeecelldescr:vemployeecell
 
 @property(weak, nonatomic)UILabel *title;
+@property(strong, nonatomic)NSMutableAttributedString *mutstring;
 
 @end

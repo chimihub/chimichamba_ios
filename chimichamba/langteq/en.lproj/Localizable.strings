@@ -27,6 +27,9 @@
 "employee_item_experience_amount"="%@ años";
 "employee_item_experience_amount_1"="%@ año ó menos";
 "employee_item_descr_title"="Sobre mi";
+"employee_item_descr_title_optional"=" (opcional)";
+"employee_item_location_title"="Mi ubicación";
+"employee_item_location_button_change"="Cambiar";
 
 "employeeskill_search_placeholder"="Profesión/Oficio";
 

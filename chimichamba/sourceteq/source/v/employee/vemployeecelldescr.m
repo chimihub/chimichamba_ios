@@ -17,12 +17,20 @@
 {
     self = [super initWithFrame:frame];
     
+    NSDictionary *dicttitle = @{NSFontAttributeName:[UIFont regularsize:18], NSForegroundColorAttributeName:[UIColor main]};
+    NSDictionary *dictoptional = @{NSFontAttributeName:[UIFont regularsize:15], NSForegroundColorAttributeName:[[UIColor main] colorWithAlphaComponent:0.5]};
+    
+    NSAttributedString *attrtitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"employee_item_descr_title", nil) attributes:dicttitle];
+    NSAttributedString *attroptional = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"employee_item_descr_title_optional", nil) attributes:dictoptional];
+    
+    self.mutstring = [[NSMutableAttributedString alloc] init];
+    [self.mutstring appendAttributedString:attrtitle];
+    [self.mutstring appendAttributedString:attroptional];
+    
     UILabel *title = [[UILabel alloc] init];
     [title setBackgroundColor:[UIColor clearColor]];
     [title setUserInteractionEnabled:NO];
     [title setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [title setFont:[UIFont regularsize:18]];
-    [title setText:NSLocalizedString(@"employee_item_descr_title", nil)];
     self.title = title;
     
     UIImageView *icon = [[UIImageView alloc] init];
@@ -84,7 +92,7 @@
     else
     {
         [self setBackgroundColor:self.colorbackground];
-        [self.title setTextColor:[UIColor main]];
+        [self.title setAttributedText:self.mutstring];
     }
 }
 
