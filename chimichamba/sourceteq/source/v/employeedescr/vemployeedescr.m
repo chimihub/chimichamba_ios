@@ -2,8 +2,8 @@
 #import "uifont+uifontmain.h"
 #import "nsnotification+nsnotificationmain.h"
 
-static NSInteger const insetsleft = 10;
-static NSInteger const insetsright = 10;
+static NSInteger const insetsleft = 8;
+static NSInteger const insetsright = 8;
 static NSInteger const insetstop = 10;
 static NSInteger const insetsbottom = 10;
 
@@ -40,6 +40,7 @@ static NSInteger const insetsbottom = 10;
     [textview setTranslatesAutoresizingMaskIntoConstraints:NO];
     [textview setScrollEnabled:NO];
     [textview setInputAccessoryView:accessory];
+    [textview setText:controller.model.descr];
     self.textview = textview;
     
     [self addSubview:textview];

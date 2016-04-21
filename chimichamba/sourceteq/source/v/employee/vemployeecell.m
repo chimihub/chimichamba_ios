@@ -7,7 +7,7 @@
 {
     self = [super initWithFrame:frame];
     [self setClipsToBounds:YES];
-    self.colorbackground = [UIColor colorWithWhite:1 alpha:0.8];
+    self.colorbackground = [UIColor colorWithWhite:1 alpha:0.75];
     [self setBackgroundColor:self.colorbackground];
 
     UIView *bordertop = [[UIView alloc] init];

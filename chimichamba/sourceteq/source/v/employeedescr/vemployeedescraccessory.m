@@ -14,7 +14,7 @@ static NSInteger const height = 32;
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     UILabel *label = [[UILabel alloc] init];
-    [label setFont:[UIFont regularsize:17]];
+    [label setFont:[UIFont regularsize:15]];
     [label setUserInteractionEnabled:NO];
     [label setBackgroundColor:[UIColor clearColor]];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -66,10 +66,10 @@ static NSInteger const height = 32;
 
 #pragma mark public
 
--(void)updatemax:(NSInteger)maxlength
+-(void)updatemax:(NSInteger)maxlength current:(NSInteger)current
 {
     self.maxlength = maxlength;
-    [self updatecharacters:0];
+    [self updatecharacters:current];
 }
 
 -(void)updatecharacters:(NSInteger)length

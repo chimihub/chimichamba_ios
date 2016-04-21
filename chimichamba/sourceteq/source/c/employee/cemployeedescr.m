@@ -26,7 +26,7 @@ static NSInteger const maxlength = 140;
     [super viewDidAppear:animated];
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
     [self.view.textview becomeFirstResponder];
-    [self.view.accessory updatemax:maxlength];
+    [self.view.accessory updatemax:maxlength current:self.model.descr.length];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -54,6 +54,8 @@ static NSInteger const maxlength = 140;
 
 -(void)back
 {
+    NSString *descr = self.view.textview.text;
+    self.model.descr = descr;
     [self.navigationController popViewControllerAnimated:YES];
 }
 

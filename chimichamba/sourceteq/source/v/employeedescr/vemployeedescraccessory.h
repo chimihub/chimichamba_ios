@@ -2,7 +2,7 @@
 
 @interface vemployeedescraccessory:UIView
 
--(void)updatemax:(NSInteger)maxlength;
+-(void)updatemax:(NSInteger)maxlength current:(NSInteger)current;
 -(void)updatecharacters:(NSInteger)length;
 
 @property(weak, nonatomic)UILabel *label;

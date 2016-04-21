@@ -3,4 +3,6 @@
 
 @interface memployeeitemdescr:memployeeitem
 
+@property(copy, nonatomic)NSString *descr;
+
 @end
