@@ -31,6 +31,7 @@
 "employeeskill_search_placeholder"="Profesión/Oficio";
 
 "employeedescr_button_save"="Guardar";
+"employeedescr_label"="%@/%@";
 
 "skill_cat_profession_name"="Profesión";
 "skill_cat_trade_name"="Oficio";
