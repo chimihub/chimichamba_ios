@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
+#import "cchimi.h"
 
-@interface cprofile:UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate, UIGestureRecognizerDelegate>
+@interface cprofile:cchimi<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
 
 +(void)open;
 -(void)back;

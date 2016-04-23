@@ -27,7 +27,6 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
     
     if(firsttime)
     {
@@ -37,12 +36,6 @@
     {
         [self.view.collection reloadData];
     }
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
 }
 
 -(void)loadView

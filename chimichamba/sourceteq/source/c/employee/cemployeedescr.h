@@ -1,7 +1,8 @@
 #import <UIKit/UIKit.h>
+#import "cchimi.h"
 #import "memployeeitemdescr.h"
 
-@interface cemployeedescr:UIViewController<UIGestureRecognizerDelegate, UITextViewDelegate>
+@interface cemployeedescr:UIViewController<UITextViewDelegate>
 
 -(instancetype)init:(memployeeitemdescr*)model;
 -(void)back;

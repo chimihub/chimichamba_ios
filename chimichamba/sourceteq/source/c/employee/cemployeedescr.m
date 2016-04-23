@@ -24,15 +24,8 @@ static NSInteger const maxlength = 140;
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
     [self.view.textview becomeFirstResponder];
     [self.view.accessory updatemax:maxlength current:self.model.descr.length];
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
 }
 
 -(void)loadView

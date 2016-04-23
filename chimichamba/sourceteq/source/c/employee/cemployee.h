@@ -1,8 +1,9 @@
 #import <UIKit/UIKit.h>
-#import "memployeeitemskill.h"
+#import "cchimi.h"
 #import "cemployeedescr.h"
+#import "memployeeitemskill.h"
 
-@interface cemployee:UIViewController<UIGestureRecognizerDelegate>
+@interface cemployee:cchimi
 
 -(void)back;
 -(void)skills:(memployeeitemskill*)model;

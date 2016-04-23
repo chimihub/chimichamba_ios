@@ -19,18 +19,6 @@
     [[cmain singleton] pushViewController:controller animated:YES];
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
-}
-
 -(void)loadView
 {
     self.view = [[vprofile alloc] init:self];
