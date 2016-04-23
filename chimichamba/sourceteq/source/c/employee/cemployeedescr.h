@@ -2,7 +2,7 @@
 #import "cchimi.h"
 #import "memployeeitemdescr.h"
 
-@interface cemployeedescr:UIViewController<UITextViewDelegate>
+@interface cemployeedescr:cchimi<UITextViewDelegate>
 
 -(instancetype)init:(memployeeitemdescr*)model;
 -(void)back;
