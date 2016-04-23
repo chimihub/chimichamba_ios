@@ -32,7 +32,7 @@ static NSInteger const maxlength = 140;
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
 }
 
 -(void)loadView

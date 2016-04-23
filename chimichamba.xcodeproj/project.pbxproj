@@ -97,6 +97,7 @@
 		DA94A9CF1CC8205600828624 /* cemployeedescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9CE1CC8205600828624 /* cemployeedescr.m */; };
 		DA94A9D31CC821CB00828624 /* vemployeedescr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9D21CC821CB00828624 /* vemployeedescr.m */; };
 		DA94A9D61CC839C400828624 /* vemployeedescraccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94A9D51CC839C400828624 /* vemployeedescraccessory.m */; };
+		DAAFB2D91CCB47ED003173A7 /* cchimi.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFB2D81CCB47ED003173A7 /* cchimi.m */; };
 		E3E1C86EB9E23595BBF7A4E9 /* libPods-chimichamba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B17ED0A59320EFF2F4C384 /* libPods-chimichamba.a */; };
 /* End PBXBuildFile section */
 
@@ -282,6 +283,8 @@
 		DA94A9D21CC821CB00828624 /* vemployeedescr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeedescr.m; sourceTree = "<group>"; };
 		DA94A9D41CC839C400828624 /* vemployeedescraccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vemployeedescraccessory.h; sourceTree = "<group>"; };
 		DA94A9D51CC839C400828624 /* vemployeedescraccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vemployeedescraccessory.m; sourceTree = "<group>"; };
+		DAAFB2D71CCB47ED003173A7 /* cchimi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cchimi.h; sourceTree = "<group>"; };
+		DAAFB2D81CCB47ED003173A7 /* cchimi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cchimi.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -587,6 +590,8 @@
 				DA6C49C51CBFDC0E00406C44 /* cpages.m */,
 				DA2913861CBFF0A400A66DCC /* clanding.h */,
 				DA2913871CBFF0A400A66DCC /* clanding.m */,
+				DAAFB2D71CCB47ED003173A7 /* cchimi.h */,
+				DAAFB2D81CCB47ED003173A7 /* cchimi.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -822,6 +827,7 @@
 				TargetAttributes = {
 					DA0A202C1CBFD8B200F08C7A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7AMWG3RLHN;
 					};
 				};
 			};
@@ -983,6 +989,7 @@
 				DA29139E1CC0056300A66DCC /* vprofile.m in Sources */,
 				DA2913881CBFF0A400A66DCC /* clanding.m in Sources */,
 				DA6C4A091CBFDC0E00406C44 /* aparser.m in Sources */,
+				DAAFB2D91CCB47ED003173A7 /* cchimi.m in Sources */,
 				DA6C4A011CBFDC0E00406C44 /* tools.m in Sources */,
 				DA94A9CF1CC8205600828624 /* cemployeedescr.m in Sources */,
 				DA29138F1CBFF4A300A66DCC /* clogin.m in Sources */,
@@ -1031,7 +1038,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1076,7 +1083,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1103,6 +1110,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/chimichamba/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1110,7 +1118,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/chimichamba/sourceteq/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chimi.chimichamba;
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.cdmx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1122,6 +1130,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/chimichamba/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1129,7 +1138,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/chimichamba/sourceteq/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chimi.chimichamba;
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.cdmx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
