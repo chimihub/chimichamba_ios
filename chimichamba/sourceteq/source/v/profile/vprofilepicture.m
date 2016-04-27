@@ -34,7 +34,6 @@ static NSInteger const circlemargin = 5;
     [buttonupload setImage:[UIImage imageNamed:@"profile_picupload"] forState:UIControlStateNormal];
     [buttonupload.imageView setContentMode:UIViewContentModeCenter];
     [buttonupload.imageView setClipsToBounds:YES];
-    [buttonupload addTarget:self action:@selector(actionupload:) forControlEvents:UIControlEventTouchUpInside];
     self.buttonupload = buttonupload;
     
     UIImageView *image = [[UIImageView alloc] init];
@@ -78,13 +77,6 @@ static NSInteger const circlemargin = 5;
                    });
     
     [super layoutSubviews];
-}
-
-#pragma mark actions
-
--(void)actionupload:(UIButton*)button
-{
-    
 }
 
 @end
